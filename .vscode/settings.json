@@ -1,0 +1,9 @@
+{
+  "[typescript][javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "eslint.experimental.useFlatConfig": true,
+  "javascript.preferences.importModuleSpecifierEnding": "js"
+}
