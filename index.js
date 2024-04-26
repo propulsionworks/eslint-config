@@ -1,3 +1,5 @@
+import tsEslint from "@typescript-eslint/eslint-plugin";
+import * as parser from "@typescript-eslint/parser";
 import n from "eslint-plugin-n";
 import unicorn from "eslint-plugin-unicorn";
 import base from "./rules/base.js";
@@ -43,7 +45,20 @@ const awboostConfig = {
 
     ts: {
       name: "@awboost/eslint-config/ts",
+
       files: ["**/*.ts"],
+
+      languageOptions: {
+        parser,
+        parserOptions: {
+          project: true,
+        },
+      },
+
+      plugins: {
+        "@typescript-eslint": tsEslint,
+      },
+
       rules: {
         ...tsBase,
         ...tsStrict,

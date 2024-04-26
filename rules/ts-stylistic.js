@@ -39,8 +39,6 @@ const tsStylistic = Object.freeze({
   "@typescript-eslint/no-import-type-side-effects": "error",
   "@typescript-eslint/no-unsafe-unary-minus": "error",
   "@typescript-eslint/prefer-readonly": "error",
-  "no-return-await": "off",
-  "@typescript-eslint/return-await": "error",
 });
 
 export default tsStylistic;
