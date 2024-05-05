@@ -1,6 +1,6 @@
 {
   "name": "@awboost/eslint-config",
-  "version": "0.1.2-1",
+  "version": "0.1.2",
   "description": "Shared eslint config for awboost packages",
   "type": "module",
   "exports": {
