@@ -1,3 +1,7 @@
-import awboostConfig from "./index.js";
+import awboostConfig from "./lib/index.js";
 
-export default awboostConfig.configs["base"];
+export default [
+  awboostConfig.configs["base"],
+  awboostConfig.configs["ts"],
+  awboostConfig.configs["ts-relaxed-any"],
+];

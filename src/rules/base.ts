@@ -1,7 +1,7 @@
 /**
  * Represents the base rule config.
  */
-const base = Object.freeze({
+const base: Readonly<Record<string, any>> = Object.freeze({
   /*
    * eslint/recommended
    * https://github.com/eslint/eslint/blob/e1ac0b5c035bfdff7be08b69e89e1470a7becac3/packages/js/src/configs/eslint-recommended.js
@@ -214,6 +214,7 @@ const base = Object.freeze({
   "array-callback-return": "error",
   curly: "error",
   eqeqeq: "error",
+  "no-param-reassign": "error",
   "no-constructor-return": "error",
   "no-duplicate-imports": "error",
   "no-else-return": "warn",

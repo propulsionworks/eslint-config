@@ -1,5 +1,6 @@
 import tsEslint from "@typescript-eslint/eslint-plugin";
 import * as parser from "@typescript-eslint/parser";
+import type { Linter } from "eslint";
 import n from "eslint-plugin-n";
 import unicorn from "eslint-plugin-unicorn";
 import base from "./rules/base.js";
@@ -8,29 +9,26 @@ import tsRelaxedAny from "./rules/ts-relaxed-any.js";
 import tsStrict from "./rules/ts-strict.js";
 import tsStylistic from "./rules/ts-stylistic.js";
 
-/**
- * @typedef Configs
- * @property {import('eslint').Linter.FlatConfig} base
- * @property {import('eslint').Linter.FlatConfig} `ts`
- * @property {import('eslint').Linter.FlatConfig} `ts-relaxed-any`
- */
+export type Configs = {
+  base: Linter.FlatConfig;
+  ts: Linter.FlatConfig;
+  "ts-relaxed-any": Linter.FlatConfig;
+};
 
-/**
- * @typedef Rules
- * @property {import('eslint').Linter.RulesRecord} base
- * @property {import('eslint').Linter.RulesRecord} `ts-base`
- * @property {import('eslint').Linter.RulesRecord} `ts-relaxed-any`
- * @property {import('eslint').Linter.RulesRecord} `ts-strict`
- * @property {import('eslint').Linter.RulesRecord} `ts-stylistic`
- */
+export type Rules = {
+  base: Linter.RulesRecord;
+  "ts-base": Linter.RulesRecord;
+  "ts-relaxed-any": Linter.RulesRecord;
+  "ts-strict": Linter.RulesRecord;
+  "ts-stylistic": Linter.RulesRecord;
+};
 
-/**
- * @typedef RulesAndConfigs
- * @property {Configs} configs
- */
+export type RulesAndConfigs = {
+  configs: Configs;
+  rules: Rules;
+};
 
-/** @type {RulesAndConfigs} */
-const awboostConfig = {
+const awboostConfig: RulesAndConfigs = {
   configs: {
     base: {
       name: "@awboost/eslint-config/base",
@@ -55,8 +53,16 @@ const awboostConfig = {
         },
       },
 
+      settings: {
+        n: {
+          convertPath: {
+            "src/**/*.ts": ["^src/(.+)\\.ts$", "lib/$1.js"],
+          },
+        },
+      },
+
       plugins: {
-        "@typescript-eslint": tsEslint,
+        "@typescript-eslint": tsEslint as any,
       },
 
       rules: {

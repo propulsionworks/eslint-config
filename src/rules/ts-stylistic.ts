@@ -1,4 +1,4 @@
-const tsStylistic = Object.freeze({
+const tsStylistic: Readonly<Record<string, any>> = Object.freeze({
   /*
    * typescript-eslint/stylistic-type-checked
    * https://github.com/typescript-eslint/typescript-eslint/blob/e44a1a280f08f9fd0d29f74e5c3e73b7b64a9606/packages/typescript-eslint/src/configs/stylistic-type-checked.ts

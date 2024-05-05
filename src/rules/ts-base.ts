@@ -1,4 +1,4 @@
-const tsBase = Object.freeze({
+const tsBase: Readonly<Record<string, any>> = Object.freeze({
   // from ts-eslint
   // https://github.com/typescript-eslint/typescript-eslint/blob/e44a1a280f08f9fd0d29f74e5c3e73b7b64a9606/packages/eslint-plugin/src/configs/eslint-recommended-raw.ts#L22
   "constructor-super": "off", // ts(2335) & ts(2377)
