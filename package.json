@@ -1,7 +1,7 @@
 {
-  "name": "@awboost/eslint-config",
+  "name": "@propulsionworks/eslint-config",
   "version": "0.2.0",
-  "description": "Shared eslint config for awboost packages",
+  "description": "Shared eslint config for PropulsionWorks packages",
   "type": "module",
   "exports": {
     ".": "./lib/index.js",
@@ -10,7 +10,7 @@
   "bin": "./lib/cli.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awboost/eslint-config.git"
+    "url": "git+https://github.com/propulsionworks/eslint-config.git"
   },
   "keywords": [
     "eslint"
@@ -18,9 +18,9 @@
   "author": "Gordon Leigh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/awboost/eslint-config/issues"
+    "url": "https://github.com/propulsionworks/eslint-config/issues"
   },
-  "homepage": "https://github.com/awboost/eslint-config#readme",
+  "homepage": "https://github.com/propulsionworks/eslint-config#readme",
   "scripts": {
     "build": "npm run compile && npm run lint",
     "compile": "tsc",

@@ -1,3 +1,6 @@
-import awboostConfig from "@awboost/eslint-config";
+import propulsionworksConfig from "@propulsionworks/eslint-config";
 
-export default [awboostConfig.configs["base"], awboostConfig.configs["ts"]];
+export default [
+  propulsionworksConfig.configs["base"],
+  propulsionworksConfig.configs["ts"],
+];

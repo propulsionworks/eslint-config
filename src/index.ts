@@ -28,10 +28,10 @@ export type RulesAndConfigs = {
   rules: Rules;
 };
 
-const awboostConfig: RulesAndConfigs = {
+const propulsionworksConfig: RulesAndConfigs = {
   configs: {
     base: {
-      name: "@awboost/eslint-config/base",
+      name: "@propulsionworks/eslint-config/base",
 
       plugins: {
         n,
@@ -42,7 +42,7 @@ const awboostConfig: RulesAndConfigs = {
     },
 
     ts: {
-      name: "@awboost/eslint-config/ts",
+      name: "@propulsionworks/eslint-config/ts",
 
       files: ["**/*.ts"],
 
@@ -73,7 +73,7 @@ const awboostConfig: RulesAndConfigs = {
     },
 
     "ts-relaxed-any": {
-      name: "@awboost/eslint-config/ts-relaxed-any",
+      name: "@propulsionworks/eslint-config/ts-relaxed-any",
       files: ["**/*.ts"],
       rules: tsRelaxedAny,
     },
@@ -88,4 +88,4 @@ const awboostConfig: RulesAndConfigs = {
   },
 };
 
-export default awboostConfig;
+export default propulsionworksConfig;

@@ -1,7 +1,7 @@
-import awboostConfig from "./lib/index.js";
+import propulsionworksConfig from "./lib/index.js";
 
 export default [
-  awboostConfig.configs["base"],
-  awboostConfig.configs["ts"],
-  awboostConfig.configs["ts-relaxed-any"],
+  propulsionworksConfig.configs["base"],
+  propulsionworksConfig.configs["ts"],
+  propulsionworksConfig.configs["ts-relaxed-any"],
 ];
