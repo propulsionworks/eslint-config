@@ -39,6 +39,7 @@ const base: Readonly<Record<string, any>> = Object.freeze({
   "no-irregular-whitespace": "error",
   "no-loss-of-precision": "error",
   "no-misleading-character-class": "error",
+  "no-nested-ternary": "error",
   "no-new-native-nonconstructor": "error",
   "no-nonoctal-decimal-escape": "error",
   "no-obj-calls": "error",
@@ -63,6 +64,7 @@ const base: Readonly<Record<string, any>> = Object.freeze({
   "no-useless-backreference": "error",
   "no-useless-catch": "error",
   "no-useless-escape": "error",
+  "no-warning-comments": "error",
   "no-with": "error",
   "require-yield": "error",
   "use-isnan": "error",
@@ -73,13 +75,14 @@ const base: Readonly<Record<string, any>> = Object.freeze({
    * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/e0dfed2659993b8fc844bc19e485bde3af1407c4/configs/recommended.js
    */
   "unicorn/better-regex": "error",
-  "unicorn/catch-error-name": "off", // this isn't that useful
+  "unicorn/catch-error-name": "off", // this isn't useful
   "unicorn/consistent-destructuring": "off",
-  "unicorn/consistent-function-scoping": "off", // this isn't that useful
+  "unicorn/consistent-empty-array-spreading": "off", // pointless with type checking
+  "unicorn/consistent-function-scoping": "off", // this isn't useful
   "unicorn/custom-error-definition": "error", // this is helpful
   "unicorn/empty-brace-spaces": "off", // this is formatting-related
   "unicorn/error-message": "error",
-  "unicorn/escape-case": "error",
+  "unicorn/escape-case": "off", // this is formatting-related
   "unicorn/expiring-todo-comments": "error",
   "unicorn/explicit-length-check": "error",
   "unicorn/filename-case": "error",
@@ -87,9 +90,9 @@ const base: Readonly<Record<string, any>> = Object.freeze({
   "unicorn/new-for-builtins": "error",
   "unicorn/no-abusive-eslint-disable": "error",
   "unicorn/no-anonymous-default-export": "error",
-  "unicorn/no-array-callback-reference": "error",
+  "unicorn/no-array-callback-reference": "off", // unnecessary with types
   "unicorn/no-array-for-each": "error",
-  "unicorn/no-array-method-this-argument": "error",
+  "unicorn/no-array-method-this-argument": "off", // false positives due to lack of type analysis
   "unicorn/no-array-push-push": "off", // this is overzealous
   "unicorn/no-array-reduce": "error",
   "unicorn/no-await-expression-member": "error",
@@ -105,8 +108,8 @@ const base: Readonly<Record<string, any>> = Object.freeze({
   "unicorn/no-lonely-if": "off", // this is useful to stop weird wrapping by prettier
   "no-negated-condition": "off",
   "unicorn/no-negated-condition": "error",
-  "no-nested-ternary": "off",
-  "unicorn/no-nested-ternary": "error",
+  // "no-nested-ternary": "off",
+  "unicorn/no-nested-ternary": "off", // keep the eslint default
   "unicorn/no-new-array": "error",
   "unicorn/no-new-buffer": "error",
   "unicorn/no-null": "error",
@@ -121,7 +124,7 @@ const base: Readonly<Record<string, any>> = Object.freeze({
   "unicorn/no-unnecessary-polyfills": "error",
   "unicorn/no-unreadable-array-destructuring": "error",
   "unicorn/no-unreadable-iife": "error",
-  "unicorn/no-unused-properties": "off",
+  "unicorn/no-unused-properties": "error", // added
   "unicorn/no-useless-fallback-in-spread": "error",
   "unicorn/no-useless-length-check": "error",
   "unicorn/no-useless-promise-resolve-reject": "error",
@@ -129,8 +132,8 @@ const base: Readonly<Record<string, any>> = Object.freeze({
   "unicorn/no-useless-switch-case": "error",
   "unicorn/no-useless-undefined": "error",
   "unicorn/no-zero-fractions": "error",
-  "unicorn/number-literal-case": "error",
-  "unicorn/numeric-separators-style": "error",
+  "unicorn/number-literal-case": "off", // fights with prettier
+  "unicorn/numeric-separators-style": "off", // unnecessary
   "unicorn/prefer-add-event-listener": "error",
   "unicorn/prefer-array-find": "error",
   "unicorn/prefer-array-flat": "error",
@@ -161,31 +164,31 @@ const base: Readonly<Record<string, any>> = Object.freeze({
   "unicorn/prefer-node-protocol": "error",
   "unicorn/prefer-number-properties": "error",
   "unicorn/prefer-object-from-entries": "error",
-  "unicorn/prefer-optional-catch-binding": "error",
+  "unicorn/prefer-optional-catch-binding": "off", // not needed with no-unused-vars
   "unicorn/prefer-prototype-methods": "error",
   "unicorn/prefer-query-selector": "error",
   "unicorn/prefer-reflect-apply": "error",
   "unicorn/prefer-regexp-test": "error",
   "unicorn/prefer-set-has": "error",
   "unicorn/prefer-set-size": "error",
-  "unicorn/prefer-spread": "error",
+  "unicorn/prefer-spread": "off", // unnecessary
   "unicorn/prefer-string-replace-all": "error",
   "unicorn/prefer-string-slice": "error",
   "unicorn/prefer-string-starts-ends-with": "error",
   "unicorn/prefer-string-trim-start-end": "error",
-  "unicorn/prefer-switch": "error",
-  "unicorn/prefer-ternary": "error",
+  "unicorn/prefer-switch": "off", // if anything it should be the opposite...
+  "unicorn/prefer-ternary": "error", // stupid
   "unicorn/prefer-top-level-await": "error",
   "unicorn/prefer-type-error": "error",
-  "unicorn/prevent-abbreviations": "error",
+  "unicorn/prevent-abbreviations": "off", // really annoying in practice
   "unicorn/relative-url-style": "error",
   "unicorn/require-array-join-separator": "error",
   "unicorn/require-number-to-fixed-digits-argument": "error",
   "unicorn/require-post-message-target-origin": "off",
   "unicorn/string-content": "off",
-  "unicorn/switch-case-braces": "error",
-  "unicorn/template-indent": "error",
-  "unicorn/text-encoding-identifier-case": "error",
+  "unicorn/switch-case-braces": "off", // unnecessary
+  "unicorn/template-indent": "off", // shouldn't be a default
+  "unicorn/text-encoding-identifier-case": "off", // unnecessary
   "unicorn/throw-new-error": "error",
 
   /*
