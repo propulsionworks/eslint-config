@@ -10,9 +10,9 @@ import tsStrict from "./rules/ts-strict.js";
 import tsStylistic from "./rules/ts-stylistic.js";
 
 export type Configs = {
-  base: Linter.FlatConfig;
-  ts: Linter.FlatConfig;
-  "ts-relaxed-any": Linter.FlatConfig;
+  base: Linter.Config;
+  ts: Linter.Config;
+  "ts-relaxed-any": Linter.Config;
 };
 
 export type Rules = {

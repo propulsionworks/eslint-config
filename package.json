@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/propulsionworks/eslint-config#readme",
   "scripts": {
-    "build": "npm run compile && npm run lint",
+    "build": "npm run clean && npm run compile && npm run lint",
+    "clean": "rm -rf lib/",
     "compile": "tsc",
     "lint": "eslint 'src/**/*.ts'",
     "preversion": "npm run build"
