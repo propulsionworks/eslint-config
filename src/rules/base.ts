@@ -188,7 +188,7 @@ const base: Readonly<Record<string, any>> = Object.freeze({
   "unicorn/prefer-optional-catch-binding": "off", // not needed with no-unused-vars
   "unicorn/prefer-spread": "off", // unnecessary
   "unicorn/prefer-switch": "off", // if anything it should be the opposite...
-  "unicorn/prefer-ternary": "error", // stupid
+  "unicorn/prefer-ternary": "off", // stupid
   "unicorn/prevent-abbreviations": "off", // really annoying in practice
   "unicorn/switch-case-braces": "off", // unnecessary
   "unicorn/template-indent": "off", // shouldn't be a default
