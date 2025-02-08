@@ -15,6 +15,18 @@ type Package = {
   version?: string;
 };
 
+function hasErrorCode<Code extends string>(
+  error: unknown,
+  code: Code,
+): error is Error & { code: Code } {
+  return (
+    typeof error === "object" &&
+    error !== null &&
+    "code" in error &&
+    error.code === code
+  );
+}
+
 export async function install(path = "."): Promise<void> {
   const ourPackageJsonPath = await findPackageJson(
     dirname(fileURLToPath(import.meta.url)),
@@ -41,7 +53,9 @@ export async function install(path = "."): Promise<void> {
   let theirPackageJson: Package;
 
   if (theirPackageJsonPath) {
-    theirPackageJson = JSON.parse(await readFile(theirPackageJsonPath, "utf8"));
+    theirPackageJson = JSON.parse(
+      await readFile(theirPackageJsonPath, "utf8"),
+    ) as Package;
   } else {
     theirPackageJsonPath = resolve("package.json");
     theirPackageJson = {};
@@ -156,8 +170,8 @@ function mergeAlphabetically<T, K extends string, V>(
 async function tryStat(path: string): Promise<Stats | undefined> {
   try {
     return await stat(path);
-  } catch (cause: any) {
-    if (cause?.code !== "ENOENT") {
+  } catch (cause) {
+    if (!hasErrorCode(cause, "ENOENT")) {
       throw cause;
     }
   }
@@ -174,8 +188,8 @@ async function writeWithFormatting(path: string, data: string): Promise<void> {
       ...prettierConfig,
       filepath: path,
     });
-  } catch (cause: any) {
-    if (cause?.code !== "ERR_MODULE_NOT_FOUND") {
+  } catch (cause) {
+    if (!hasErrorCode(cause, "ERR_MODULE_NOT_FOUND")) {
       throw cause;
     }
     formattedData = data;

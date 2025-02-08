@@ -1,13 +1,19 @@
 {
   "name": "@propulsionworks/eslint-config",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Shared eslint config for PropulsionWorks packages",
   "type": "module",
   "exports": {
-    ".": "./lib/index.js",
-    "./install": "./lib/install.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./install": {
+      "types": "./dist/install.d.ts",
+      "default": "./dist/install.js"
+    }
   },
-  "bin": "./lib/cli.js",
+  "bin": "./dist/cli.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/propulsionworks/eslint-config.git"
@@ -25,31 +31,36 @@
     "build": "npm run clean && npm run compile && npm run lint",
     "clean": "rm -rf lib/",
     "compile": "tsc",
-    "lint": "eslint 'src/**/*.ts'",
+    "generate:meta": "node --experimental-strip-types src/build/generate-rule-meta.ts",
+    "lint": "eslint",
     "preversion": "npm run build"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.8.0",
-    "@typescript-eslint/parser": "^8.8.0",
-    "eslint-plugin-n": "^17.10.2",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-unicorn": "^55.0.0"
+    "typescript-eslint": "^8",
+    "eslint-plugin-n": "^17",
+    "eslint-plugin-prettier": "^5",
+    "eslint-plugin-unicorn": "^56"
   },
   "peerDependencies": {
     "eslint": "^9",
     "prettier": "^3"
   },
   "devDependencies": {
+    "@eslint/js": "^9",
     "@types/eslint": "^9.6.1",
     "@types/node": "^22.5.1",
-    "eslint": "^9.9.1",
+    "eslint": "^9.19.0",
     "prettier": "^3.3.3",
-    "typescript": "~5.5"
+    "typescript": "^5.7",
+    "typescript-eslint": "^8",
+    "safe-stable-stringify": "^2.5.0"
   },
   "files": [
     "src/",
-    "lib/",
-    "eslint.config.template.js"
+    "!build/",
+    "dist/",
+    "eslint.config.template.js",
+    "rule-meta.json"
   ],
   "packageManager": "npm@10.8.3+sha512.d08425c8062f56d43bb8e84315864218af2492eb769e1f1ca40740f44e85bd148969382d651660363942e5909cb7ffcbef7ca0ae963ddc2c57a51243b4da8f56"
 }

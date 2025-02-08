@@ -1,50 +1,36 @@
-import tsEslint from "@typescript-eslint/eslint-plugin";
 import * as parser from "@typescript-eslint/parser";
 import type { Linter } from "eslint";
 import n from "eslint-plugin-n";
 import unicorn from "eslint-plugin-unicorn";
-import base from "./rules/base.js";
-import tsBase from "./rules/ts-base.js";
-import tsRelaxedAny from "./rules/ts-relaxed-any.js";
-import tsStrict from "./rules/ts-strict.js";
-import tsStylistic from "./rules/ts-stylistic.js";
+import tseslint from "typescript-eslint";
+import { getConfigRulesets, type ConfigName } from "./ruleset.ts";
 
-export type Configs = {
-  base: Linter.Config;
-  ts: Linter.Config;
-  "ts-relaxed-any": Linter.Config;
+/**
+ * Create configs using "extend". Re-exported from typescript-eslint for
+ * convenience.
+ * @see {@link https://typescript-eslint.io/packages/typescript-eslint#config}
+ */
+export { config } from "typescript-eslint";
+
+export type PropulsionWorksEslint = {
+  configs: Record<ConfigName, Linter.Config>;
 };
 
-export type Rules = {
-  base: Linter.RulesRecord;
-  "ts-base": Linter.RulesRecord;
-  "ts-relaxed-any": Linter.RulesRecord;
-  "ts-strict": Linter.RulesRecord;
-  "ts-stylistic": Linter.RulesRecord;
-};
-
-export type RulesAndConfigs = {
-  configs: Configs;
-  rules: Rules;
-};
-
-const propulsionworksConfig: RulesAndConfigs = {
+const propulsionworks: PropulsionWorksEslint = {
   configs: {
-    base: {
-      name: "@propulsionworks/eslint-config/base",
+    js: {
+      name: "@propulsionworks/js",
 
       plugins: {
         n,
         unicorn,
       },
 
-      rules: base,
+      rules: getConfigRulesets("js"),
     },
 
     ts: {
-      name: "@propulsionworks/eslint-config/ts",
-
-      files: ["**/*.ts"],
+      name: "@propulsionworks/ts",
 
       languageOptions: {
         parser,
@@ -53,39 +39,20 @@ const propulsionworksConfig: RulesAndConfigs = {
         },
       },
 
-      settings: {
-        n: {
-          convertPath: {
-            "src/**/*.ts": ["^src/(.+)\\.ts$", "lib/$1.js"],
-          },
-        },
-      },
-
       plugins: {
-        "@typescript-eslint": tsEslint as any,
+        n,
+        unicorn,
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
+        "@typescript-eslint": tseslint.plugin as any,
       },
 
-      rules: {
-        ...tsBase,
-        ...tsStrict,
-        ...tsStylistic,
-      },
+      rules: getConfigRulesets("ts"),
     },
 
     "ts-relaxed-any": {
-      name: "@propulsionworks/eslint-config/ts-relaxed-any",
-      files: ["**/*.ts"],
-      rules: tsRelaxedAny,
+      rules: getConfigRulesets("ts-relaxed-any"),
     },
-  },
-
-  rules: {
-    base,
-    "ts-base": tsBase,
-    "ts-relaxed-any": tsRelaxedAny,
-    "ts-strict": tsStrict,
-    "ts-stylistic": tsStylistic,
   },
 };
 
-export default propulsionworksConfig;
+export default propulsionworks;

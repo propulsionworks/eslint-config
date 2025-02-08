@@ -1,0 +1,5907 @@
+{
+  "@typescript-eslint/adjacent-overload-signatures": {
+    "docs": {
+      "description": "Require that function overload signatures be consecutive",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/adjacent-overload-signatures"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/array-type": {
+    "docs": {
+      "description": "Require consistently using either `T[]` or `Array<T>` for arrays",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/array-type"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/await-thenable": {
+    "docs": {
+      "description": "Disallow awaiting a value that is not a Thenable",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/await-thenable"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/ban-ts-comment": {
+    "docs": {
+      "description": "Disallow `@ts-<directive>` comments or require descriptions after directives",
+      "recommended": {
+        "recommended": true,
+        "strict": [
+          {
+            "minimumDescriptionLength": 10
+          }
+        ]
+      },
+      "url": "https://typescript-eslint.io/rules/ban-ts-comment"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": [
+        "error",
+        {
+          "minimumDescriptionLength": 10
+        }
+      ]
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": [
+        "error",
+        {
+          "minimumDescriptionLength": 10
+        }
+      ],
+      "typescript-eslint/strict-type-checked": [
+        "error",
+        {
+          "minimumDescriptionLength": 10
+        }
+      ]
+    }
+  },
+  "@typescript-eslint/ban-tslint-comment": {
+    "docs": {
+      "description": "Disallow `// tslint:<rule-flag>` comments",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/ban-tslint-comment"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/class-literal-property-style": {
+    "docs": {
+      "description": "Enforce that literals on classes are exposed in a consistent style",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/class-literal-property-style"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/class-methods-use-this": {
+    "docs": {
+      "description": "Enforce that class methods utilize `this`",
+      "extendsBaseRule": true,
+      "requiresTypeChecking": false,
+      "url": "https://typescript-eslint.io/rules/class-methods-use-this"
+    }
+  },
+  "@typescript-eslint/consistent-generic-constructors": {
+    "docs": {
+      "description": "Enforce specifying generic type arguments on type annotation or constructor name of a constructor call",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/consistent-generic-constructors"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/consistent-indexed-object-style": {
+    "docs": {
+      "description": "Require or disallow the `Record` type",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/consistent-indexed-object-style"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/consistent-return": {
+    "docs": {
+      "description": "Require `return` statements to either always or never specify values",
+      "extendsBaseRule": true,
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/consistent-return"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/consistent-type-assertions": {
+    "docs": {
+      "description": "Enforce consistent usage of type assertions",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/consistent-type-assertions"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/consistent-type-definitions": {
+    "docs": {
+      "description": "Enforce type definitions to consistently use either `interface` or `type`",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/consistent-type-definitions"
+    },
+    "rulesets": {
+      "ts-stylistic": [
+        "error",
+        "type"
+      ]
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/consistent-type-exports": {
+    "docs": {
+      "description": "Enforce consistent usage of type exports",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/consistent-type-exports"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/consistent-type-imports": {
+    "docs": {
+      "description": "Enforce consistent usage of type imports",
+      "url": "https://typescript-eslint.io/rules/consistent-type-imports"
+    }
+  },
+  "@typescript-eslint/default-param-last": {
+    "docs": {
+      "description": "Enforce default parameters to be last",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/default-param-last"
+    }
+  },
+  "@typescript-eslint/dot-notation": {
+    "docs": {
+      "description": "Enforce dot notation whenever possible",
+      "extendsBaseRule": true,
+      "recommended": "stylistic",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/dot-notation"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/stylistic-type-checked": "error",
+      "typescript-eslint/stylistic-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/explicit-function-return-type": {
+    "docs": {
+      "description": "Require explicit return types on functions and class methods",
+      "url": "https://typescript-eslint.io/rules/explicit-function-return-type"
+    }
+  },
+  "@typescript-eslint/explicit-member-accessibility": {
+    "docs": {
+      "description": "Require explicit accessibility modifiers on class properties and methods",
+      "url": "https://typescript-eslint.io/rules/explicit-member-accessibility"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    }
+  },
+  "@typescript-eslint/explicit-module-boundary-types": {
+    "docs": {
+      "description": "Require explicit return and argument types on exported functions' and classes' public class methods",
+      "url": "https://typescript-eslint.io/rules/explicit-module-boundary-types"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    }
+  },
+  "@typescript-eslint/init-declarations": {
+    "docs": {
+      "description": "Require or disallow initialization in variable declarations",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/init-declarations"
+    }
+  },
+  "@typescript-eslint/max-params": {
+    "docs": {
+      "description": "Enforce a maximum number of parameters in function definitions",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/max-params"
+    }
+  },
+  "@typescript-eslint/member-ordering": {
+    "docs": {
+      "description": "Require a consistent member declaration order",
+      "url": "https://typescript-eslint.io/rules/member-ordering"
+    }
+  },
+  "@typescript-eslint/method-signature-style": {
+    "docs": {
+      "description": "Enforce using a particular method signature syntax",
+      "url": "https://typescript-eslint.io/rules/method-signature-style"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    }
+  },
+  "@typescript-eslint/naming-convention": {
+    "docs": {
+      "description": "Enforce naming conventions for everything across a codebase",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/naming-convention"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/no-array-constructor": {
+    "docs": {
+      "description": "Disallow generic `Array` constructors",
+      "extendsBaseRule": true,
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-array-constructor"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-array-delete": {
+    "docs": {
+      "description": "Disallow using the `delete` operator on array values",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-array-delete"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-base-to-string": {
+    "docs": {
+      "description": "Require `.toString()` and `.toLocaleString()` to only be called on objects which provide useful information when stringified",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-base-to-string"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-confusing-non-null-assertion": {
+    "docs": {
+      "description": "Disallow non-null assertion in locations that may be confusing",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/no-confusing-non-null-assertion"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-confusing-void-expression": {
+    "docs": {
+      "description": "Require expressions of type void to appear in statement position",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-confusing-void-expression"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-deprecated": {
+    "docs": {
+      "description": "Disallow using code marked as `@deprecated`",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-deprecated"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-dupe-class-members": {
+    "docs": {
+      "description": "Disallow duplicate class members",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/no-dupe-class-members"
+    }
+  },
+  "@typescript-eslint/no-duplicate-enum-values": {
+    "docs": {
+      "description": "Disallow duplicate enum member values",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-duplicate-enum-values"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-duplicate-type-constituents": {
+    "docs": {
+      "description": "Disallow duplicate constituents of union or intersection types",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-duplicate-type-constituents"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-dynamic-delete": {
+    "docs": {
+      "description": "Disallow using the `delete` operator on computed key expressions",
+      "recommended": "strict",
+      "url": "https://typescript-eslint.io/rules/no-dynamic-delete"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-empty-function": {
+    "docs": {
+      "description": "Disallow empty functions",
+      "extendsBaseRule": true,
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/no-empty-function"
+    },
+    "rulesets": {
+      "ts-stylistic": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-empty-interface": {
+    "docs": {
+      "description": "Disallow the declaration of empty interfaces",
+      "url": "https://typescript-eslint.io/rules/no-empty-interface"
+    }
+  },
+  "@typescript-eslint/no-empty-object-type": {
+    "docs": {
+      "description": "Disallow accidentally using the \"empty object\" type",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-empty-object-type"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-explicit-any": {
+    "docs": {
+      "description": "Disallow the `any` type",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-explicit-any"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-relaxed-any": "off",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-extra-non-null-assertion": {
+    "docs": {
+      "description": "Disallow extra non-null assertions",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-extra-non-null-assertion"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-extraneous-class": {
+    "docs": {
+      "description": "Disallow classes used as namespaces",
+      "recommended": "strict",
+      "url": "https://typescript-eslint.io/rules/no-extraneous-class"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-floating-promises": {
+    "docs": {
+      "description": "Require Promise-like statements to be handled appropriately",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-floating-promises"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-for-in-array": {
+    "docs": {
+      "description": "Disallow iterating over an array with a for-in loop",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-for-in-array"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-implied-eval": {
+    "docs": {
+      "description": "Disallow the use of `eval()`-like methods",
+      "extendsBaseRule": true,
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-implied-eval"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-import-type-side-effects": {
+    "docs": {
+      "description": "Enforce the use of top-level import type qualifier when an import only has specifiers with inline type qualifiers",
+      "url": "https://typescript-eslint.io/rules/no-import-type-side-effects"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    }
+  },
+  "@typescript-eslint/no-inferrable-types": {
+    "docs": {
+      "description": "Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/no-inferrable-types"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-invalid-this": {
+    "docs": {
+      "description": "Disallow `this` keywords outside of classes or class-like objects",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/no-invalid-this"
+    }
+  },
+  "@typescript-eslint/no-invalid-void-type": {
+    "docs": {
+      "description": "Disallow `void` type outside of generic or return types",
+      "recommended": "strict",
+      "url": "https://typescript-eslint.io/rules/no-invalid-void-type"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-loop-func": {
+    "docs": {
+      "description": "Disallow function declarations that contain unsafe references inside loop statements",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/no-loop-func"
+    }
+  },
+  "@typescript-eslint/no-loss-of-precision": {
+    "docs": {
+      "description": "Disallow literal numbers that lose precision",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/no-loss-of-precision"
+    }
+  },
+  "@typescript-eslint/no-magic-numbers": {
+    "docs": {
+      "description": "Disallow magic numbers",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/no-magic-numbers"
+    }
+  },
+  "@typescript-eslint/no-meaningless-void-operator": {
+    "docs": {
+      "description": "Disallow the `void` operator except when used to discard a value",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-meaningless-void-operator"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-misused-new": {
+    "docs": {
+      "description": "Enforce valid definition of `new` and `constructor`",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-misused-new"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-misused-promises": {
+    "docs": {
+      "description": "Disallow Promises in places not designed to handle them",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-misused-promises"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-misused-spread": {
+    "docs": {
+      "description": "Disallow using the spread operator when it might cause unexpected behavior",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-misused-spread"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-mixed-enums": {
+    "docs": {
+      "description": "Disallow enums from having both number and string members",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-mixed-enums"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-namespace": {
+    "docs": {
+      "description": "Disallow TypeScript namespaces",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-namespace"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing": {
+    "docs": {
+      "description": "Disallow non-null assertions in the left operand of a nullish coalescing operator",
+      "recommended": "strict",
+      "url": "https://typescript-eslint.io/rules/no-non-null-asserted-nullish-coalescing"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-non-null-asserted-optional-chain": {
+    "docs": {
+      "description": "Disallow non-null assertions after an optional chain expression",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-non-null-assertion": {
+    "docs": {
+      "description": "Disallow non-null assertions using the `!` postfix operator",
+      "recommended": "strict",
+      "url": "https://typescript-eslint.io/rules/no-non-null-assertion"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-redeclare": {
+    "docs": {
+      "description": "Disallow variable redeclaration",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/no-redeclare"
+    }
+  },
+  "@typescript-eslint/no-redundant-type-constituents": {
+    "docs": {
+      "description": "Disallow members of unions and intersections that do nothing or override type information",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-redundant-type-constituents"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-require-imports": {
+    "docs": {
+      "description": "Disallow invocation of `require()`",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-require-imports"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-restricted-imports": {
+    "docs": {
+      "description": "Disallow specified modules when loaded by `import`",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/no-restricted-imports"
+    }
+  },
+  "@typescript-eslint/no-restricted-types": {
+    "docs": {
+      "description": "Disallow certain types",
+      "url": "https://typescript-eslint.io/rules/no-restricted-types"
+    }
+  },
+  "@typescript-eslint/no-shadow": {
+    "docs": {
+      "description": "Disallow variable declarations from shadowing variables declared in the outer scope",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/no-shadow"
+    }
+  },
+  "@typescript-eslint/no-this-alias": {
+    "docs": {
+      "description": "Disallow aliasing `this`",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-this-alias"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-type-alias": {
+    "docs": {
+      "description": "Disallow type aliases",
+      "url": "https://typescript-eslint.io/rules/no-type-alias"
+    }
+  },
+  "@typescript-eslint/no-unnecessary-boolean-literal-compare": {
+    "docs": {
+      "description": "Disallow unnecessary equality comparisons against boolean literals",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unnecessary-condition": {
+    "docs": {
+      "description": "Disallow conditionals where the type is always truthy or always falsy",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unnecessary-condition"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unnecessary-parameter-property-assignment": {
+    "docs": {
+      "description": "Disallow unnecessary assignment of constructor property parameter",
+      "url": "https://typescript-eslint.io/rules/no-unnecessary-parameter-property-assignment"
+    }
+  },
+  "@typescript-eslint/no-unnecessary-qualifier": {
+    "docs": {
+      "description": "Disallow unnecessary namespace qualifiers",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unnecessary-qualifier"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/no-unnecessary-template-expression": {
+    "docs": {
+      "description": "Disallow unnecessary template expressions",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unnecessary-template-expression"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unnecessary-type-arguments": {
+    "docs": {
+      "description": "Disallow type arguments that are equal to the default",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unnecessary-type-arguments"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unnecessary-type-assertion": {
+    "docs": {
+      "description": "Disallow type assertions that do not change the type of an expression",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unnecessary-type-assertion"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unnecessary-type-constraint": {
+    "docs": {
+      "description": "Disallow unnecessary constraints on generic types",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-unnecessary-type-constraint"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-unnecessary-type-parameters": {
+    "docs": {
+      "description": "Disallow type parameters that aren't used multiple times",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unnecessary-type-parameters"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unsafe-argument": {
+    "docs": {
+      "description": "Disallow calling a function with a value with type `any`",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unsafe-argument"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-relaxed-any": "off",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unsafe-assignment": {
+    "docs": {
+      "description": "Disallow assigning a value with type `any` to variables and properties",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unsafe-assignment"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-relaxed-any": "off",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unsafe-call": {
+    "docs": {
+      "description": "Disallow calling a value with type `any`",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unsafe-call"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-relaxed-any": "off",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unsafe-declaration-merging": {
+    "docs": {
+      "description": "Disallow unsafe declaration merging",
+      "recommended": "recommended",
+      "requiresTypeChecking": false,
+      "url": "https://typescript-eslint.io/rules/no-unsafe-declaration-merging"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-unsafe-enum-comparison": {
+    "docs": {
+      "description": "Disallow comparing an enum value with a non-enum value",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unsafe-enum-comparison"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unsafe-function-type": {
+    "docs": {
+      "description": "Disallow using the unsafe built-in Function type",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-unsafe-function-type"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-unsafe-member-access": {
+    "docs": {
+      "description": "Disallow member access on a value with type `any`",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unsafe-member-access"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-relaxed-any": "off",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unsafe-return": {
+    "docs": {
+      "description": "Disallow returning a value with type `any` from a function",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unsafe-return"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-relaxed-any": "off",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unsafe-type-assertion": {
+    "docs": {
+      "description": "Disallow type assertions that narrow a type",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unsafe-type-assertion"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/no-unsafe-unary-minus": {
+    "docs": {
+      "description": "Require unary negation to take a number",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/no-unsafe-unary-minus"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error",
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/no-unused-expressions": {
+    "docs": {
+      "description": "Disallow unused expressions",
+      "extendsBaseRule": true,
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-unused-expressions"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-unused-vars": {
+    "docs": {
+      "description": "Disallow unused variables",
+      "extendsBaseRule": true,
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-unused-vars"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-use-before-define": {
+    "docs": {
+      "description": "Disallow the use of variables before they are defined",
+      "extendsBaseRule": true,
+      "url": "https://typescript-eslint.io/rules/no-use-before-define"
+    }
+  },
+  "@typescript-eslint/no-useless-constructor": {
+    "docs": {
+      "description": "Disallow unnecessary constructors",
+      "extendsBaseRule": true,
+      "recommended": "strict",
+      "url": "https://typescript-eslint.io/rules/no-useless-constructor"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/no-useless-empty-export": {
+    "docs": {
+      "description": "Disallow empty exports that don't change anything in a module file",
+      "url": "https://typescript-eslint.io/rules/no-useless-empty-export"
+    }
+  },
+  "@typescript-eslint/no-var-requires": {
+    "docs": {
+      "description": "Disallow `require` statements except in import statements",
+      "url": "https://typescript-eslint.io/rules/no-var-requires"
+    }
+  },
+  "@typescript-eslint/no-wrapper-object-types": {
+    "docs": {
+      "description": "Disallow using confusing built-in primitive class wrappers",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/no-wrapper-object-types"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/non-nullable-type-assertion-style": {
+    "docs": {
+      "description": "Enforce non-null assertions over explicit type assertions",
+      "recommended": "stylistic",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/non-nullable-type-assertion-style"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/stylistic-type-checked": "error",
+      "typescript-eslint/stylistic-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/only-throw-error": {
+    "docs": {
+      "description": "Disallow throwing non-`Error` values as exceptions",
+      "extendsBaseRule": "no-throw-literal",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/only-throw-error"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/parameter-properties": {
+    "docs": {
+      "description": "Require or disallow parameter properties in class constructors",
+      "url": "https://typescript-eslint.io/rules/parameter-properties"
+    }
+  },
+  "@typescript-eslint/prefer-as-const": {
+    "docs": {
+      "description": "Enforce the use of `as const` over literal type",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/prefer-as-const"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/prefer-destructuring": {
+    "docs": {
+      "description": "Require destructuring from arrays and/or objects",
+      "extendsBaseRule": true,
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-destructuring"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/prefer-enum-initializers": {
+    "docs": {
+      "description": "Require each enum member value to be explicitly initialized",
+      "url": "https://typescript-eslint.io/rules/prefer-enum-initializers"
+    }
+  },
+  "@typescript-eslint/prefer-find": {
+    "docs": {
+      "description": "Enforce the use of Array.prototype.find() over Array.prototype.filter() followed by [0] when looking for a single result",
+      "recommended": "stylistic",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-find"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/stylistic-type-checked": "error",
+      "typescript-eslint/stylistic-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/prefer-for-of": {
+    "docs": {
+      "description": "Enforce the use of `for-of` loop over the standard `for` loop where possible",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/prefer-for-of"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/prefer-function-type": {
+    "docs": {
+      "description": "Enforce using function types instead of interfaces with call signatures",
+      "recommended": "stylistic",
+      "url": "https://typescript-eslint.io/rules/prefer-function-type"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "error",
+      "typescript-eslint/stylistic-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/prefer-includes": {
+    "docs": {
+      "description": "Enforce `includes` method over `indexOf` method",
+      "recommended": "stylistic",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-includes"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/stylistic-type-checked": "error",
+      "typescript-eslint/stylistic-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/prefer-literal-enum-member": {
+    "docs": {
+      "description": "Require all enum members to be literal values",
+      "recommended": "strict",
+      "requiresTypeChecking": false,
+      "url": "https://typescript-eslint.io/rules/prefer-literal-enum-member"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/prefer-namespace-keyword": {
+    "docs": {
+      "description": "Require using `namespace` keyword over `module` keyword to declare custom TypeScript modules",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/prefer-namespace-keyword"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/prefer-nullish-coalescing": {
+    "docs": {
+      "description": "Enforce using the nullish coalescing operator instead of logical assignments or chaining",
+      "recommended": "stylistic",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-nullish-coalescing"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/stylistic-type-checked": "error",
+      "typescript-eslint/stylistic-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/prefer-optional-chain": {
+    "docs": {
+      "description": "Enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects",
+      "recommended": "stylistic",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-optional-chain"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/stylistic-type-checked": "error",
+      "typescript-eslint/stylistic-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/prefer-promise-reject-errors": {
+    "docs": {
+      "description": "Require using Error objects as Promise rejection reasons",
+      "extendsBaseRule": true,
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-promise-reject-errors"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/prefer-readonly": {
+    "docs": {
+      "description": "Require private members to be marked as `readonly` if they're never modified outside of the constructor",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-readonly"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/prefer-readonly-parameter-types": {
+    "docs": {
+      "description": "Require function parameters to be typed as `readonly` to prevent accidental mutation of inputs",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-readonly-parameter-types"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/prefer-reduce-type-parameter": {
+    "docs": {
+      "description": "Enforce using type parameter when calling `Array#reduce` instead of using a type assertion",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-reduce-type-parameter"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/prefer-regexp-exec": {
+    "docs": {
+      "description": "Enforce `RegExp#exec` over `String#match` if no global flag is provided",
+      "recommended": "stylistic",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-regexp-exec"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/stylistic-type-checked": "error",
+      "typescript-eslint/stylistic-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/prefer-return-this-type": {
+    "docs": {
+      "description": "Enforce that `this` is used when only `this` type is returned",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-return-this-type"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/prefer-string-starts-ends-with": {
+    "docs": {
+      "description": "Enforce using `String#startsWith` and `String#endsWith` over other equivalent methods of checking substrings",
+      "recommended": "stylistic",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/prefer-string-starts-ends-with"
+    },
+    "rulesets": {
+      "ts-stylistic": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/stylistic-type-checked": "error",
+      "typescript-eslint/stylistic-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/prefer-ts-expect-error": {
+    "docs": {
+      "description": "Enforce using `@ts-expect-error` over `@ts-ignore`",
+      "url": "https://typescript-eslint.io/rules/prefer-ts-expect-error"
+    }
+  },
+  "@typescript-eslint/promise-function-async": {
+    "docs": {
+      "description": "Require any function or method that returns a Promise to be marked async",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/promise-function-async"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/related-getter-setter-pairs": {
+    "docs": {
+      "description": "Enforce that `get()` types should be assignable to their equivalent `set()` type",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/related-getter-setter-pairs"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/require-array-sort-compare": {
+    "docs": {
+      "description": "Require `Array#sort` and `Array#toSorted` calls to always provide a `compareFunction`",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/require-array-sort-compare"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/require-await": {
+    "docs": {
+      "description": "Disallow async functions which do not return promises and have no `await` expression",
+      "extendsBaseRule": true,
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/require-await"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/restrict-plus-operands": {
+    "docs": {
+      "description": "Require both operands of addition to be the same type and be `bigint`, `number`, or `string`",
+      "recommended": {
+        "recommended": true,
+        "strict": [
+          {
+            "allowAny": false,
+            "allowBoolean": false,
+            "allowNullish": false,
+            "allowNumberAndString": false,
+            "allowRegExp": false
+          }
+        ]
+      },
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/restrict-plus-operands"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": [
+        "error",
+        {
+          "allowAny": false,
+          "allowBoolean": false,
+          "allowNullish": false,
+          "allowNumberAndString": false,
+          "allowRegExp": false
+        }
+      ]
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": [
+        "error",
+        {
+          "allowAny": false,
+          "allowBoolean": false,
+          "allowNullish": false,
+          "allowNumberAndString": false,
+          "allowRegExp": false
+        }
+      ],
+      "typescript-eslint/strict-type-checked-only": [
+        "error",
+        {
+          "allowAny": false,
+          "allowBoolean": false,
+          "allowNullish": false,
+          "allowNumberAndString": false,
+          "allowRegExp": false
+        }
+      ]
+    }
+  },
+  "@typescript-eslint/restrict-template-expressions": {
+    "docs": {
+      "description": "Enforce template literal expressions to be of `string` type",
+      "recommended": {
+        "recommended": true,
+        "strict": [
+          {
+            "allowAny": false,
+            "allowBoolean": false,
+            "allowNever": false,
+            "allowNullish": false,
+            "allowNumber": false,
+            "allowRegExp": false
+          }
+        ]
+      },
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/restrict-template-expressions"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": [
+        "error",
+        {
+          "allowAny": false,
+          "allowBoolean": true,
+          "allowNever": false,
+          "allowNullish": false,
+          "allowNumber": true,
+          "allowRegExp": false
+        }
+      ]
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": [
+        "error",
+        {
+          "allowAny": false,
+          "allowBoolean": false,
+          "allowNever": false,
+          "allowNullish": false,
+          "allowNumber": false,
+          "allowRegExp": false
+        }
+      ],
+      "typescript-eslint/strict-type-checked-only": [
+        "error",
+        {
+          "allowAny": false,
+          "allowBoolean": false,
+          "allowNever": false,
+          "allowNullish": false,
+          "allowNumber": false,
+          "allowRegExp": false
+        }
+      ]
+    }
+  },
+  "@typescript-eslint/return-await": {
+    "docs": {
+      "description": "Enforce consistent awaiting of returned promises",
+      "recommended": {
+        "strict": [
+          "error-handling-correctness-only"
+        ]
+      },
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/return-await"
+    },
+    "rulesets": {
+      "ts-strict": [
+        "error",
+        "always"
+      ]
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": [
+        "error",
+        "error-handling-correctness-only"
+      ],
+      "typescript-eslint/strict-type-checked-only": [
+        "error",
+        "error-handling-correctness-only"
+      ]
+    }
+  },
+  "@typescript-eslint/sort-type-constituents": {
+    "docs": {
+      "description": "Enforce constituents of a type union/intersection to be sorted alphabetically",
+      "url": "https://typescript-eslint.io/rules/sort-type-constituents"
+    }
+  },
+  "@typescript-eslint/strict-boolean-expressions": {
+    "docs": {
+      "description": "Disallow certain types in boolean expressions",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/strict-boolean-expressions"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/switch-exhaustiveness-check": {
+    "docs": {
+      "description": "Require switch-case statements to be exhaustive",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/switch-exhaustiveness-check"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off"
+    }
+  },
+  "@typescript-eslint/triple-slash-reference": {
+    "docs": {
+      "description": "Disallow certain triple slash directives in favor of ES6-style import declarations",
+      "recommended": "recommended",
+      "url": "https://typescript-eslint.io/rules/triple-slash-reference"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "error",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/typedef": {
+    "docs": {
+      "description": "Require type annotations in certain places",
+      "url": "https://typescript-eslint.io/rules/typedef"
+    }
+  },
+  "@typescript-eslint/unbound-method": {
+    "docs": {
+      "description": "Enforce unbound methods are called with their expected scope",
+      "recommended": "recommended",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/unbound-method"
+    },
+    "rulesets": {
+      "ts-base": "error",
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/recommended-type-checked": "error",
+      "typescript-eslint/recommended-type-checked-only": "error",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "@typescript-eslint/unified-signatures": {
+    "docs": {
+      "description": "Disallow two overloads that could be unified into one with a union or an optional/rest parameter",
+      "recommended": "strict",
+      "url": "https://typescript-eslint.io/rules/unified-signatures"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/strict": "error",
+      "typescript-eslint/strict-type-checked": "error"
+    }
+  },
+  "@typescript-eslint/use-unknown-in-catch-callback-variable": {
+    "docs": {
+      "description": "Enforce typing arguments in Promise rejection callbacks as `unknown`",
+      "recommended": "strict",
+      "requiresTypeChecking": true,
+      "url": "https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable"
+    },
+    "rulesets": {
+      "ts-strict": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/disable-type-checked": "off",
+      "typescript-eslint/strict-type-checked": "error",
+      "typescript-eslint/strict-type-checked-only": "error"
+    }
+  },
+  "accessor-pairs": {
+    "docs": {
+      "description": "Enforce getter and setter pairs in objects and classes",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/accessor-pairs"
+    }
+  },
+  "array-callback-return": {
+    "docs": {
+      "description": "Enforce `return` statements in callbacks of array methods",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/array-callback-return"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "arrow-body-style": {
+    "docs": {
+      "description": "Require braces around arrow function bodies",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/arrow-body-style"
+    }
+  },
+  "block-scoped-var": {
+    "docs": {
+      "description": "Enforce the use of variables within the scope they are defined",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/block-scoped-var"
+    }
+  },
+  "camelcase": {
+    "docs": {
+      "description": "Enforce camelcase naming convention",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/camelcase"
+    }
+  },
+  "capitalized-comments": {
+    "docs": {
+      "description": "Enforce or disallow capitalization of the first letter of a comment",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/capitalized-comments"
+    }
+  },
+  "class-methods-use-this": {
+    "docs": {
+      "description": "Enforce that class methods utilize `this`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/class-methods-use-this"
+    }
+  },
+  "complexity": {
+    "docs": {
+      "description": "Enforce a maximum cyclomatic complexity allowed in a program",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/complexity"
+    }
+  },
+  "consistent-return": {
+    "docs": {
+      "description": "Require `return` statements to either always or never specify values",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/consistent-return"
+    }
+  },
+  "consistent-this": {
+    "docs": {
+      "description": "Enforce consistent naming when capturing the current execution context",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/consistent-this"
+    }
+  },
+  "constructor-super": {
+    "docs": {
+      "description": "Require `super()` calls in constructors",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/constructor-super"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "curly": {
+    "docs": {
+      "description": "Enforce consistent brace style for all control statements",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/curly"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "default-case": {
+    "docs": {
+      "description": "Require `default` cases in `switch` statements",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/default-case"
+    }
+  },
+  "default-case-last": {
+    "docs": {
+      "description": "Enforce `default` clauses in `switch` statements to be last",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/default-case-last"
+    }
+  },
+  "default-param-last": {
+    "docs": {
+      "description": "Enforce default parameters to be last",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/default-param-last"
+    }
+  },
+  "dot-notation": {
+    "docs": {
+      "description": "Enforce dot notation whenever possible",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/dot-notation"
+    },
+    "rulesets": {
+      "ts-stylistic": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic-type-checked": "off",
+      "typescript-eslint/stylistic-type-checked-only": "off"
+    }
+  },
+  "eqeqeq": {
+    "docs": {
+      "description": "Require the use of `===` and `!==`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/eqeqeq"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "for-direction": {
+    "docs": {
+      "description": "Enforce `for` loop update clause moving the counter in the right direction",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/for-direction"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "func-name-matching": {
+    "docs": {
+      "description": "Require function names to match the name of the variable or property to which they are assigned",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/func-name-matching"
+    }
+  },
+  "func-names": {
+    "docs": {
+      "description": "Require or disallow named `function` expressions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/func-names"
+    }
+  },
+  "func-style": {
+    "docs": {
+      "description": "Enforce the consistent use of either `function` declarations or expressions assigned to variables",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/func-style"
+    }
+  },
+  "getter-return": {
+    "docs": {
+      "description": "Enforce `return` statements in getters",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/getter-return"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "grouped-accessor-pairs": {
+    "docs": {
+      "description": "Require grouped accessor pairs in object literals and classes",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/grouped-accessor-pairs"
+    }
+  },
+  "guard-for-in": {
+    "docs": {
+      "description": "Require `for-in` loops to include an `if` statement",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/guard-for-in"
+    }
+  },
+  "id-denylist": {
+    "docs": {
+      "description": "Disallow specified identifiers",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/id-denylist"
+    }
+  },
+  "id-length": {
+    "docs": {
+      "description": "Enforce minimum and maximum identifier lengths",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/id-length"
+    }
+  },
+  "id-match": {
+    "docs": {
+      "description": "Require identifiers to match a specified regular expression",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/id-match"
+    }
+  },
+  "init-declarations": {
+    "docs": {
+      "description": "Require or disallow initialization in variable declarations",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/init-declarations"
+    }
+  },
+  "logical-assignment-operators": {
+    "docs": {
+      "description": "Require or disallow logical assignment operator shorthand",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/logical-assignment-operators"
+    }
+  },
+  "max-classes-per-file": {
+    "docs": {
+      "description": "Enforce a maximum number of classes per file",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/max-classes-per-file"
+    }
+  },
+  "max-depth": {
+    "docs": {
+      "description": "Enforce a maximum depth that blocks can be nested",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/max-depth"
+    }
+  },
+  "max-lines": {
+    "docs": {
+      "description": "Enforce a maximum number of lines per file",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/max-lines"
+    }
+  },
+  "max-lines-per-function": {
+    "docs": {
+      "description": "Enforce a maximum number of lines of code in a function",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/max-lines-per-function"
+    }
+  },
+  "max-nested-callbacks": {
+    "docs": {
+      "description": "Enforce a maximum depth that callbacks can be nested",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/max-nested-callbacks"
+    }
+  },
+  "max-params": {
+    "docs": {
+      "description": "Enforce a maximum number of parameters in function definitions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/max-params"
+    }
+  },
+  "max-statements": {
+    "docs": {
+      "description": "Enforce a maximum number of statements allowed in function blocks",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/max-statements"
+    }
+  },
+  "n/callback-return": {
+    "docs": {
+      "description": "require `return` statements after callbacks",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/callback-return.md"
+    }
+  },
+  "n/exports-style": {
+    "docs": {
+      "description": "enforce either `module.exports` or `exports`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/exports-style.md"
+    }
+  },
+  "n/file-extension-in-import": {
+    "docs": {
+      "description": "enforce the style of file extensions in `import` declarations",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/file-extension-in-import.md"
+    }
+  },
+  "n/global-require": {
+    "docs": {
+      "description": "require `require()` calls to be placed at top-level module scope",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/global-require.md"
+    }
+  },
+  "n/handle-callback-err": {
+    "docs": {
+      "description": "require error handling in callbacks",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/handle-callback-err.md"
+    }
+  },
+  "n/hashbang": {
+    "docs": {
+      "description": "require correct usage of hashbang",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-callback-literal": {
+    "docs": {
+      "description": "enforce Node.js-style error-first callback pattern is followed",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-callback-literal.md"
+    }
+  },
+  "n/no-deprecated-api": {
+    "docs": {
+      "description": "disallow deprecated APIs",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-deprecated-api.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-exports-assign": {
+    "docs": {
+      "description": "disallow the assignment to `exports`",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-extraneous-import": {
+    "docs": {
+      "description": "disallow `import` declarations which import extraneous modules",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-import.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-extraneous-require": {
+    "docs": {
+      "description": "disallow `require()` expressions which import extraneous modules",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-require.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-hide-core-modules": {
+    "docs": {
+      "description": "disallow third-party modules which are hiding core modules",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-hide-core-modules.md"
+    }
+  },
+  "n/no-missing-import": {
+    "docs": {
+      "description": "disallow `import` declarations which import non-existence modules",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-import.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-missing-require": {
+    "docs": {
+      "description": "disallow `require()` expressions which import non-existence modules",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-require.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-mixed-requires": {
+    "docs": {
+      "description": "disallow `require` calls to be mixed with regular variable declarations",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-mixed-requires.md"
+    }
+  },
+  "n/no-new-require": {
+    "docs": {
+      "description": "disallow `new` operators with calls to `require`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-new-require.md"
+    }
+  },
+  "n/no-path-concat": {
+    "docs": {
+      "description": "disallow string concatenation with `__dirname` and `__filename`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-path-concat.md"
+    }
+  },
+  "n/no-process-env": {
+    "docs": {
+      "description": "disallow the use of `process.env`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md"
+    },
+    "rulesets": {
+      "js": "warn"
+    }
+  },
+  "n/no-process-exit": {
+    "docs": {
+      "description": "disallow the use of `process.exit()`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-restricted-import": {
+    "docs": {
+      "description": "disallow specified modules when loaded by `import` declarations",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-import.md"
+    }
+  },
+  "n/no-restricted-require": {
+    "docs": {
+      "description": "disallow specified modules when loaded by `require`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-require.md"
+    }
+  },
+  "n/no-sync": {
+    "docs": {
+      "description": "disallow synchronous methods",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-sync.md"
+    }
+  },
+  "n/no-unpublished-bin": {
+    "docs": {
+      "description": "disallow `bin` files that npm ignores",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-unpublished-import": {
+    "docs": {
+      "description": "disallow `import` declarations which import private modules",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-unpublished-require": {
+    "docs": {
+      "description": "disallow `require()` expressions which import private modules",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-unsupported-features/es-builtins": {
+    "docs": {
+      "description": "disallow unsupported ECMAScript built-ins on the specified version",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-builtins.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/no-unsupported-features/es-syntax": {
+    "docs": {
+      "description": "disallow unsupported ECMAScript syntax on the specified version",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-syntax.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": [
+        "error",
+        {
+          "ignores": [
+            "modules"
+          ]
+        }
+      ],
+      "node/recommended-script": [
+        "error",
+        {
+          "ignores": []
+        }
+      ]
+    }
+  },
+  "n/no-unsupported-features/node-builtins": {
+    "docs": {
+      "description": "disallow unsupported Node.js built-in APIs on the specified version",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/node-builtins.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/prefer-global/buffer": {
+    "docs": {
+      "description": "enforce either `Buffer` or `require(\"buffer\").Buffer`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/buffer.md"
+    }
+  },
+  "n/prefer-global/console": {
+    "docs": {
+      "description": "enforce either `console` or `require(\"console\")`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/console.md"
+    }
+  },
+  "n/prefer-global/process": {
+    "docs": {
+      "description": "enforce either `process` or `require(\"process\")`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/process.md"
+    }
+  },
+  "n/prefer-global/text-decoder": {
+    "docs": {
+      "description": "enforce either `TextDecoder` or `require(\"util\").TextDecoder`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/text-decoder.md"
+    }
+  },
+  "n/prefer-global/text-encoder": {
+    "docs": {
+      "description": "enforce either `TextEncoder` or `require(\"util\").TextEncoder`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/text-encoder.md"
+    }
+  },
+  "n/prefer-global/url": {
+    "docs": {
+      "description": "enforce either `URL` or `require(\"url\").URL`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/url.md"
+    }
+  },
+  "n/prefer-global/url-search-params": {
+    "docs": {
+      "description": "enforce either `URLSearchParams` or `require(\"url\").URLSearchParams`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/url-search-params.md"
+    }
+  },
+  "n/prefer-node-protocol": {
+    "docs": {
+      "description": "enforce using the `node:` protocol when importing Node.js builtin modules.",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-node-protocol.md"
+    }
+  },
+  "n/prefer-promises/dns": {
+    "docs": {
+      "description": "enforce `require(\"dns\").promises`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-promises/dns.md"
+    }
+  },
+  "n/prefer-promises/fs": {
+    "docs": {
+      "description": "enforce `require(\"fs\").promises`",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-promises/fs.md"
+    }
+  },
+  "n/process-exit-as-throw": {
+    "docs": {
+      "description": "require that `process.exit()` expressions use the same code path as `throw`",
+      "recommended": true,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "node/recommended-module": "error",
+      "node/recommended-script": "error"
+    }
+  },
+  "n/shebang": {
+    "docs": {
+      "description": "require correct usage of hashbang",
+      "recommended": false,
+      "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md"
+    }
+  },
+  "new-cap": {
+    "docs": {
+      "description": "Require constructor names to begin with a capital letter",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/new-cap"
+    }
+  },
+  "no-alert": {
+    "docs": {
+      "description": "Disallow the use of `alert`, `confirm`, and `prompt`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-alert"
+    }
+  },
+  "no-array-constructor": {
+    "docs": {
+      "description": "Disallow `Array` constructors",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-array-constructor"
+    },
+    "rulesets": {
+      "ts-base": "off",
+      "ts-strict": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "off",
+      "typescript-eslint/recommended-type-checked": "off",
+      "typescript-eslint/strict": "off",
+      "typescript-eslint/strict-type-checked": "off"
+    }
+  },
+  "no-async-promise-executor": {
+    "docs": {
+      "description": "Disallow using an async function as a Promise executor",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-async-promise-executor"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-await-in-loop": {
+    "docs": {
+      "description": "Disallow `await` inside of loops",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-await-in-loop"
+    }
+  },
+  "no-bitwise": {
+    "docs": {
+      "description": "Disallow bitwise operators",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-bitwise"
+    }
+  },
+  "no-caller": {
+    "docs": {
+      "description": "Disallow the use of `arguments.caller` or `arguments.callee`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-caller"
+    }
+  },
+  "no-case-declarations": {
+    "docs": {
+      "description": "Disallow lexical declarations in case clauses",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-case-declarations"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-class-assign": {
+    "docs": {
+      "description": "Disallow reassigning class members",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-class-assign"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-compare-neg-zero": {
+    "docs": {
+      "description": "Disallow comparing against `-0`",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-compare-neg-zero"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-cond-assign": {
+    "docs": {
+      "description": "Disallow assignment operators in conditional expressions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-cond-assign"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-console": {
+    "docs": {
+      "description": "Disallow the use of `console`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-console"
+    }
+  },
+  "no-const-assign": {
+    "docs": {
+      "description": "Disallow reassigning `const` variables",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-const-assign"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-constant-binary-expression": {
+    "docs": {
+      "description": "Disallow expressions where the operation doesn't affect the value",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-constant-binary-expression"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-constant-condition": {
+    "docs": {
+      "description": "Disallow constant expressions in conditions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-constant-condition"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-constructor-return": {
+    "docs": {
+      "description": "Disallow returning value from constructor",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-constructor-return"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-continue": {
+    "docs": {
+      "description": "Disallow `continue` statements",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-continue"
+    }
+  },
+  "no-control-regex": {
+    "docs": {
+      "description": "Disallow control characters in regular expressions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-control-regex"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-debugger": {
+    "docs": {
+      "description": "Disallow the use of `debugger`",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-debugger"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-delete-var": {
+    "docs": {
+      "description": "Disallow deleting variables",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-delete-var"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-div-regex": {
+    "docs": {
+      "description": "Disallow equal signs explicitly at the beginning of regular expressions",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-div-regex"
+    }
+  },
+  "no-dupe-args": {
+    "docs": {
+      "description": "Disallow duplicate arguments in `function` definitions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-dupe-args"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-dupe-class-members": {
+    "docs": {
+      "description": "Disallow duplicate class members",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-dupe-class-members"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-dupe-else-if": {
+    "docs": {
+      "description": "Disallow duplicate conditions in if-else-if chains",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-dupe-else-if"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-dupe-keys": {
+    "docs": {
+      "description": "Disallow duplicate keys in object literals",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-dupe-keys"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-duplicate-case": {
+    "docs": {
+      "description": "Disallow duplicate case labels",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-duplicate-case"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-duplicate-imports": {
+    "docs": {
+      "description": "Disallow duplicate module imports",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-duplicate-imports"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-else-return": {
+    "docs": {
+      "description": "Disallow `else` blocks after `return` statements in `if` statements",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-else-return"
+    },
+    "rulesets": {
+      "js": "warn"
+    }
+  },
+  "no-empty": {
+    "docs": {
+      "description": "Disallow empty block statements",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-empty"
+    },
+    "rulesets": {
+      "js": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-empty-character-class": {
+    "docs": {
+      "description": "Disallow empty character classes in regular expressions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-empty-character-class"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-empty-function": {
+    "docs": {
+      "description": "Disallow empty functions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-empty-function"
+    },
+    "rulesets": {
+      "ts-stylistic": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/stylistic": "off",
+      "typescript-eslint/stylistic-type-checked": "off"
+    }
+  },
+  "no-empty-pattern": {
+    "docs": {
+      "description": "Disallow empty destructuring patterns",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-empty-pattern"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-empty-static-block": {
+    "docs": {
+      "description": "Disallow empty static blocks",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-empty-static-block"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-eq-null": {
+    "docs": {
+      "description": "Disallow `null` comparisons without type-checking operators",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-eq-null"
+    }
+  },
+  "no-eval": {
+    "docs": {
+      "description": "Disallow the use of `eval()`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-eval"
+    }
+  },
+  "no-ex-assign": {
+    "docs": {
+      "description": "Disallow reassigning exceptions in `catch` clauses",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-ex-assign"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-extend-native": {
+    "docs": {
+      "description": "Disallow extending native types",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-extend-native"
+    }
+  },
+  "no-extra-bind": {
+    "docs": {
+      "description": "Disallow unnecessary calls to `.bind()`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-extra-bind"
+    }
+  },
+  "no-extra-boolean-cast": {
+    "docs": {
+      "description": "Disallow unnecessary boolean casts",
+      "frozen": true,
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-extra-boolean-cast"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-extra-label": {
+    "docs": {
+      "description": "Disallow unnecessary labels",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-extra-label"
+    }
+  },
+  "no-fallthrough": {
+    "docs": {
+      "description": "Disallow fallthrough of `case` statements",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-fallthrough"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-func-assign": {
+    "docs": {
+      "description": "Disallow reassigning `function` declarations",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-func-assign"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-global-assign": {
+    "docs": {
+      "description": "Disallow assignments to native objects or read-only global variables",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-global-assign"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-implicit-coercion": {
+    "docs": {
+      "description": "Disallow shorthand type conversions",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-implicit-coercion"
+    }
+  },
+  "no-implicit-globals": {
+    "docs": {
+      "description": "Disallow declarations in the global scope",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-implicit-globals"
+    }
+  },
+  "no-implied-eval": {
+    "docs": {
+      "description": "Disallow the use of `eval()`-like methods",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-implied-eval"
+    },
+    "rulesets": {
+      "ts-base": "off",
+      "ts-strict": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended-type-checked": "off",
+      "typescript-eslint/recommended-type-checked-only": "off",
+      "typescript-eslint/strict-type-checked": "off",
+      "typescript-eslint/strict-type-checked-only": "off"
+    }
+  },
+  "no-import-assign": {
+    "docs": {
+      "description": "Disallow assigning to imported bindings",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-import-assign"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-inline-comments": {
+    "docs": {
+      "description": "Disallow inline comments after code",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-inline-comments"
+    }
+  },
+  "no-inner-declarations": {
+    "docs": {
+      "description": "Disallow variable or `function` declarations in nested blocks",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-inner-declarations"
+    }
+  },
+  "no-invalid-regexp": {
+    "docs": {
+      "description": "Disallow invalid regular expression strings in `RegExp` constructors",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-invalid-regexp"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-invalid-this": {
+    "docs": {
+      "description": "Disallow use of `this` in contexts where the value of `this` is `undefined`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-invalid-this"
+    }
+  },
+  "no-irregular-whitespace": {
+    "docs": {
+      "description": "Disallow irregular whitespace",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-irregular-whitespace"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-iterator": {
+    "docs": {
+      "description": "Disallow the use of the `__iterator__` property",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-iterator"
+    }
+  },
+  "no-label-var": {
+    "docs": {
+      "description": "Disallow labels that share a name with a variable",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-label-var"
+    }
+  },
+  "no-labels": {
+    "docs": {
+      "description": "Disallow labeled statements",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-labels"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-lone-blocks": {
+    "docs": {
+      "description": "Disallow unnecessary nested blocks",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-lone-blocks"
+    }
+  },
+  "no-lonely-if": {
+    "docs": {
+      "description": "Disallow `if` statements as the only statement in `else` blocks",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-lonely-if"
+    }
+  },
+  "no-loop-func": {
+    "docs": {
+      "description": "Disallow function declarations that contain unsafe references inside loop statements",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-loop-func"
+    }
+  },
+  "no-loss-of-precision": {
+    "docs": {
+      "description": "Disallow literal numbers that lose precision",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-loss-of-precision"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-magic-numbers": {
+    "docs": {
+      "description": "Disallow magic numbers",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-magic-numbers"
+    }
+  },
+  "no-misleading-character-class": {
+    "docs": {
+      "description": "Disallow characters which are made with multiple code points in character class syntax",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-misleading-character-class"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-multi-assign": {
+    "docs": {
+      "description": "Disallow use of chained assignment expressions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-multi-assign"
+    }
+  },
+  "no-multi-str": {
+    "docs": {
+      "description": "Disallow multiline strings",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-multi-str"
+    }
+  },
+  "no-negated-condition": {
+    "docs": {
+      "description": "Disallow negated conditions",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-negated-condition"
+    },
+    "rulesets": {
+      "js": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "no-nested-ternary": {
+    "docs": {
+      "description": "Disallow nested ternary expressions",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-nested-ternary"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "no-new": {
+    "docs": {
+      "description": "Disallow `new` operators outside of assignments or comparisons",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-new"
+    }
+  },
+  "no-new-func": {
+    "docs": {
+      "description": "Disallow `new` operators with the `Function` object",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-new-func"
+    }
+  },
+  "no-new-native-nonconstructor": {
+    "docs": {
+      "description": "Disallow `new` operators with global non-constructor functions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-new-native-nonconstructor"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-new-wrappers": {
+    "docs": {
+      "description": "Disallow `new` operators with the `String`, `Number`, and `Boolean` objects",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-new-wrappers"
+    }
+  },
+  "no-nonoctal-decimal-escape": {
+    "docs": {
+      "description": "Disallow `\\8` and `\\9` escape sequences in string literals",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-obj-calls": {
+    "docs": {
+      "description": "Disallow calling global object properties as functions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-obj-calls"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-object-constructor": {
+    "docs": {
+      "description": "Disallow calls to the `Object` constructor without an argument",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-object-constructor"
+    }
+  },
+  "no-octal": {
+    "docs": {
+      "description": "Disallow octal literals",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-octal"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-octal-escape": {
+    "docs": {
+      "description": "Disallow octal escape sequences in string literals",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-octal-escape"
+    }
+  },
+  "no-param-reassign": {
+    "docs": {
+      "description": "Disallow reassigning function parameters",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-param-reassign"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-plusplus": {
+    "docs": {
+      "description": "Disallow the unary operators `++` and `--`",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-plusplus"
+    }
+  },
+  "no-promise-executor-return": {
+    "docs": {
+      "description": "Disallow returning values from Promise executor functions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-promise-executor-return"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-proto": {
+    "docs": {
+      "description": "Disallow the use of the `__proto__` property",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-proto"
+    }
+  },
+  "no-prototype-builtins": {
+    "docs": {
+      "description": "Disallow calling some `Object.prototype` methods directly on objects",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-prototype-builtins"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-redeclare": {
+    "docs": {
+      "description": "Disallow variable redeclaration",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-redeclare"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-regex-spaces": {
+    "docs": {
+      "description": "Disallow multiple spaces in regular expressions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-regex-spaces"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-restricted-exports": {
+    "docs": {
+      "description": "Disallow specified names in exports",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-restricted-exports"
+    }
+  },
+  "no-restricted-globals": {
+    "docs": {
+      "description": "Disallow specified global variables",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-restricted-globals"
+    }
+  },
+  "no-restricted-imports": {
+    "docs": {
+      "description": "Disallow specified modules when loaded by `import`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-restricted-imports"
+    }
+  },
+  "no-restricted-properties": {
+    "docs": {
+      "description": "Disallow certain properties on certain objects",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-restricted-properties"
+    }
+  },
+  "no-restricted-syntax": {
+    "docs": {
+      "description": "Disallow specified syntax",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-restricted-syntax"
+    }
+  },
+  "no-return-assign": {
+    "docs": {
+      "description": "Disallow assignment operators in `return` statements",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-return-assign"
+    }
+  },
+  "no-script-url": {
+    "docs": {
+      "description": "Disallow `javascript:` URLs",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-script-url"
+    }
+  },
+  "no-self-assign": {
+    "docs": {
+      "description": "Disallow assignments where both sides are exactly the same",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-self-assign"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-self-compare": {
+    "docs": {
+      "description": "Disallow comparisons where both sides are exactly the same",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-self-compare"
+    }
+  },
+  "no-sequences": {
+    "docs": {
+      "description": "Disallow comma operators",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-sequences"
+    }
+  },
+  "no-setter-return": {
+    "docs": {
+      "description": "Disallow returning values from setters",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-setter-return"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-shadow": {
+    "docs": {
+      "description": "Disallow variable declarations from shadowing variables declared in the outer scope",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-shadow"
+    }
+  },
+  "no-shadow-restricted-names": {
+    "docs": {
+      "description": "Disallow identifiers from shadowing restricted names",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-shadow-restricted-names"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-sparse-arrays": {
+    "docs": {
+      "description": "Disallow sparse arrays",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-sparse-arrays"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-template-curly-in-string": {
+    "docs": {
+      "description": "Disallow template literal placeholder syntax in regular strings",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-template-curly-in-string"
+    },
+    "rulesets": {
+      "js": "warn"
+    }
+  },
+  "no-ternary": {
+    "docs": {
+      "description": "Disallow ternary operators",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-ternary"
+    }
+  },
+  "no-this-before-super": {
+    "docs": {
+      "description": "Disallow `this`/`super` before calling `super()` in constructors",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-this-before-super"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-throw-literal": {
+    "docs": {
+      "description": "Disallow throwing literals as exceptions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-throw-literal"
+    },
+    "rulesets": {
+      "ts-base": "off",
+      "ts-strict": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended-type-checked": "off",
+      "typescript-eslint/recommended-type-checked-only": "off",
+      "typescript-eslint/strict-type-checked": "off",
+      "typescript-eslint/strict-type-checked-only": "off"
+    }
+  },
+  "no-undef": {
+    "docs": {
+      "description": "Disallow the use of undeclared variables unless mentioned in `/*global */` comments",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-undef"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-undef-init": {
+    "docs": {
+      "description": "Disallow initializing variables to `undefined`",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-undef-init"
+    }
+  },
+  "no-undefined": {
+    "docs": {
+      "description": "Disallow the use of `undefined` as an identifier",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-undefined"
+    }
+  },
+  "no-underscore-dangle": {
+    "docs": {
+      "description": "Disallow dangling underscores in identifiers",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-underscore-dangle"
+    }
+  },
+  "no-unexpected-multiline": {
+    "docs": {
+      "description": "Disallow confusing multiline expressions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-unexpected-multiline"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-unmodified-loop-condition": {
+    "docs": {
+      "description": "Disallow unmodified loop conditions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-unmodified-loop-condition"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-unneeded-ternary": {
+    "docs": {
+      "description": "Disallow ternary operators when simpler alternatives exist",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-unneeded-ternary"
+    }
+  },
+  "no-unreachable": {
+    "docs": {
+      "description": "Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-unreachable"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-unreachable-loop": {
+    "docs": {
+      "description": "Disallow loops with a body that allows only one iteration",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-unreachable-loop"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-unsafe-finally": {
+    "docs": {
+      "description": "Disallow control flow statements in `finally` blocks",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-unsafe-finally"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-unsafe-negation": {
+    "docs": {
+      "description": "Disallow negating the left operand of relational operators",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-unsafe-negation"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/eslint-recommended": "off"
+    }
+  },
+  "no-unsafe-optional-chaining": {
+    "docs": {
+      "description": "Disallow use of optional chaining in contexts where the `undefined` value is not allowed",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-unused-expressions": {
+    "docs": {
+      "description": "Disallow unused expressions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-unused-expressions"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off",
+      "ts-strict": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended": "off",
+      "typescript-eslint/recommended-type-checked": "off",
+      "typescript-eslint/strict": "off",
+      "typescript-eslint/strict-type-checked": "off"
+    }
+  },
+  "no-unused-labels": {
+    "docs": {
+      "description": "Disallow unused labels",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-unused-labels"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-unused-private-class-members": {
+    "docs": {
+      "description": "Disallow unused private class members",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-unused-private-class-members"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-unused-vars": {
+    "docs": {
+      "description": "Disallow unused variables",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-unused-vars"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": "off",
+      "ts-strict": "off"
+    },
+    "sourceConfigs": {
+      "recommended": "error",
+      "typescript-eslint/recommended": "off",
+      "typescript-eslint/recommended-type-checked": "off",
+      "typescript-eslint/strict": "off",
+      "typescript-eslint/strict-type-checked": "off"
+    }
+  },
+  "no-use-before-define": {
+    "docs": {
+      "description": "Disallow the use of variables before they are defined",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-use-before-define"
+    }
+  },
+  "no-useless-assignment": {
+    "docs": {
+      "description": "Disallow variable assignments when the value is not used",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-assignment"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-useless-backreference": {
+    "docs": {
+      "description": "Disallow useless backreferences in regular expressions",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-backreference"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-useless-call": {
+    "docs": {
+      "description": "Disallow unnecessary calls to `.call()` and `.apply()`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-call"
+    }
+  },
+  "no-useless-catch": {
+    "docs": {
+      "description": "Disallow unnecessary `catch` clauses",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-catch"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-useless-computed-key": {
+    "docs": {
+      "description": "Disallow unnecessary computed property keys in objects and classes",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-computed-key"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-useless-concat": {
+    "docs": {
+      "description": "Disallow unnecessary concatenation of literals or template literals",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-concat"
+    }
+  },
+  "no-useless-constructor": {
+    "docs": {
+      "description": "Disallow unnecessary constructors",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-constructor"
+    },
+    "rulesets": {
+      "ts-strict": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/strict": "off",
+      "typescript-eslint/strict-type-checked": "off"
+    }
+  },
+  "no-useless-escape": {
+    "docs": {
+      "description": "Disallow unnecessary escape characters",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-escape"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "no-useless-rename": {
+    "docs": {
+      "description": "Disallow renaming import, export, and destructured assignments to the same name",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-rename"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-useless-return": {
+    "docs": {
+      "description": "Disallow redundant return statements",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-useless-return"
+    }
+  },
+  "no-var": {
+    "docs": {
+      "description": "Require `let` or `const` instead of `var`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-var"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/eslint-recommended": "error"
+    }
+  },
+  "no-void": {
+    "docs": {
+      "description": "Disallow `void` operators",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-void"
+    }
+  },
+  "no-warning-comments": {
+    "docs": {
+      "description": "Disallow specified warning terms in comments",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/no-warning-comments"
+    },
+    "rulesets": {
+      "js": "error"
+    }
+  },
+  "no-with": {
+    "docs": {
+      "description": "Disallow `with` statements",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/no-with"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "object-shorthand": {
+    "docs": {
+      "description": "Require or disallow method and property shorthand syntax for object literals",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/object-shorthand"
+    }
+  },
+  "one-var": {
+    "docs": {
+      "description": "Enforce variables to be declared either together or separately in functions",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/one-var"
+    }
+  },
+  "operator-assignment": {
+    "docs": {
+      "description": "Require or disallow assignment operator shorthand where possible",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/operator-assignment"
+    }
+  },
+  "prefer-arrow-callback": {
+    "docs": {
+      "description": "Require using arrow functions for callbacks",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-arrow-callback"
+    }
+  },
+  "prefer-const": {
+    "docs": {
+      "description": "Require `const` declarations for variables that are never reassigned after declared",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-const"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/eslint-recommended": "error"
+    }
+  },
+  "prefer-destructuring": {
+    "docs": {
+      "description": "Require destructuring from arrays and/or objects",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-destructuring"
+    }
+  },
+  "prefer-exponentiation-operator": {
+    "docs": {
+      "description": "Disallow the use of `Math.pow` in favor of the `**` operator",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-exponentiation-operator"
+    }
+  },
+  "prefer-named-capture-group": {
+    "docs": {
+      "description": "Enforce using named capture group in regular expression",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-named-capture-group"
+    }
+  },
+  "prefer-numeric-literals": {
+    "docs": {
+      "description": "Disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-numeric-literals"
+    }
+  },
+  "prefer-object-has-own": {
+    "docs": {
+      "description": "Disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-object-has-own"
+    }
+  },
+  "prefer-object-spread": {
+    "docs": {
+      "description": "Disallow using `Object.assign` with an object literal as the first argument and prefer the use of object spread instead",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-object-spread"
+    }
+  },
+  "prefer-promise-reject-errors": {
+    "docs": {
+      "description": "Require using Error objects as Promise rejection reasons",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-promise-reject-errors"
+    },
+    "rulesets": {
+      "ts-base": "off",
+      "ts-strict": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended-type-checked": "off",
+      "typescript-eslint/recommended-type-checked-only": "off",
+      "typescript-eslint/strict-type-checked": "off",
+      "typescript-eslint/strict-type-checked-only": "off"
+    }
+  },
+  "prefer-regex-literals": {
+    "docs": {
+      "description": "Disallow use of the `RegExp` constructor in favor of regular expression literals",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-regex-literals"
+    }
+  },
+  "prefer-rest-params": {
+    "docs": {
+      "description": "Require rest parameters instead of `arguments`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-rest-params"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/eslint-recommended": "error"
+    }
+  },
+  "prefer-spread": {
+    "docs": {
+      "description": "Require spread operators instead of `.apply()`",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-spread"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/eslint-recommended": "error"
+    }
+  },
+  "prefer-template": {
+    "docs": {
+      "description": "Require template literals instead of string concatenation",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/prefer-template"
+    }
+  },
+  "radix": {
+    "docs": {
+      "description": "Enforce the consistent use of the radix argument when using `parseInt()`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/radix"
+    }
+  },
+  "require-atomic-updates": {
+    "docs": {
+      "description": "Disallow assignments that can lead to race conditions due to usage of `await` or `yield`",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/require-atomic-updates"
+    }
+  },
+  "require-await": {
+    "docs": {
+      "description": "Disallow async functions which have no `await` expression",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/require-await"
+    },
+    "rulesets": {
+      "ts-base": "off",
+      "ts-strict": "off"
+    },
+    "sourceConfigs": {
+      "typescript-eslint/recommended-type-checked": "off",
+      "typescript-eslint/recommended-type-checked-only": "off",
+      "typescript-eslint/strict-type-checked": "off",
+      "typescript-eslint/strict-type-checked-only": "off"
+    }
+  },
+  "require-unicode-regexp": {
+    "docs": {
+      "description": "Enforce the use of `u` or `v` flag on regular expressions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/require-unicode-regexp"
+    }
+  },
+  "require-yield": {
+    "docs": {
+      "description": "Require generator functions to contain `yield`",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/require-yield"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "sort-imports": {
+    "docs": {
+      "description": "Enforce sorted `import` declarations within modules",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/sort-imports"
+    }
+  },
+  "sort-keys": {
+    "docs": {
+      "description": "Require object keys to be sorted",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/sort-keys"
+    }
+  },
+  "sort-vars": {
+    "docs": {
+      "description": "Require variables within the same declaration block to be sorted",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/sort-vars"
+    }
+  },
+  "strict": {
+    "docs": {
+      "description": "Require or disallow strict mode directives",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/strict"
+    }
+  },
+  "symbol-description": {
+    "docs": {
+      "description": "Require symbol descriptions",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/symbol-description"
+    }
+  },
+  "unicode-bom": {
+    "docs": {
+      "description": "Require or disallow Unicode byte order mark (BOM)",
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/unicode-bom"
+    }
+  },
+  "unicorn/better-regex": {
+    "docs": {
+      "description": "Improve regexes by making them shorter, consistent, and safer.",
+      "recommended": false,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/better-regex.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "unicorn/catch-error-name": {
+    "docs": {
+      "description": "Enforce a specific parameter name in catch clauses.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/catch-error-name.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/consistent-destructuring": {
+    "docs": {
+      "description": "Use destructured variables over properties.",
+      "recommended": false,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/consistent-destructuring.md"
+    },
+    "rulesets": {
+      "js": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "unicorn/consistent-empty-array-spread": {
+    "docs": {
+      "description": "Prefer consistent types when spreading a ternary in an array literal.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/consistent-empty-array-spread.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/consistent-existence-index-check": {
+    "docs": {
+      "description": "Enforce consistent style for element existence checks with `indexOf()`, `lastIndexOf()`, `findIndex()`, and `findLastIndex()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/consistent-existence-index-check.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/consistent-function-scoping": {
+    "docs": {
+      "description": "Move function definitions to the highest possible scope.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/consistent-function-scoping.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/custom-error-definition": {
+    "docs": {
+      "description": "Enforce correct `Error` subclassing.",
+      "recommended": false,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/custom-error-definition.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "unicorn/empty-brace-spaces": {
+    "docs": {
+      "description": "Enforce no spaces between braces.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/empty-brace-spaces.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/error-message": {
+    "docs": {
+      "description": "Enforce passing a `message` value when creating a built-in error.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/error-message.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/escape-case": {
+    "docs": {
+      "description": "Require escape sequences to use uppercase values.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/escape-case.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/expiring-todo-comments": {
+    "docs": {
+      "description": "Add expiration conditions to TODO comments.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/expiring-todo-comments.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/explicit-length-check": {
+    "docs": {
+      "description": "Enforce explicitly comparing the `length` or `size` property of a value.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/explicit-length-check.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/filename-case": {
+    "docs": {
+      "description": "Enforce a case style for filenames.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/filename-case.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/import-index": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#import-index"
+    }
+  },
+  "unicorn/import-style": {
+    "docs": {
+      "description": "Enforce specific import styles per module.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/import-style.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/new-for-builtins": {
+    "docs": {
+      "description": "Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/new-for-builtins.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-abusive-eslint-disable": {
+    "docs": {
+      "description": "Enforce specifying rules to disable in `eslint-disable` comments.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-abusive-eslint-disable.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-anonymous-default-export": {
+    "docs": {
+      "description": "Disallow anonymous functions and classes as the default export.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-anonymous-default-export.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-array-callback-reference": {
+    "docs": {
+      "description": "Prevent passing a function reference directly to iterator methods.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-callback-reference.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-array-for-each": {
+    "docs": {
+      "description": "Prefer `for…of` over the `forEach` method.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-for-each.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-array-instanceof": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#no-array-instanceof"
+    }
+  },
+  "unicorn/no-array-method-this-argument": {
+    "docs": {
+      "description": "Disallow using the `this` argument in array methods.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-method-this-argument.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-array-push-push": {
+    "docs": {
+      "description": "Enforce combining multiple `Array#push()` into one call.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-push-push.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-array-reduce": {
+    "docs": {
+      "description": "Disallow `Array#reduce()` and `Array#reduceRight()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-reduce.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-await-expression-member": {
+    "docs": {
+      "description": "Disallow member access from await expression.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-expression-member.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-await-in-promise-methods": {
+    "docs": {
+      "description": "Disallow using `await` in `Promise` method parameters.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-in-promise-methods.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-console-spaces": {
+    "docs": {
+      "description": "Do not use leading/trailing space between `console.log` parameters.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-console-spaces.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-document-cookie": {
+    "docs": {
+      "description": "Do not use `document.cookie` directly.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-document-cookie.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-empty-file": {
+    "docs": {
+      "description": "Disallow empty files.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-empty-file.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-fn-reference-in-iterator": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#no-fn-reference-in-iterator"
+    }
+  },
+  "unicorn/no-for-loop": {
+    "docs": {
+      "description": "Do not use a `for` loop that can be replaced with a `for-of` loop.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-for-loop.md"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-stylistic": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-hex-escape": {
+    "docs": {
+      "description": "Enforce the use of Unicode escapes instead of hexadecimal escapes.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-hex-escape.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-instanceof-array": {
+    "docs": {
+      "description": "Require `Array.isArray()` instead of `instanceof Array`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-instanceof-array.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-invalid-fetch-options": {
+    "docs": {
+      "description": "Disallow invalid options in `fetch()` and `new Request()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-invalid-fetch-options.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-invalid-remove-event-listener": {
+    "docs": {
+      "description": "Prevent calling `EventTarget#removeEventListener()` with the result of an expression.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-invalid-remove-event-listener.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-keyword-prefix": {
+    "docs": {
+      "description": "Disallow identifiers starting with `new` or `class`.",
+      "recommended": false,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-keyword-prefix.md"
+    },
+    "rulesets": {
+      "js": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "unicorn/no-length-as-slice-end": {
+    "docs": {
+      "description": "Disallow using `.length` as the `end` argument of `{Array,String,TypedArray}#slice()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-length-as-slice-end.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-lonely-if": {
+    "docs": {
+      "description": "Disallow `if` statements as the only statement in `if` blocks without `else`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-lonely-if.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-magic-array-flat-depth": {
+    "docs": {
+      "description": "Disallow a magic number as the `depth` argument in `Array#flat(…).`",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-magic-array-flat-depth.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-negated-condition": {
+    "docs": {
+      "description": "Disallow negated conditions.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-negated-condition.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-negation-in-equality-check": {
+    "docs": {
+      "description": "Disallow negated expression in equality check.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-negation-in-equality-check.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-nested-ternary": {
+    "docs": {
+      "description": "Disallow nested ternary expressions.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-nested-ternary.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-new-array": {
+    "docs": {
+      "description": "Disallow `new Array()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-array.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-new-buffer": {
+    "docs": {
+      "description": "Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-buffer.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-null": {
+    "docs": {
+      "description": "Disallow the use of the `null` literal.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-null.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-object-as-default-parameter": {
+    "docs": {
+      "description": "Disallow the use of objects as default parameters.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-object-as-default-parameter.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-process-exit": {
+    "docs": {
+      "description": "Disallow `process.exit()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-process-exit.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-reduce": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#no-reduce"
+    }
+  },
+  "unicorn/no-single-promise-in-promise-methods": {
+    "docs": {
+      "description": "Disallow passing single-element arrays to `Promise` methods.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-single-promise-in-promise-methods.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-static-only-class": {
+    "docs": {
+      "description": "Disallow classes that only have static members.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-static-only-class.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-thenable": {
+    "docs": {
+      "description": "Disallow `then` property.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-thenable.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-this-assignment": {
+    "docs": {
+      "description": "Disallow assigning `this` to a variable.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-this-assignment.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-typeof-undefined": {
+    "docs": {
+      "description": "Disallow comparing `undefined` using `typeof`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-typeof-undefined.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-unnecessary-await": {
+    "docs": {
+      "description": "Disallow awaiting non-promise values.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-await.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-unnecessary-polyfills": {
+    "docs": {
+      "description": "Enforce the use of built-in methods instead of unnecessary polyfills.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-polyfills.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-unreadable-array-destructuring": {
+    "docs": {
+      "description": "Disallow unreadable array destructuring.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-array-destructuring.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-unreadable-iife": {
+    "docs": {
+      "description": "Disallow unreadable IIFEs.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-iife.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-unsafe-regex": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#no-unsafe-regex"
+    }
+  },
+  "unicorn/no-unused-properties": {
+    "docs": {
+      "description": "Disallow unused object properties.",
+      "recommended": false,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unused-properties.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "unicorn/no-useless-fallback-in-spread": {
+    "docs": {
+      "description": "Disallow useless fallback when spreading in object literals.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-fallback-in-spread.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-useless-length-check": {
+    "docs": {
+      "description": "Disallow useless array length check.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-length-check.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-useless-promise-resolve-reject": {
+    "docs": {
+      "description": "Disallow returning/yielding `Promise.resolve/reject()` in async functions or promise callbacks",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-promise-resolve-reject.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-useless-spread": {
+    "docs": {
+      "description": "Disallow unnecessary spread.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-spread.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-useless-switch-case": {
+    "docs": {
+      "description": "Disallow useless case in switch statements.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-switch-case.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-useless-undefined": {
+    "docs": {
+      "description": "Disallow useless `undefined`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-undefined.md"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-base": [
+        "error",
+        {
+          "checkArguments": false
+        }
+      ]
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/no-zero-fractions": {
+    "docs": {
+      "description": "Disallow number literals with zero fractions or dangling dots.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-zero-fractions.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/number-literal-case": {
+    "docs": {
+      "description": "Enforce proper case for numeric literals.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/number-literal-case.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/numeric-separators-style": {
+    "docs": {
+      "description": "Enforce the style of numeric separators by correctly grouping digits.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/numeric-separators-style.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-add-event-listener": {
+    "docs": {
+      "description": "Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-add-event-listener.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-array-find": {
+    "docs": {
+      "description": "Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-find.md"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-stylistic": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-array-flat": {
+    "docs": {
+      "description": "Prefer `Array#flat()` over legacy techniques to flatten arrays.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-array-flat-map": {
+    "docs": {
+      "description": "Prefer `.flatMap(…)` over `.map(…).flat()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat-map.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-array-index-of": {
+    "docs": {
+      "description": "Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findLastIndex}()` when looking for the index of an item.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-index-of.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-array-some": {
+    "docs": {
+      "description": "Prefer `.some(…)` over `.filter(…).length` check and `.{find,findLast,findIndex,findLastIndex}(…)`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-some.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-at": {
+    "docs": {
+      "description": "Prefer `.at()` method for index access and `String#charAt()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-at.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-blob-reading-methods": {
+    "docs": {
+      "description": "Prefer `Blob#arrayBuffer()` over `FileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-blob-reading-methods.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-code-point": {
+    "docs": {
+      "description": "Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-code-point.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-dataset": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-dataset"
+    }
+  },
+  "unicorn/prefer-date-now": {
+    "docs": {
+      "description": "Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-date-now.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-default-parameters": {
+    "docs": {
+      "description": "Prefer default parameters over reassignment.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-default-parameters.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-dom-node-append": {
+    "docs": {
+      "description": "Prefer `Node#append()` over `Node#appendChild()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-append.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-dom-node-dataset": {
+    "docs": {
+      "description": "Prefer using `.dataset` on DOM elements over calling attribute methods.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-dataset.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-dom-node-remove": {
+    "docs": {
+      "description": "Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-remove.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-dom-node-text-content": {
+    "docs": {
+      "description": "Prefer `.textContent` over `.innerText`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-text-content.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-event-key": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-event-key"
+    }
+  },
+  "unicorn/prefer-event-target": {
+    "docs": {
+      "description": "Prefer `EventTarget` over `EventEmitter`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-event-target.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-exponentiation-operator": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-exponentiation-operator"
+    }
+  },
+  "unicorn/prefer-export-from": {
+    "docs": {
+      "description": "Prefer `export…from` when re-exporting.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-export-from.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-flat-map": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-flat-map"
+    }
+  },
+  "unicorn/prefer-global-this": {
+    "docs": {
+      "description": "Prefer `globalThis` over `window`, `self`, and `global`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-global-this.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-includes": {
+    "docs": {
+      "description": "Prefer `.includes()` over `.indexOf()`, `.lastIndexOf()`, and `Array#some()` when checking for existence or non-existence.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-includes.md"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-stylistic": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-json-parse-buffer": {
+    "docs": {
+      "description": "Prefer reading a JSON file as a buffer.",
+      "recommended": false,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-json-parse-buffer.md"
+    },
+    "rulesets": {
+      "js": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "unicorn/prefer-keyboard-event-key": {
+    "docs": {
+      "description": "Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-keyboard-event-key.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-logical-operator-over-ternary": {
+    "docs": {
+      "description": "Prefer using a logical operator over a ternary.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-logical-operator-over-ternary.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-math-min-max": {
+    "docs": {
+      "description": "Prefer `Math.min()` and `Math.max()` over ternaries for simple comparisons.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-math-min-max.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-math-trunc": {
+    "docs": {
+      "description": "Enforce the use of `Math.trunc` instead of bitwise operators.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-math-trunc.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-modern-dom-apis": {
+    "docs": {
+      "description": "Prefer `.before()` over `.insertBefore()`, `.replaceWith()` over `.replaceChild()`, prefer one of `.before()`, `.after()`, `.append()` or `.prepend()` over `insertAdjacentText()` and `insertAdjacentElement()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-dom-apis.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-modern-math-apis": {
+    "docs": {
+      "description": "Prefer modern `Math` APIs over legacy patterns.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-math-apis.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-module": {
+    "docs": {
+      "description": "Prefer JavaScript modules (ESM) over CommonJS.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-module.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-native-coercion-functions": {
+    "docs": {
+      "description": "Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` directly.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-native-coercion-functions.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-negative-index": {
+    "docs": {
+      "description": "Prefer negative index over `.length - index` when possible.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-negative-index.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-node-append": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-node-append"
+    }
+  },
+  "unicorn/prefer-node-protocol": {
+    "docs": {
+      "description": "Prefer using the `node:` protocol when importing Node.js builtin modules.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-node-protocol.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-node-remove": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-node-remove"
+    }
+  },
+  "unicorn/prefer-number-properties": {
+    "docs": {
+      "description": "Prefer `Number` static properties over global ones.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-number-properties.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-object-from-entries": {
+    "docs": {
+      "description": "Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-object-from-entries.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-object-has-own": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-object-has-own"
+    }
+  },
+  "unicorn/prefer-optional-catch-binding": {
+    "docs": {
+      "description": "Prefer omitting the `catch` binding parameter.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-optional-catch-binding.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-prototype-methods": {
+    "docs": {
+      "description": "Prefer borrowing methods from the prototype instead of the instance.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-prototype-methods.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-query-selector": {
+    "docs": {
+      "description": "Prefer `.querySelector()` over `.getElementById()`, `.querySelectorAll()` over `.getElementsByClassName()` and `.getElementsByTagName()` and `.getElementsByName()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-query-selector.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-reflect-apply": {
+    "docs": {
+      "description": "Prefer `Reflect.apply()` over `Function#apply()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-reflect-apply.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-regexp-test": {
+    "docs": {
+      "description": "Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-regexp-test.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-replace-all": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-replace-all"
+    }
+  },
+  "unicorn/prefer-set-has": {
+    "docs": {
+      "description": "Prefer `Set#has()` over `Array#includes()` when checking for existence or non-existence.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-set-has.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-set-size": {
+    "docs": {
+      "description": "Prefer using `Set#size` instead of `Array#length`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-set-size.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-spread": {
+    "docs": {
+      "description": "Prefer the spread operator over `Array.from(…)`, `Array#concat(…)`, `Array#{slice,toSpliced}()` and `String#split('')`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-spread.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-starts-ends-with": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-starts-ends-with"
+    }
+  },
+  "unicorn/prefer-string-raw": {
+    "docs": {
+      "description": "Prefer using the `String.raw` tag to avoid escaping `\\`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-raw.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-string-replace-all": {
+    "docs": {
+      "description": "Prefer `String#replaceAll()` over regex searches with the global flag.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-replace-all.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-string-slice": {
+    "docs": {
+      "description": "Prefer `String#slice()` over `String#substr()` and `String#substring()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-slice.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-string-starts-ends-with": {
+    "docs": {
+      "description": "Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-starts-ends-with.md"
+    },
+    "rulesets": {
+      "js": "error",
+      "ts-stylistic": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-string-trim-start-end": {
+    "docs": {
+      "description": "Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-trim-start-end.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-structured-clone": {
+    "docs": {
+      "description": "Prefer using `structuredClone` to create a deep clone.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-structured-clone.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-switch": {
+    "docs": {
+      "description": "Prefer `switch` over multiple `else-if`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-switch.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-ternary": {
+    "docs": {
+      "description": "Prefer ternary expressions over simple `if-else` statements.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-ternary.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-text-content": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-text-content"
+    }
+  },
+  "unicorn/prefer-top-level-await": {
+    "docs": {
+      "description": "Prefer top-level await over top-level promises and async function calls.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-top-level-await.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prefer-trim-start-end": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#prefer-trim-start-end"
+    }
+  },
+  "unicorn/prefer-type-error": {
+    "docs": {
+      "description": "Enforce throwing `TypeError` in type checking conditions.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-type-error.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/prevent-abbreviations": {
+    "docs": {
+      "description": "Prevent abbreviations.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prevent-abbreviations.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/regex-shorthand": {
+    "docs": {
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#regex-shorthand"
+    }
+  },
+  "unicorn/relative-url-style": {
+    "docs": {
+      "description": "Enforce consistent relative URL style.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/relative-url-style.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/require-array-join-separator": {
+    "docs": {
+      "description": "Enforce using the separator argument with `Array#join()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-array-join-separator.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/require-number-to-fixed-digits-argument": {
+    "docs": {
+      "description": "Enforce using the digits argument with `Number#toFixed()`.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-number-to-fixed-digits-argument.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/require-post-message-target-origin": {
+    "docs": {
+      "description": "Enforce using the `targetOrigin` argument with `window.postMessage()`.",
+      "recommended": false,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-post-message-target-origin.md"
+    },
+    "rulesets": {
+      "js": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "unicorn/string-content": {
+    "docs": {
+      "description": "Enforce better string content.",
+      "recommended": false,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/string-content.md"
+    },
+    "rulesets": {
+      "js": "off"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "off"
+    }
+  },
+  "unicorn/switch-case-braces": {
+    "docs": {
+      "description": "Enforce consistent brace style for `case` clauses.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/switch-case-braces.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/template-indent": {
+    "docs": {
+      "description": "Fix whitespace-insensitive template indentation.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/template-indent.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/text-encoding-identifier-case": {
+    "docs": {
+      "description": "Enforce consistent case for text encoding identifiers.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/text-encoding-identifier-case.md"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "unicorn/throw-new-error": {
+    "docs": {
+      "description": "Require `new` when creating an error.",
+      "recommended": true,
+      "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/throw-new-error.md"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "unicorn/recommended": "error"
+    }
+  },
+  "use-isnan": {
+    "docs": {
+      "description": "Require calls to `isNaN()` when checking for `NaN`",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/use-isnan"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "valid-typeof": {
+    "docs": {
+      "description": "Enforce comparing `typeof` expressions against valid strings",
+      "recommended": true,
+      "url": "https://eslint.org/docs/latest/rules/valid-typeof"
+    },
+    "rulesets": {
+      "js": "error"
+    },
+    "sourceConfigs": {
+      "recommended": "error"
+    }
+  },
+  "vars-on-top": {
+    "docs": {
+      "description": "Require `var` declarations be placed at the top of their containing scope",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/vars-on-top"
+    }
+  },
+  "yoda": {
+    "docs": {
+      "description": "Require or disallow \"Yoda\" conditions",
+      "frozen": true,
+      "recommended": false,
+      "url": "https://eslint.org/docs/latest/rules/yoda"
+    }
+  }
+}

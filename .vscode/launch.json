@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "name": "Launch build/config",
+      "program": "${workspaceFolder}/src/build/config.ts",
+      "runtimeArgs": ["--experimental-strip-types"],
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ]
+}

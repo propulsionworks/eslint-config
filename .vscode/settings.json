@@ -4,6 +4,5 @@
       "source.organizeImports": "explicit"
     }
   },
-  "eslint.experimental.useFlatConfig": true,
-  "javascript.preferences.importModuleSpecifierEnding": "js"
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
