@@ -64,3 +64,10 @@ export function getRuleEnabledConfigs(rule: RuleConfig): ConfigName[] {
     .filter(([, entry]) => entry !== undefined && entry !== "off")
     .map(([name]) => name);
 }
+
+export function getPluginName(name: string): string | undefined {
+  const index = name.indexOf("/");
+  if (index > 0) {
+    return name.slice(0, index);
+  }
+}

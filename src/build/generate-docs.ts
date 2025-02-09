@@ -1,5 +1,5 @@
 import { writeFileSync } from "node:fs";
-import { ConfigRulesetMap, loadRuleFile, type ConfigName } from "../ruleset.ts";
+import { ConfigRulesetMap, loadRuleFile } from "../ruleset.ts";
 import { getRuleEnabledConfigs } from "./shared.ts";
 
 function main(): void {
@@ -26,20 +26,28 @@ ${toc}
 - [All Rules](#all-rules)
 `;
 
-  for (const [config] of Object.entries(ConfigRulesetMap)) {
+  for (const [config, rulesets] of Object.entries(ConfigRulesetMap)) {
     output += `
 
 ## Config ${config}
     
-| Rule | Description |
-|---|---|
+| Rule | Description | Level |
+|---|---|---|
 `;
+
+    const reversedRulesets = rulesets.reverse();
+
     for (const ruleName of sortedRuleNames) {
       const rule = rules[ruleName];
       if (!rule) {
         continue;
       }
-      if (!getRuleEnabledConfigs(rule).includes(config as ConfigName)) {
+
+      const level = reversedRulesets
+        .map((ruleset) => rule.rulesets?.[ruleset])
+        .find(Boolean);
+
+      if (!level) {
         continue;
       }
 
@@ -51,8 +59,9 @@ ${toc}
       }
 
       const descriptionCol = rule.docs?.description ?? "";
+      const levelCol = Array.isArray(level) ? level[0] : level;
 
-      output += `| ${ruleNameCol} | ${descriptionCol} |\n`;
+      output += `| ${ruleNameCol} | ${descriptionCol} | ${levelCol} |\n`;
     }
   }
 

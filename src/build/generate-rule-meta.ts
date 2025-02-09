@@ -13,7 +13,7 @@ import {
   type RuleMap,
   type RuleMetaDocs,
 } from "../ruleset.ts";
-import { saveRuleFile } from "./shared.ts";
+import { getPluginName, saveRuleFile } from "./shared.ts";
 
 const scriptArgs = process.argv.slice(2);
 const ruleMap = loadRuleFile();
@@ -54,14 +54,19 @@ function initRule(rule: string, docs: RuleMetaDocs) {
 }
 
 function setConfig(rule: string, config: string, entry: Linter.RuleEntry) {
+  // don't save "off" for the same plugin
+  if (getPluginName(rule) === getPluginName(config) && entry === "off") {
+    return;
+  }
   // don't save the rule if it hasn't been loaded already
   const existing = ruleMap[rule];
-  if (existing) {
-    if (!existing.sourceConfigs) {
-      existing.sourceConfigs = {};
-    }
-    existing.sourceConfigs[config] = entry;
+  if (!existing) {
+    return;
   }
+  if (!existing.sourceConfigs) {
+    existing.sourceConfigs = {};
+  }
+  existing.sourceConfigs[config] = entry;
 }
 
 function loadRules(

@@ -31,6 +31,7 @@
     "build": "npm run clean && npm run compile && npm run lint",
     "clean": "rm -rf lib/",
     "compile": "tsc",
+    "generate:docs": "node --experimental-strip-types src/build/generate-docs.ts",
     "generate:meta": "node --experimental-strip-types src/build/generate-rule-meta.ts",
     "lint": "eslint",
     "preversion": "npm run build"

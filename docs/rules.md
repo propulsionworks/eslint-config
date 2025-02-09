@@ -8,461 +8,492 @@
 
 ## Config js
     
-| Rule | Description |
-|---|---|
-| [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return) | Enforce `return` statements in callbacks of array methods |
-| [constructor-super](https://eslint.org/docs/latest/rules/constructor-super) | Require `super()` calls in constructors |
-| [curly](https://eslint.org/docs/latest/rules/curly) | Enforce consistent brace style for all control statements |
-| [eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq) | Require the use of `===` and `!==` |
-| [for-direction](https://eslint.org/docs/latest/rules/for-direction) | Enforce `for` loop update clause moving the counter in the right direction |
-| [getter-return](https://eslint.org/docs/latest/rules/getter-return) | Enforce `return` statements in getters |
-| [no-async-promise-executor](https://eslint.org/docs/latest/rules/no-async-promise-executor) | Disallow using an async function as a Promise executor |
-| [no-case-declarations](https://eslint.org/docs/latest/rules/no-case-declarations) | Disallow lexical declarations in case clauses |
-| [no-class-assign](https://eslint.org/docs/latest/rules/no-class-assign) | Disallow reassigning class members |
-| [no-compare-neg-zero](https://eslint.org/docs/latest/rules/no-compare-neg-zero) | Disallow comparing against `-0` |
-| [no-cond-assign](https://eslint.org/docs/latest/rules/no-cond-assign) | Disallow assignment operators in conditional expressions |
-| [no-const-assign](https://eslint.org/docs/latest/rules/no-const-assign) | Disallow reassigning `const` variables |
-| [no-constant-binary-expression](https://eslint.org/docs/latest/rules/no-constant-binary-expression) | Disallow expressions where the operation doesn't affect the value |
-| [no-constant-condition](https://eslint.org/docs/latest/rules/no-constant-condition) | Disallow constant expressions in conditions |
-| [no-constructor-return](https://eslint.org/docs/latest/rules/no-constructor-return) | Disallow returning value from constructor |
-| [no-control-regex](https://eslint.org/docs/latest/rules/no-control-regex) | Disallow control characters in regular expressions |
-| [no-debugger](https://eslint.org/docs/latest/rules/no-debugger) | Disallow the use of `debugger` |
-| [no-delete-var](https://eslint.org/docs/latest/rules/no-delete-var) | Disallow deleting variables |
-| [no-dupe-args](https://eslint.org/docs/latest/rules/no-dupe-args) | Disallow duplicate arguments in `function` definitions |
-| [no-dupe-class-members](https://eslint.org/docs/latest/rules/no-dupe-class-members) | Disallow duplicate class members |
-| [no-dupe-else-if](https://eslint.org/docs/latest/rules/no-dupe-else-if) | Disallow duplicate conditions in if-else-if chains |
-| [no-dupe-keys](https://eslint.org/docs/latest/rules/no-dupe-keys) | Disallow duplicate keys in object literals |
-| [no-duplicate-case](https://eslint.org/docs/latest/rules/no-duplicate-case) | Disallow duplicate case labels |
-| [no-duplicate-imports](https://eslint.org/docs/latest/rules/no-duplicate-imports) | Disallow duplicate module imports |
-| [no-else-return](https://eslint.org/docs/latest/rules/no-else-return) | Disallow `else` blocks after `return` statements in `if` statements |
-| [no-empty-character-class](https://eslint.org/docs/latest/rules/no-empty-character-class) | Disallow empty character classes in regular expressions |
-| [no-empty-pattern](https://eslint.org/docs/latest/rules/no-empty-pattern) | Disallow empty destructuring patterns |
-| [no-empty-static-block](https://eslint.org/docs/latest/rules/no-empty-static-block) | Disallow empty static blocks |
-| [no-ex-assign](https://eslint.org/docs/latest/rules/no-ex-assign) | Disallow reassigning exceptions in `catch` clauses |
-| [no-extra-boolean-cast](https://eslint.org/docs/latest/rules/no-extra-boolean-cast) | Disallow unnecessary boolean casts |
-| [no-fallthrough](https://eslint.org/docs/latest/rules/no-fallthrough) | Disallow fallthrough of `case` statements |
-| [no-func-assign](https://eslint.org/docs/latest/rules/no-func-assign) | Disallow reassigning `function` declarations |
-| [no-global-assign](https://eslint.org/docs/latest/rules/no-global-assign) | Disallow assignments to native objects or read-only global variables |
-| [no-import-assign](https://eslint.org/docs/latest/rules/no-import-assign) | Disallow assigning to imported bindings |
-| [no-invalid-regexp](https://eslint.org/docs/latest/rules/no-invalid-regexp) | Disallow invalid regular expression strings in `RegExp` constructors |
-| [no-irregular-whitespace](https://eslint.org/docs/latest/rules/no-irregular-whitespace) | Disallow irregular whitespace |
-| [no-labels](https://eslint.org/docs/latest/rules/no-labels) | Disallow labeled statements |
-| [no-loss-of-precision](https://eslint.org/docs/latest/rules/no-loss-of-precision) | Disallow literal numbers that lose precision |
-| [no-misleading-character-class](https://eslint.org/docs/latest/rules/no-misleading-character-class) | Disallow characters which are made with multiple code points in character class syntax |
-| [no-nested-ternary](https://eslint.org/docs/latest/rules/no-nested-ternary) | Disallow nested ternary expressions |
-| [no-new-native-nonconstructor](https://eslint.org/docs/latest/rules/no-new-native-nonconstructor) | Disallow `new` operators with global non-constructor functions |
-| [no-nonoctal-decimal-escape](https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape) | Disallow `\8` and `\9` escape sequences in string literals |
-| [no-obj-calls](https://eslint.org/docs/latest/rules/no-obj-calls) | Disallow calling global object properties as functions |
-| [no-octal](https://eslint.org/docs/latest/rules/no-octal) | Disallow octal literals |
-| [no-param-reassign](https://eslint.org/docs/latest/rules/no-param-reassign) | Disallow reassigning function parameters |
-| [no-promise-executor-return](https://eslint.org/docs/latest/rules/no-promise-executor-return) | Disallow returning values from Promise executor functions |
-| [no-prototype-builtins](https://eslint.org/docs/latest/rules/no-prototype-builtins) | Disallow calling some `Object.prototype` methods directly on objects |
-| [no-redeclare](https://eslint.org/docs/latest/rules/no-redeclare) | Disallow variable redeclaration |
-| [no-regex-spaces](https://eslint.org/docs/latest/rules/no-regex-spaces) | Disallow multiple spaces in regular expressions |
-| [no-self-assign](https://eslint.org/docs/latest/rules/no-self-assign) | Disallow assignments where both sides are exactly the same |
-| [no-setter-return](https://eslint.org/docs/latest/rules/no-setter-return) | Disallow returning values from setters |
-| [no-shadow-restricted-names](https://eslint.org/docs/latest/rules/no-shadow-restricted-names) | Disallow identifiers from shadowing restricted names |
-| [no-sparse-arrays](https://eslint.org/docs/latest/rules/no-sparse-arrays) | Disallow sparse arrays |
-| [no-template-curly-in-string](https://eslint.org/docs/latest/rules/no-template-curly-in-string) | Disallow template literal placeholder syntax in regular strings |
-| [no-this-before-super](https://eslint.org/docs/latest/rules/no-this-before-super) | Disallow `this`/`super` before calling `super()` in constructors |
-| [no-undef](https://eslint.org/docs/latest/rules/no-undef) | Disallow the use of undeclared variables unless mentioned in `/*global */` comments |
-| [no-unexpected-multiline](https://eslint.org/docs/latest/rules/no-unexpected-multiline) | Disallow confusing multiline expressions |
-| [no-unmodified-loop-condition](https://eslint.org/docs/latest/rules/no-unmodified-loop-condition) | Disallow unmodified loop conditions |
-| [no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable) | Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements |
-| [no-unreachable-loop](https://eslint.org/docs/latest/rules/no-unreachable-loop) | Disallow loops with a body that allows only one iteration |
-| [no-unsafe-finally](https://eslint.org/docs/latest/rules/no-unsafe-finally) | Disallow control flow statements in `finally` blocks |
-| [no-unsafe-negation](https://eslint.org/docs/latest/rules/no-unsafe-negation) | Disallow negating the left operand of relational operators |
-| [no-unsafe-optional-chaining](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining) | Disallow use of optional chaining in contexts where the `undefined` value is not allowed |
-| [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions) | Disallow unused expressions |
-| [no-unused-labels](https://eslint.org/docs/latest/rules/no-unused-labels) | Disallow unused labels |
-| [no-unused-private-class-members](https://eslint.org/docs/latest/rules/no-unused-private-class-members) | Disallow unused private class members |
-| [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | Disallow unused variables |
-| [no-useless-assignment](https://eslint.org/docs/latest/rules/no-useless-assignment) | Disallow variable assignments when the value is not used |
-| [no-useless-backreference](https://eslint.org/docs/latest/rules/no-useless-backreference) | Disallow useless backreferences in regular expressions |
-| [no-useless-catch](https://eslint.org/docs/latest/rules/no-useless-catch) | Disallow unnecessary `catch` clauses |
-| [no-useless-computed-key](https://eslint.org/docs/latest/rules/no-useless-computed-key) | Disallow unnecessary computed property keys in objects and classes |
-| [no-useless-escape](https://eslint.org/docs/latest/rules/no-useless-escape) | Disallow unnecessary escape characters |
-| [no-useless-rename](https://eslint.org/docs/latest/rules/no-useless-rename) | Disallow renaming import, export, and destructured assignments to the same name |
-| [no-var](https://eslint.org/docs/latest/rules/no-var) | Require `let` or `const` instead of `var` |
-| [no-warning-comments](https://eslint.org/docs/latest/rules/no-warning-comments) | Disallow specified warning terms in comments |
-| [no-with](https://eslint.org/docs/latest/rules/no-with) | Disallow `with` statements |
-| [prefer-const](https://eslint.org/docs/latest/rules/prefer-const) | Require `const` declarations for variables that are never reassigned after declared |
-| [prefer-rest-params](https://eslint.org/docs/latest/rules/prefer-rest-params) | Require rest parameters instead of `arguments` |
-| [prefer-spread](https://eslint.org/docs/latest/rules/prefer-spread) | Require spread operators instead of `.apply()` |
-| [require-yield](https://eslint.org/docs/latest/rules/require-yield) | Require generator functions to contain `yield` |
-| [use-isnan](https://eslint.org/docs/latest/rules/use-isnan) | Require calls to `isNaN()` when checking for `NaN` |
-| [valid-typeof](https://eslint.org/docs/latest/rules/valid-typeof) | Enforce comparing `typeof` expressions against valid strings |
-| [n/hashbang](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md) | require correct usage of hashbang |
-| [n/no-deprecated-api](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-deprecated-api.md) | disallow deprecated APIs |
-| [n/no-exports-assign](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md) | disallow the assignment to `exports` |
-| [n/no-extraneous-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-import.md) | disallow `import` declarations which import extraneous modules |
-| [n/no-extraneous-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-require.md) | disallow `require()` expressions which import extraneous modules |
-| [n/no-missing-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-import.md) | disallow `import` declarations which import non-existence modules |
-| [n/no-missing-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-require.md) | disallow `require()` expressions which import non-existence modules |
-| [n/no-process-env](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md) | disallow the use of `process.env` |
-| [n/no-process-exit](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md) | disallow the use of `process.exit()` |
-| [n/no-unpublished-bin](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md) | disallow `bin` files that npm ignores |
-| [n/no-unpublished-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md) | disallow `import` declarations which import private modules |
-| [n/no-unpublished-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md) | disallow `require()` expressions which import private modules |
-| [n/no-unsupported-features/es-builtins](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-builtins.md) | disallow unsupported ECMAScript built-ins on the specified version |
-| [n/no-unsupported-features/es-syntax](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-syntax.md) | disallow unsupported ECMAScript syntax on the specified version |
-| [n/no-unsupported-features/node-builtins](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/node-builtins.md) | disallow unsupported Node.js built-in APIs on the specified version |
-| [n/process-exit-as-throw](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md) | require that `process.exit()` expressions use the same code path as `throw` |
-| [unicorn/better-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/better-regex.md) | Improve regexes by making them shorter, consistent, and safer. |
-| [unicorn/error-message](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/error-message.md) | Enforce passing a `message` value when creating a built-in error. |
-| [unicorn/expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/expiring-todo-comments.md) | Add expiration conditions to TODO comments. |
-| [unicorn/explicit-length-check](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/explicit-length-check.md) | Enforce explicitly comparing the `length` or `size` property of a value. |
-| [unicorn/filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/filename-case.md) | Enforce a case style for filenames. |
-| [unicorn/new-for-builtins](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/new-for-builtins.md) | Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`. |
-| [unicorn/no-abusive-eslint-disable](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-abusive-eslint-disable.md) | Enforce specifying rules to disable in `eslint-disable` comments. |
-| [unicorn/no-anonymous-default-export](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-anonymous-default-export.md) | Disallow anonymous functions and classes as the default export. |
-| [unicorn/no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-for-each.md) | Prefer `for…of` over the `forEach` method. |
-| [unicorn/no-array-reduce](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-reduce.md) | Disallow `Array#reduce()` and `Array#reduceRight()`. |
-| [unicorn/no-await-expression-member](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-expression-member.md) | Disallow member access from await expression. |
-| [unicorn/no-await-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-in-promise-methods.md) | Disallow using `await` in `Promise` method parameters. |
-| [unicorn/no-console-spaces](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-console-spaces.md) | Do not use leading/trailing space between `console.log` parameters. |
-| [unicorn/no-document-cookie](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-document-cookie.md) | Do not use `document.cookie` directly. |
-| [unicorn/no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-empty-file.md) | Disallow empty files. |
-| [unicorn/no-for-loop](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-for-loop.md) | Do not use a `for` loop that can be replaced with a `for-of` loop. |
-| [unicorn/no-hex-escape](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-hex-escape.md) | Enforce the use of Unicode escapes instead of hexadecimal escapes. |
-| [unicorn/no-instanceof-array](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-instanceof-array.md) | Require `Array.isArray()` instead of `instanceof Array`. |
-| [unicorn/no-invalid-remove-event-listener](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-invalid-remove-event-listener.md) | Prevent calling `EventTarget#removeEventListener()` with the result of an expression. |
-| [unicorn/no-negated-condition](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-negated-condition.md) | Disallow negated conditions. |
-| [unicorn/no-new-array](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-array.md) | Disallow `new Array()`. |
-| [unicorn/no-new-buffer](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-buffer.md) | Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`. |
-| [unicorn/no-null](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-null.md) | Disallow the use of the `null` literal. |
-| [unicorn/no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-object-as-default-parameter.md) | Disallow the use of objects as default parameters. |
-| [unicorn/no-process-exit](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-process-exit.md) | Disallow `process.exit()`. |
-| [unicorn/no-single-promise-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-single-promise-in-promise-methods.md) | Disallow passing single-element arrays to `Promise` methods. |
-| [unicorn/no-static-only-class](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-static-only-class.md) | Disallow classes that only have static members. |
-| [unicorn/no-thenable](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-thenable.md) | Disallow `then` property. |
-| [unicorn/no-this-assignment](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-this-assignment.md) | Disallow assigning `this` to a variable. |
-| [unicorn/no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-typeof-undefined.md) | Disallow comparing `undefined` using `typeof`. |
-| [unicorn/no-unnecessary-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-await.md) | Disallow awaiting non-promise values. |
-| [unicorn/no-unnecessary-polyfills](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-polyfills.md) | Enforce the use of built-in methods instead of unnecessary polyfills. |
-| [unicorn/no-unreadable-array-destructuring](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-array-destructuring.md) | Disallow unreadable array destructuring. |
-| [unicorn/no-unreadable-iife](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-iife.md) | Disallow unreadable IIFEs. |
-| [unicorn/no-useless-fallback-in-spread](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-fallback-in-spread.md) | Disallow useless fallback when spreading in object literals. |
-| [unicorn/no-useless-length-check](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-length-check.md) | Disallow useless array length check. |
-| [unicorn/no-useless-promise-resolve-reject](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-promise-resolve-reject.md) | Disallow returning/yielding `Promise.resolve/reject()` in async functions or promise callbacks |
-| [unicorn/no-useless-spread](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-spread.md) | Disallow unnecessary spread. |
-| [unicorn/no-useless-switch-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-switch-case.md) | Disallow useless case in switch statements. |
-| [unicorn/no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-undefined.md) | Disallow useless `undefined`. |
-| [unicorn/no-zero-fractions](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-zero-fractions.md) | Disallow number literals with zero fractions or dangling dots. |
-| [unicorn/prefer-add-event-listener](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-add-event-listener.md) | Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions. |
-| [unicorn/prefer-array-find](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-find.md) | Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`. |
-| [unicorn/prefer-array-flat](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat.md) | Prefer `Array#flat()` over legacy techniques to flatten arrays. |
-| [unicorn/prefer-array-flat-map](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat-map.md) | Prefer `.flatMap(…)` over `.map(…).flat()`. |
-| [unicorn/prefer-array-index-of](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-index-of.md) | Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findLastIndex}()` when looking for the index of an item. |
-| [unicorn/prefer-array-some](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-some.md) | Prefer `.some(…)` over `.filter(…).length` check and `.{find,findLast,findIndex,findLastIndex}(…)`. |
-| [unicorn/prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-at.md) | Prefer `.at()` method for index access and `String#charAt()`. |
-| [unicorn/prefer-blob-reading-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-blob-reading-methods.md) | Prefer `Blob#arrayBuffer()` over `FileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`. |
-| [unicorn/prefer-code-point](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-code-point.md) | Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`. |
-| [unicorn/prefer-date-now](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-date-now.md) | Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch. |
-| [unicorn/prefer-default-parameters](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-default-parameters.md) | Prefer default parameters over reassignment. |
-| [unicorn/prefer-dom-node-append](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-append.md) | Prefer `Node#append()` over `Node#appendChild()`. |
-| [unicorn/prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-dataset.md) | Prefer using `.dataset` on DOM elements over calling attribute methods. |
-| [unicorn/prefer-dom-node-remove](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-remove.md) | Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`. |
-| [unicorn/prefer-dom-node-text-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-text-content.md) | Prefer `.textContent` over `.innerText`. |
-| [unicorn/prefer-event-target](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-event-target.md) | Prefer `EventTarget` over `EventEmitter`. |
-| [unicorn/prefer-export-from](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-export-from.md) | Prefer `export…from` when re-exporting. |
-| [unicorn/prefer-includes](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-includes.md) | Prefer `.includes()` over `.indexOf()`, `.lastIndexOf()`, and `Array#some()` when checking for existence or non-existence. |
-| [unicorn/prefer-keyboard-event-key](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-keyboard-event-key.md) | Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`. |
-| [unicorn/prefer-logical-operator-over-ternary](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-logical-operator-over-ternary.md) | Prefer using a logical operator over a ternary. |
-| [unicorn/prefer-math-trunc](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-math-trunc.md) | Enforce the use of `Math.trunc` instead of bitwise operators. |
-| [unicorn/prefer-modern-dom-apis](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-dom-apis.md) | Prefer `.before()` over `.insertBefore()`, `.replaceWith()` over `.replaceChild()`, prefer one of `.before()`, `.after()`, `.append()` or `.prepend()` over `insertAdjacentText()` and `insertAdjacentElement()`. |
-| [unicorn/prefer-modern-math-apis](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-math-apis.md) | Prefer modern `Math` APIs over legacy patterns. |
-| [unicorn/prefer-module](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-module.md) | Prefer JavaScript modules (ESM) over CommonJS. |
-| [unicorn/prefer-native-coercion-functions](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-native-coercion-functions.md) | Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` directly. |
-| [unicorn/prefer-negative-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-negative-index.md) | Prefer negative index over `.length - index` when possible. |
-| [unicorn/prefer-node-protocol](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-node-protocol.md) | Prefer using the `node:` protocol when importing Node.js builtin modules. |
-| [unicorn/prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-number-properties.md) | Prefer `Number` static properties over global ones. |
-| [unicorn/prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-object-from-entries.md) | Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object. |
-| [unicorn/prefer-prototype-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-prototype-methods.md) | Prefer borrowing methods from the prototype instead of the instance. |
-| [unicorn/prefer-query-selector](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-query-selector.md) | Prefer `.querySelector()` over `.getElementById()`, `.querySelectorAll()` over `.getElementsByClassName()` and `.getElementsByTagName()` and `.getElementsByName()`. |
-| [unicorn/prefer-reflect-apply](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-reflect-apply.md) | Prefer `Reflect.apply()` over `Function#apply()`. |
-| [unicorn/prefer-regexp-test](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-regexp-test.md) | Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`. |
-| [unicorn/prefer-set-size](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-set-size.md) | Prefer using `Set#size` instead of `Array#length`. |
-| [unicorn/prefer-string-replace-all](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-replace-all.md) | Prefer `String#replaceAll()` over regex searches with the global flag. |
-| [unicorn/prefer-string-slice](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-slice.md) | Prefer `String#slice()` over `String#substr()` and `String#substring()`. |
-| [unicorn/prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-starts-ends-with.md) | Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`. |
-| [unicorn/prefer-string-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-trim-start-end.md) | Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()`. |
-| [unicorn/prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-top-level-await.md) | Prefer top-level await over top-level promises and async function calls. |
-| [unicorn/prefer-type-error](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-type-error.md) | Enforce throwing `TypeError` in type checking conditions. |
-| [unicorn/relative-url-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/relative-url-style.md) | Enforce consistent relative URL style. |
-| [unicorn/require-array-join-separator](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-array-join-separator.md) | Enforce using the separator argument with `Array#join()`. |
-| [unicorn/require-number-to-fixed-digits-argument](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-number-to-fixed-digits-argument.md) | Enforce using the digits argument with `Number#toFixed()`. |
-| [unicorn/throw-new-error](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/throw-new-error.md) | Require `new` when creating an error. |
+| Rule | Description | Level |
+|---|---|---|
+| [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return) | Enforce `return` statements in callbacks of array methods | error |
+| [constructor-super](https://eslint.org/docs/latest/rules/constructor-super) | Require `super()` calls in constructors | error |
+| [curly](https://eslint.org/docs/latest/rules/curly) | Enforce consistent brace style for all control statements | error |
+| [eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq) | Require the use of `===` and `!==` | error |
+| [for-direction](https://eslint.org/docs/latest/rules/for-direction) | Enforce `for` loop update clause moving the counter in the right direction | error |
+| [getter-return](https://eslint.org/docs/latest/rules/getter-return) | Enforce `return` statements in getters | error |
+| [no-async-promise-executor](https://eslint.org/docs/latest/rules/no-async-promise-executor) | Disallow using an async function as a Promise executor | error |
+| [no-case-declarations](https://eslint.org/docs/latest/rules/no-case-declarations) | Disallow lexical declarations in case clauses | error |
+| [no-class-assign](https://eslint.org/docs/latest/rules/no-class-assign) | Disallow reassigning class members | error |
+| [no-compare-neg-zero](https://eslint.org/docs/latest/rules/no-compare-neg-zero) | Disallow comparing against `-0` | error |
+| [no-cond-assign](https://eslint.org/docs/latest/rules/no-cond-assign) | Disallow assignment operators in conditional expressions | error |
+| [no-const-assign](https://eslint.org/docs/latest/rules/no-const-assign) | Disallow reassigning `const` variables | error |
+| [no-constant-binary-expression](https://eslint.org/docs/latest/rules/no-constant-binary-expression) | Disallow expressions where the operation doesn't affect the value | error |
+| [no-constant-condition](https://eslint.org/docs/latest/rules/no-constant-condition) | Disallow constant expressions in conditions | error |
+| [no-constructor-return](https://eslint.org/docs/latest/rules/no-constructor-return) | Disallow returning value from constructor | error |
+| [no-control-regex](https://eslint.org/docs/latest/rules/no-control-regex) | Disallow control characters in regular expressions | error |
+| [no-debugger](https://eslint.org/docs/latest/rules/no-debugger) | Disallow the use of `debugger` | error |
+| [no-delete-var](https://eslint.org/docs/latest/rules/no-delete-var) | Disallow deleting variables | error |
+| [no-dupe-args](https://eslint.org/docs/latest/rules/no-dupe-args) | Disallow duplicate arguments in `function` definitions | error |
+| [no-dupe-class-members](https://eslint.org/docs/latest/rules/no-dupe-class-members) | Disallow duplicate class members | error |
+| [no-dupe-else-if](https://eslint.org/docs/latest/rules/no-dupe-else-if) | Disallow duplicate conditions in if-else-if chains | error |
+| [no-dupe-keys](https://eslint.org/docs/latest/rules/no-dupe-keys) | Disallow duplicate keys in object literals | error |
+| [no-duplicate-case](https://eslint.org/docs/latest/rules/no-duplicate-case) | Disallow duplicate case labels | error |
+| [no-duplicate-imports](https://eslint.org/docs/latest/rules/no-duplicate-imports) | Disallow duplicate module imports | error |
+| [no-else-return](https://eslint.org/docs/latest/rules/no-else-return) | Disallow `else` blocks after `return` statements in `if` statements | warn |
+| [no-empty](https://eslint.org/docs/latest/rules/no-empty) | Disallow empty block statements | off |
+| [no-empty-character-class](https://eslint.org/docs/latest/rules/no-empty-character-class) | Disallow empty character classes in regular expressions | error |
+| [no-empty-pattern](https://eslint.org/docs/latest/rules/no-empty-pattern) | Disallow empty destructuring patterns | error |
+| [no-empty-static-block](https://eslint.org/docs/latest/rules/no-empty-static-block) | Disallow empty static blocks | error |
+| [no-ex-assign](https://eslint.org/docs/latest/rules/no-ex-assign) | Disallow reassigning exceptions in `catch` clauses | error |
+| [no-extra-boolean-cast](https://eslint.org/docs/latest/rules/no-extra-boolean-cast) | Disallow unnecessary boolean casts | error |
+| [no-fallthrough](https://eslint.org/docs/latest/rules/no-fallthrough) | Disallow fallthrough of `case` statements | error |
+| [no-func-assign](https://eslint.org/docs/latest/rules/no-func-assign) | Disallow reassigning `function` declarations | error |
+| [no-global-assign](https://eslint.org/docs/latest/rules/no-global-assign) | Disallow assignments to native objects or read-only global variables | error |
+| [no-import-assign](https://eslint.org/docs/latest/rules/no-import-assign) | Disallow assigning to imported bindings | error |
+| [no-invalid-regexp](https://eslint.org/docs/latest/rules/no-invalid-regexp) | Disallow invalid regular expression strings in `RegExp` constructors | error |
+| [no-irregular-whitespace](https://eslint.org/docs/latest/rules/no-irregular-whitespace) | Disallow irregular whitespace | error |
+| [no-labels](https://eslint.org/docs/latest/rules/no-labels) | Disallow labeled statements | error |
+| [no-loss-of-precision](https://eslint.org/docs/latest/rules/no-loss-of-precision) | Disallow literal numbers that lose precision | error |
+| [no-misleading-character-class](https://eslint.org/docs/latest/rules/no-misleading-character-class) | Disallow characters which are made with multiple code points in character class syntax | error |
+| [no-negated-condition](https://eslint.org/docs/latest/rules/no-negated-condition) | Disallow negated conditions | off |
+| [no-nested-ternary](https://eslint.org/docs/latest/rules/no-nested-ternary) | Disallow nested ternary expressions | error |
+| [no-new-native-nonconstructor](https://eslint.org/docs/latest/rules/no-new-native-nonconstructor) | Disallow `new` operators with global non-constructor functions | error |
+| [no-nonoctal-decimal-escape](https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape) | Disallow `\8` and `\9` escape sequences in string literals | error |
+| [no-obj-calls](https://eslint.org/docs/latest/rules/no-obj-calls) | Disallow calling global object properties as functions | error |
+| [no-octal](https://eslint.org/docs/latest/rules/no-octal) | Disallow octal literals | error |
+| [no-param-reassign](https://eslint.org/docs/latest/rules/no-param-reassign) | Disallow reassigning function parameters | error |
+| [no-promise-executor-return](https://eslint.org/docs/latest/rules/no-promise-executor-return) | Disallow returning values from Promise executor functions | error |
+| [no-prototype-builtins](https://eslint.org/docs/latest/rules/no-prototype-builtins) | Disallow calling some `Object.prototype` methods directly on objects | error |
+| [no-redeclare](https://eslint.org/docs/latest/rules/no-redeclare) | Disallow variable redeclaration | error |
+| [no-regex-spaces](https://eslint.org/docs/latest/rules/no-regex-spaces) | Disallow multiple spaces in regular expressions | error |
+| [no-self-assign](https://eslint.org/docs/latest/rules/no-self-assign) | Disallow assignments where both sides are exactly the same | error |
+| [no-setter-return](https://eslint.org/docs/latest/rules/no-setter-return) | Disallow returning values from setters | error |
+| [no-shadow-restricted-names](https://eslint.org/docs/latest/rules/no-shadow-restricted-names) | Disallow identifiers from shadowing restricted names | error |
+| [no-sparse-arrays](https://eslint.org/docs/latest/rules/no-sparse-arrays) | Disallow sparse arrays | error |
+| [no-template-curly-in-string](https://eslint.org/docs/latest/rules/no-template-curly-in-string) | Disallow template literal placeholder syntax in regular strings | warn |
+| [no-this-before-super](https://eslint.org/docs/latest/rules/no-this-before-super) | Disallow `this`/`super` before calling `super()` in constructors | error |
+| [no-undef](https://eslint.org/docs/latest/rules/no-undef) | Disallow the use of undeclared variables unless mentioned in `/*global */` comments | error |
+| [no-unexpected-multiline](https://eslint.org/docs/latest/rules/no-unexpected-multiline) | Disallow confusing multiline expressions | error |
+| [no-unmodified-loop-condition](https://eslint.org/docs/latest/rules/no-unmodified-loop-condition) | Disallow unmodified loop conditions | error |
+| [no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable) | Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements | error |
+| [no-unreachable-loop](https://eslint.org/docs/latest/rules/no-unreachable-loop) | Disallow loops with a body that allows only one iteration | error |
+| [no-unsafe-finally](https://eslint.org/docs/latest/rules/no-unsafe-finally) | Disallow control flow statements in `finally` blocks | error |
+| [no-unsafe-negation](https://eslint.org/docs/latest/rules/no-unsafe-negation) | Disallow negating the left operand of relational operators | error |
+| [no-unsafe-optional-chaining](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining) | Disallow use of optional chaining in contexts where the `undefined` value is not allowed | error |
+| [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions) | Disallow unused expressions | error |
+| [no-unused-labels](https://eslint.org/docs/latest/rules/no-unused-labels) | Disallow unused labels | error |
+| [no-unused-private-class-members](https://eslint.org/docs/latest/rules/no-unused-private-class-members) | Disallow unused private class members | error |
+| [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | Disallow unused variables | error |
+| [no-useless-assignment](https://eslint.org/docs/latest/rules/no-useless-assignment) | Disallow variable assignments when the value is not used | error |
+| [no-useless-backreference](https://eslint.org/docs/latest/rules/no-useless-backreference) | Disallow useless backreferences in regular expressions | error |
+| [no-useless-catch](https://eslint.org/docs/latest/rules/no-useless-catch) | Disallow unnecessary `catch` clauses | error |
+| [no-useless-computed-key](https://eslint.org/docs/latest/rules/no-useless-computed-key) | Disallow unnecessary computed property keys in objects and classes | error |
+| [no-useless-escape](https://eslint.org/docs/latest/rules/no-useless-escape) | Disallow unnecessary escape characters | error |
+| [no-useless-rename](https://eslint.org/docs/latest/rules/no-useless-rename) | Disallow renaming import, export, and destructured assignments to the same name | error |
+| [no-var](https://eslint.org/docs/latest/rules/no-var) | Require `let` or `const` instead of `var` | error |
+| [no-warning-comments](https://eslint.org/docs/latest/rules/no-warning-comments) | Disallow specified warning terms in comments | error |
+| [no-with](https://eslint.org/docs/latest/rules/no-with) | Disallow `with` statements | error |
+| [prefer-const](https://eslint.org/docs/latest/rules/prefer-const) | Require `const` declarations for variables that are never reassigned after declared | error |
+| [prefer-rest-params](https://eslint.org/docs/latest/rules/prefer-rest-params) | Require rest parameters instead of `arguments` | error |
+| [prefer-spread](https://eslint.org/docs/latest/rules/prefer-spread) | Require spread operators instead of `.apply()` | error |
+| [require-yield](https://eslint.org/docs/latest/rules/require-yield) | Require generator functions to contain `yield` | error |
+| [use-isnan](https://eslint.org/docs/latest/rules/use-isnan) | Require calls to `isNaN()` when checking for `NaN` | error |
+| [valid-typeof](https://eslint.org/docs/latest/rules/valid-typeof) | Enforce comparing `typeof` expressions against valid strings | error |
+| [n/hashbang](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md) | require correct usage of hashbang | error |
+| [n/no-deprecated-api](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-deprecated-api.md) | disallow deprecated APIs | error |
+| [n/no-exports-assign](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md) | disallow the assignment to `exports` | error |
+| [n/no-extraneous-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-import.md) | disallow `import` declarations which import extraneous modules | error |
+| [n/no-extraneous-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-require.md) | disallow `require()` expressions which import extraneous modules | error |
+| [n/no-missing-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-import.md) | disallow `import` declarations which import non-existence modules | error |
+| [n/no-missing-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-require.md) | disallow `require()` expressions which import non-existence modules | error |
+| [n/no-process-env](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md) | disallow the use of `process.env` | warn |
+| [n/no-process-exit](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md) | disallow the use of `process.exit()` | error |
+| [n/no-unpublished-bin](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md) | disallow `bin` files that npm ignores | error |
+| [n/no-unpublished-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md) | disallow `import` declarations which import private modules | error |
+| [n/no-unpublished-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md) | disallow `require()` expressions which import private modules | error |
+| [n/no-unsupported-features/es-builtins](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-builtins.md) | disallow unsupported ECMAScript built-ins on the specified version | error |
+| [n/no-unsupported-features/es-syntax](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-syntax.md) | disallow unsupported ECMAScript syntax on the specified version | error |
+| [n/no-unsupported-features/node-builtins](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/node-builtins.md) | disallow unsupported Node.js built-in APIs on the specified version | error |
+| [n/process-exit-as-throw](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md) | require that `process.exit()` expressions use the same code path as `throw` | error |
+| [unicorn/error-message](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/error-message.md) | Enforce passing a `message` value when creating a built-in error. | error |
+| [unicorn/expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/expiring-todo-comments.md) | Add expiration conditions to TODO comments. | error |
+| [unicorn/explicit-length-check](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/explicit-length-check.md) | Enforce explicitly comparing the `length` or `size` property of a value. | error |
+| [unicorn/filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/filename-case.md) | Enforce a case style for filenames. | error |
+| [unicorn/new-for-builtins](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/new-for-builtins.md) | Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`. | error |
+| [unicorn/no-abusive-eslint-disable](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-abusive-eslint-disable.md) | Enforce specifying rules to disable in `eslint-disable` comments. | error |
+| [unicorn/no-anonymous-default-export](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-anonymous-default-export.md) | Disallow anonymous functions and classes as the default export. | error |
+| [unicorn/no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-for-each.md) | Prefer `for…of` over the `forEach` method. | error |
+| [unicorn/no-array-reduce](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-reduce.md) | Disallow `Array#reduce()` and `Array#reduceRight()`. | error |
+| [unicorn/no-await-expression-member](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-expression-member.md) | Disallow member access from await expression. | error |
+| [unicorn/no-await-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-in-promise-methods.md) | Disallow using `await` in `Promise` method parameters. | error |
+| [unicorn/no-console-spaces](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-console-spaces.md) | Do not use leading/trailing space between `console.log` parameters. | error |
+| [unicorn/no-document-cookie](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-document-cookie.md) | Do not use `document.cookie` directly. | error |
+| [unicorn/no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-empty-file.md) | Disallow empty files. | error |
+| [unicorn/no-for-loop](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-for-loop.md) | Do not use a `for` loop that can be replaced with a `for-of` loop. | error |
+| [unicorn/no-hex-escape](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-hex-escape.md) | Enforce the use of Unicode escapes instead of hexadecimal escapes. | error |
+| [unicorn/no-instanceof-array](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-instanceof-array.md) | Require `Array.isArray()` instead of `instanceof Array`. | error |
+| [unicorn/no-invalid-remove-event-listener](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-invalid-remove-event-listener.md) | Prevent calling `EventTarget#removeEventListener()` with the result of an expression. | error |
+| [unicorn/no-negated-condition](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-negated-condition.md) | Disallow negated conditions. | error |
+| [unicorn/no-new-array](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-array.md) | Disallow `new Array()`. | error |
+| [unicorn/no-new-buffer](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-buffer.md) | Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`. | error |
+| [unicorn/no-null](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-null.md) | Disallow the use of the `null` literal. | error |
+| [unicorn/no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-object-as-default-parameter.md) | Disallow the use of objects as default parameters. | error |
+| [unicorn/no-process-exit](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-process-exit.md) | Disallow `process.exit()`. | error |
+| [unicorn/no-single-promise-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-single-promise-in-promise-methods.md) | Disallow passing single-element arrays to `Promise` methods. | error |
+| [unicorn/no-static-only-class](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-static-only-class.md) | Disallow classes that only have static members. | error |
+| [unicorn/no-thenable](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-thenable.md) | Disallow `then` property. | error |
+| [unicorn/no-this-assignment](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-this-assignment.md) | Disallow assigning `this` to a variable. | error |
+| [unicorn/no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-typeof-undefined.md) | Disallow comparing `undefined` using `typeof`. | error |
+| [unicorn/no-unnecessary-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-await.md) | Disallow awaiting non-promise values. | error |
+| [unicorn/no-unnecessary-polyfills](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-polyfills.md) | Enforce the use of built-in methods instead of unnecessary polyfills. | error |
+| [unicorn/no-unreadable-array-destructuring](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-array-destructuring.md) | Disallow unreadable array destructuring. | error |
+| [unicorn/no-unreadable-iife](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-iife.md) | Disallow unreadable IIFEs. | error |
+| [unicorn/no-useless-fallback-in-spread](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-fallback-in-spread.md) | Disallow useless fallback when spreading in object literals. | error |
+| [unicorn/no-useless-length-check](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-length-check.md) | Disallow useless array length check. | error |
+| [unicorn/no-useless-promise-resolve-reject](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-promise-resolve-reject.md) | Disallow returning/yielding `Promise.resolve/reject()` in async functions or promise callbacks | error |
+| [unicorn/no-useless-spread](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-spread.md) | Disallow unnecessary spread. | error |
+| [unicorn/no-useless-switch-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-switch-case.md) | Disallow useless case in switch statements. | error |
+| [unicorn/no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-undefined.md) | Disallow useless `undefined`. | error |
+| [unicorn/no-zero-fractions](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-zero-fractions.md) | Disallow number literals with zero fractions or dangling dots. | error |
+| [unicorn/prefer-add-event-listener](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-add-event-listener.md) | Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions. | error |
+| [unicorn/prefer-array-find](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-find.md) | Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`. | error |
+| [unicorn/prefer-array-flat](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat.md) | Prefer `Array#flat()` over legacy techniques to flatten arrays. | error |
+| [unicorn/prefer-array-flat-map](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat-map.md) | Prefer `.flatMap(…)` over `.map(…).flat()`. | error |
+| [unicorn/prefer-array-index-of](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-index-of.md) | Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findLastIndex}()` when looking for the index of an item. | error |
+| [unicorn/prefer-array-some](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-some.md) | Prefer `.some(…)` over `.filter(…).length` check and `.{find,findLast,findIndex,findLastIndex}(…)`. | error |
+| [unicorn/prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-at.md) | Prefer `.at()` method for index access and `String#charAt()`. | error |
+| [unicorn/prefer-blob-reading-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-blob-reading-methods.md) | Prefer `Blob#arrayBuffer()` over `FileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`. | error |
+| [unicorn/prefer-code-point](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-code-point.md) | Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`. | error |
+| [unicorn/prefer-date-now](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-date-now.md) | Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch. | error |
+| [unicorn/prefer-default-parameters](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-default-parameters.md) | Prefer default parameters over reassignment. | error |
+| [unicorn/prefer-dom-node-append](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-append.md) | Prefer `Node#append()` over `Node#appendChild()`. | error |
+| [unicorn/prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-dataset.md) | Prefer using `.dataset` on DOM elements over calling attribute methods. | error |
+| [unicorn/prefer-dom-node-remove](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-remove.md) | Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`. | error |
+| [unicorn/prefer-dom-node-text-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-text-content.md) | Prefer `.textContent` over `.innerText`. | error |
+| [unicorn/prefer-event-target](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-event-target.md) | Prefer `EventTarget` over `EventEmitter`. | error |
+| [unicorn/prefer-export-from](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-export-from.md) | Prefer `export…from` when re-exporting. | error |
+| [unicorn/prefer-includes](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-includes.md) | Prefer `.includes()` over `.indexOf()`, `.lastIndexOf()`, and `Array#some()` when checking for existence or non-existence. | error |
+| [unicorn/prefer-keyboard-event-key](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-keyboard-event-key.md) | Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`. | error |
+| [unicorn/prefer-logical-operator-over-ternary](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-logical-operator-over-ternary.md) | Prefer using a logical operator over a ternary. | error |
+| [unicorn/prefer-math-trunc](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-math-trunc.md) | Enforce the use of `Math.trunc` instead of bitwise operators. | error |
+| [unicorn/prefer-modern-dom-apis](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-dom-apis.md) | Prefer `.before()` over `.insertBefore()`, `.replaceWith()` over `.replaceChild()`, prefer one of `.before()`, `.after()`, `.append()` or `.prepend()` over `insertAdjacentText()` and `insertAdjacentElement()`. | error |
+| [unicorn/prefer-modern-math-apis](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-math-apis.md) | Prefer modern `Math` APIs over legacy patterns. | error |
+| [unicorn/prefer-module](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-module.md) | Prefer JavaScript modules (ESM) over CommonJS. | error |
+| [unicorn/prefer-native-coercion-functions](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-native-coercion-functions.md) | Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` directly. | error |
+| [unicorn/prefer-negative-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-negative-index.md) | Prefer negative index over `.length - index` when possible. | error |
+| [unicorn/prefer-node-protocol](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-node-protocol.md) | Prefer using the `node:` protocol when importing Node.js builtin modules. | error |
+| [unicorn/prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-number-properties.md) | Prefer `Number` static properties over global ones. | error |
+| [unicorn/prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-object-from-entries.md) | Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object. | error |
+| [unicorn/prefer-prototype-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-prototype-methods.md) | Prefer borrowing methods from the prototype instead of the instance. | error |
+| [unicorn/prefer-query-selector](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-query-selector.md) | Prefer `.querySelector()` over `.getElementById()`, `.querySelectorAll()` over `.getElementsByClassName()` and `.getElementsByTagName()` and `.getElementsByName()`. | error |
+| [unicorn/prefer-reflect-apply](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-reflect-apply.md) | Prefer `Reflect.apply()` over `Function#apply()`. | error |
+| [unicorn/prefer-regexp-test](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-regexp-test.md) | Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`. | error |
+| [unicorn/prefer-set-size](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-set-size.md) | Prefer using `Set#size` instead of `Array#length`. | error |
+| [unicorn/prefer-string-replace-all](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-replace-all.md) | Prefer `String#replaceAll()` over regex searches with the global flag. | error |
+| [unicorn/prefer-string-slice](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-slice.md) | Prefer `String#slice()` over `String#substr()` and `String#substring()`. | error |
+| [unicorn/prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-starts-ends-with.md) | Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`. | error |
+| [unicorn/prefer-string-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-trim-start-end.md) | Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()`. | error |
+| [unicorn/prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-top-level-await.md) | Prefer top-level await over top-level promises and async function calls. | error |
+| [unicorn/prefer-type-error](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-type-error.md) | Enforce throwing `TypeError` in type checking conditions. | error |
+| [unicorn/relative-url-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/relative-url-style.md) | Enforce consistent relative URL style. | error |
+| [unicorn/require-array-join-separator](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-array-join-separator.md) | Enforce using the separator argument with `Array#join()`. | error |
+| [unicorn/require-number-to-fixed-digits-argument](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-number-to-fixed-digits-argument.md) | Enforce using the digits argument with `Number#toFixed()`. | error |
+| [unicorn/throw-new-error](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/throw-new-error.md) | Require `new` when creating an error. | error |
 
 
 ## Config ts
     
-| Rule | Description |
-|---|---|
-| [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return) | Enforce `return` statements in callbacks of array methods |
-| [constructor-super](https://eslint.org/docs/latest/rules/constructor-super) | Require `super()` calls in constructors |
-| [curly](https://eslint.org/docs/latest/rules/curly) | Enforce consistent brace style for all control statements |
-| [eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq) | Require the use of `===` and `!==` |
-| [for-direction](https://eslint.org/docs/latest/rules/for-direction) | Enforce `for` loop update clause moving the counter in the right direction |
-| [no-async-promise-executor](https://eslint.org/docs/latest/rules/no-async-promise-executor) | Disallow using an async function as a Promise executor |
-| [no-case-declarations](https://eslint.org/docs/latest/rules/no-case-declarations) | Disallow lexical declarations in case clauses |
-| [no-class-assign](https://eslint.org/docs/latest/rules/no-class-assign) | Disallow reassigning class members |
-| [no-compare-neg-zero](https://eslint.org/docs/latest/rules/no-compare-neg-zero) | Disallow comparing against `-0` |
-| [no-cond-assign](https://eslint.org/docs/latest/rules/no-cond-assign) | Disallow assignment operators in conditional expressions |
-| [no-const-assign](https://eslint.org/docs/latest/rules/no-const-assign) | Disallow reassigning `const` variables |
-| [no-constant-binary-expression](https://eslint.org/docs/latest/rules/no-constant-binary-expression) | Disallow expressions where the operation doesn't affect the value |
-| [no-constant-condition](https://eslint.org/docs/latest/rules/no-constant-condition) | Disallow constant expressions in conditions |
-| [no-constructor-return](https://eslint.org/docs/latest/rules/no-constructor-return) | Disallow returning value from constructor |
-| [no-control-regex](https://eslint.org/docs/latest/rules/no-control-regex) | Disallow control characters in regular expressions |
-| [no-debugger](https://eslint.org/docs/latest/rules/no-debugger) | Disallow the use of `debugger` |
-| [no-delete-var](https://eslint.org/docs/latest/rules/no-delete-var) | Disallow deleting variables |
-| [no-dupe-class-members](https://eslint.org/docs/latest/rules/no-dupe-class-members) | Disallow duplicate class members |
-| [no-dupe-else-if](https://eslint.org/docs/latest/rules/no-dupe-else-if) | Disallow duplicate conditions in if-else-if chains |
-| [no-dupe-keys](https://eslint.org/docs/latest/rules/no-dupe-keys) | Disallow duplicate keys in object literals |
-| [no-duplicate-case](https://eslint.org/docs/latest/rules/no-duplicate-case) | Disallow duplicate case labels |
-| [no-duplicate-imports](https://eslint.org/docs/latest/rules/no-duplicate-imports) | Disallow duplicate module imports |
-| [no-else-return](https://eslint.org/docs/latest/rules/no-else-return) | Disallow `else` blocks after `return` statements in `if` statements |
-| [no-empty-character-class](https://eslint.org/docs/latest/rules/no-empty-character-class) | Disallow empty character classes in regular expressions |
-| [no-empty-pattern](https://eslint.org/docs/latest/rules/no-empty-pattern) | Disallow empty destructuring patterns |
-| [no-empty-static-block](https://eslint.org/docs/latest/rules/no-empty-static-block) | Disallow empty static blocks |
-| [no-ex-assign](https://eslint.org/docs/latest/rules/no-ex-assign) | Disallow reassigning exceptions in `catch` clauses |
-| [no-extra-boolean-cast](https://eslint.org/docs/latest/rules/no-extra-boolean-cast) | Disallow unnecessary boolean casts |
-| [no-fallthrough](https://eslint.org/docs/latest/rules/no-fallthrough) | Disallow fallthrough of `case` statements |
-| [no-func-assign](https://eslint.org/docs/latest/rules/no-func-assign) | Disallow reassigning `function` declarations |
-| [no-global-assign](https://eslint.org/docs/latest/rules/no-global-assign) | Disallow assignments to native objects or read-only global variables |
-| [no-invalid-regexp](https://eslint.org/docs/latest/rules/no-invalid-regexp) | Disallow invalid regular expression strings in `RegExp` constructors |
-| [no-irregular-whitespace](https://eslint.org/docs/latest/rules/no-irregular-whitespace) | Disallow irregular whitespace |
-| [no-labels](https://eslint.org/docs/latest/rules/no-labels) | Disallow labeled statements |
-| [no-loss-of-precision](https://eslint.org/docs/latest/rules/no-loss-of-precision) | Disallow literal numbers that lose precision |
-| [no-misleading-character-class](https://eslint.org/docs/latest/rules/no-misleading-character-class) | Disallow characters which are made with multiple code points in character class syntax |
-| [no-nested-ternary](https://eslint.org/docs/latest/rules/no-nested-ternary) | Disallow nested ternary expressions |
-| [no-nonoctal-decimal-escape](https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape) | Disallow `\8` and `\9` escape sequences in string literals |
-| [no-octal](https://eslint.org/docs/latest/rules/no-octal) | Disallow octal literals |
-| [no-param-reassign](https://eslint.org/docs/latest/rules/no-param-reassign) | Disallow reassigning function parameters |
-| [no-promise-executor-return](https://eslint.org/docs/latest/rules/no-promise-executor-return) | Disallow returning values from Promise executor functions |
-| [no-prototype-builtins](https://eslint.org/docs/latest/rules/no-prototype-builtins) | Disallow calling some `Object.prototype` methods directly on objects |
-| [no-redeclare](https://eslint.org/docs/latest/rules/no-redeclare) | Disallow variable redeclaration |
-| [no-regex-spaces](https://eslint.org/docs/latest/rules/no-regex-spaces) | Disallow multiple spaces in regular expressions |
-| [no-self-assign](https://eslint.org/docs/latest/rules/no-self-assign) | Disallow assignments where both sides are exactly the same |
-| [no-shadow-restricted-names](https://eslint.org/docs/latest/rules/no-shadow-restricted-names) | Disallow identifiers from shadowing restricted names |
-| [no-sparse-arrays](https://eslint.org/docs/latest/rules/no-sparse-arrays) | Disallow sparse arrays |
-| [no-template-curly-in-string](https://eslint.org/docs/latest/rules/no-template-curly-in-string) | Disallow template literal placeholder syntax in regular strings |
-| [no-unexpected-multiline](https://eslint.org/docs/latest/rules/no-unexpected-multiline) | Disallow confusing multiline expressions |
-| [no-unmodified-loop-condition](https://eslint.org/docs/latest/rules/no-unmodified-loop-condition) | Disallow unmodified loop conditions |
-| [no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable) | Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements |
-| [no-unreachable-loop](https://eslint.org/docs/latest/rules/no-unreachable-loop) | Disallow loops with a body that allows only one iteration |
-| [no-unsafe-finally](https://eslint.org/docs/latest/rules/no-unsafe-finally) | Disallow control flow statements in `finally` blocks |
-| [no-unsafe-optional-chaining](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining) | Disallow use of optional chaining in contexts where the `undefined` value is not allowed |
-| [no-unused-labels](https://eslint.org/docs/latest/rules/no-unused-labels) | Disallow unused labels |
-| [no-unused-private-class-members](https://eslint.org/docs/latest/rules/no-unused-private-class-members) | Disallow unused private class members |
-| [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | Disallow unused variables |
-| [no-useless-assignment](https://eslint.org/docs/latest/rules/no-useless-assignment) | Disallow variable assignments when the value is not used |
-| [no-useless-backreference](https://eslint.org/docs/latest/rules/no-useless-backreference) | Disallow useless backreferences in regular expressions |
-| [no-useless-catch](https://eslint.org/docs/latest/rules/no-useless-catch) | Disallow unnecessary `catch` clauses |
-| [no-useless-computed-key](https://eslint.org/docs/latest/rules/no-useless-computed-key) | Disallow unnecessary computed property keys in objects and classes |
-| [no-useless-escape](https://eslint.org/docs/latest/rules/no-useless-escape) | Disallow unnecessary escape characters |
-| [no-useless-rename](https://eslint.org/docs/latest/rules/no-useless-rename) | Disallow renaming import, export, and destructured assignments to the same name |
-| [no-var](https://eslint.org/docs/latest/rules/no-var) | Require `let` or `const` instead of `var` |
-| [no-warning-comments](https://eslint.org/docs/latest/rules/no-warning-comments) | Disallow specified warning terms in comments |
-| [no-with](https://eslint.org/docs/latest/rules/no-with) | Disallow `with` statements |
-| [prefer-const](https://eslint.org/docs/latest/rules/prefer-const) | Require `const` declarations for variables that are never reassigned after declared |
-| [prefer-rest-params](https://eslint.org/docs/latest/rules/prefer-rest-params) | Require rest parameters instead of `arguments` |
-| [prefer-spread](https://eslint.org/docs/latest/rules/prefer-spread) | Require spread operators instead of `.apply()` |
-| [require-yield](https://eslint.org/docs/latest/rules/require-yield) | Require generator functions to contain `yield` |
-| [use-isnan](https://eslint.org/docs/latest/rules/use-isnan) | Require calls to `isNaN()` when checking for `NaN` |
-| [valid-typeof](https://eslint.org/docs/latest/rules/valid-typeof) | Enforce comparing `typeof` expressions against valid strings |
-| [@typescript-eslint/adjacent-overload-signatures](https://typescript-eslint.io/rules/adjacent-overload-signatures) | Require that function overload signatures be consecutive |
-| [@typescript-eslint/array-type](https://typescript-eslint.io/rules/array-type) | Require consistently using either `T[]` or `Array<T>` for arrays |
-| [@typescript-eslint/await-thenable](https://typescript-eslint.io/rules/await-thenable) | Disallow awaiting a value that is not a Thenable |
-| [@typescript-eslint/ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment) | Disallow `@ts-<directive>` comments or require descriptions after directives |
-| [@typescript-eslint/ban-tslint-comment](https://typescript-eslint.io/rules/ban-tslint-comment) | Disallow `// tslint:<rule-flag>` comments |
-| [@typescript-eslint/class-literal-property-style](https://typescript-eslint.io/rules/class-literal-property-style) | Enforce that literals on classes are exposed in a consistent style |
-| [@typescript-eslint/consistent-generic-constructors](https://typescript-eslint.io/rules/consistent-generic-constructors) | Enforce specifying generic type arguments on type annotation or constructor name of a constructor call |
-| [@typescript-eslint/consistent-indexed-object-style](https://typescript-eslint.io/rules/consistent-indexed-object-style) | Require or disallow the `Record` type |
-| [@typescript-eslint/consistent-type-assertions](https://typescript-eslint.io/rules/consistent-type-assertions) | Enforce consistent usage of type assertions |
-| [@typescript-eslint/consistent-type-definitions](https://typescript-eslint.io/rules/consistent-type-definitions) | Enforce type definitions to consistently use either `interface` or `type` |
-| [@typescript-eslint/dot-notation](https://typescript-eslint.io/rules/dot-notation) | Enforce dot notation whenever possible |
-| [@typescript-eslint/explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility) | Require explicit accessibility modifiers on class properties and methods |
-| [@typescript-eslint/explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types) | Require explicit return and argument types on exported functions' and classes' public class methods |
-| [@typescript-eslint/method-signature-style](https://typescript-eslint.io/rules/method-signature-style) | Enforce using a particular method signature syntax |
-| [@typescript-eslint/no-array-constructor](https://typescript-eslint.io/rules/no-array-constructor) | Disallow generic `Array` constructors |
-| [@typescript-eslint/no-array-delete](https://typescript-eslint.io/rules/no-array-delete) | Disallow using the `delete` operator on array values |
-| [@typescript-eslint/no-base-to-string](https://typescript-eslint.io/rules/no-base-to-string) | Require `.toString()` and `.toLocaleString()` to only be called on objects which provide useful information when stringified |
-| [@typescript-eslint/no-confusing-non-null-assertion](https://typescript-eslint.io/rules/no-confusing-non-null-assertion) | Disallow non-null assertion in locations that may be confusing |
-| [@typescript-eslint/no-confusing-void-expression](https://typescript-eslint.io/rules/no-confusing-void-expression) | Require expressions of type void to appear in statement position |
-| [@typescript-eslint/no-deprecated](https://typescript-eslint.io/rules/no-deprecated) | Disallow using code marked as `@deprecated` |
-| [@typescript-eslint/no-duplicate-enum-values](https://typescript-eslint.io/rules/no-duplicate-enum-values) | Disallow duplicate enum member values |
-| [@typescript-eslint/no-duplicate-type-constituents](https://typescript-eslint.io/rules/no-duplicate-type-constituents) | Disallow duplicate constituents of union or intersection types |
-| [@typescript-eslint/no-dynamic-delete](https://typescript-eslint.io/rules/no-dynamic-delete) | Disallow using the `delete` operator on computed key expressions |
-| [@typescript-eslint/no-empty-object-type](https://typescript-eslint.io/rules/no-empty-object-type) | Disallow accidentally using the "empty object" type |
-| [@typescript-eslint/no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any) | Disallow the `any` type |
-| [@typescript-eslint/no-extra-non-null-assertion](https://typescript-eslint.io/rules/no-extra-non-null-assertion) | Disallow extra non-null assertions |
-| [@typescript-eslint/no-extraneous-class](https://typescript-eslint.io/rules/no-extraneous-class) | Disallow classes used as namespaces |
-| [@typescript-eslint/no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises) | Require Promise-like statements to be handled appropriately |
-| [@typescript-eslint/no-for-in-array](https://typescript-eslint.io/rules/no-for-in-array) | Disallow iterating over an array with a for-in loop |
-| [@typescript-eslint/no-implied-eval](https://typescript-eslint.io/rules/no-implied-eval) | Disallow the use of `eval()`-like methods |
-| [@typescript-eslint/no-import-type-side-effects](https://typescript-eslint.io/rules/no-import-type-side-effects) | Enforce the use of top-level import type qualifier when an import only has specifiers with inline type qualifiers |
-| [@typescript-eslint/no-inferrable-types](https://typescript-eslint.io/rules/no-inferrable-types) | Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean |
-| [@typescript-eslint/no-invalid-void-type](https://typescript-eslint.io/rules/no-invalid-void-type) | Disallow `void` type outside of generic or return types |
-| [@typescript-eslint/no-meaningless-void-operator](https://typescript-eslint.io/rules/no-meaningless-void-operator) | Disallow the `void` operator except when used to discard a value |
-| [@typescript-eslint/no-misused-new](https://typescript-eslint.io/rules/no-misused-new) | Enforce valid definition of `new` and `constructor` |
-| [@typescript-eslint/no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises) | Disallow Promises in places not designed to handle them |
-| [@typescript-eslint/no-mixed-enums](https://typescript-eslint.io/rules/no-mixed-enums) | Disallow enums from having both number and string members |
-| [@typescript-eslint/no-namespace](https://typescript-eslint.io/rules/no-namespace) | Disallow TypeScript namespaces |
-| [@typescript-eslint/no-non-null-asserted-nullish-coalescing](https://typescript-eslint.io/rules/no-non-null-asserted-nullish-coalescing) | Disallow non-null assertions in the left operand of a nullish coalescing operator |
-| [@typescript-eslint/no-non-null-asserted-optional-chain](https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain) | Disallow non-null assertions after an optional chain expression |
-| [@typescript-eslint/no-non-null-assertion](https://typescript-eslint.io/rules/no-non-null-assertion) | Disallow non-null assertions using the `!` postfix operator |
-| [@typescript-eslint/no-redundant-type-constituents](https://typescript-eslint.io/rules/no-redundant-type-constituents) | Disallow members of unions and intersections that do nothing or override type information |
-| [@typescript-eslint/no-require-imports](https://typescript-eslint.io/rules/no-require-imports) | Disallow invocation of `require()` |
-| [@typescript-eslint/no-this-alias](https://typescript-eslint.io/rules/no-this-alias) | Disallow aliasing `this` |
-| [@typescript-eslint/no-unnecessary-boolean-literal-compare](https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare) | Disallow unnecessary equality comparisons against boolean literals |
-| [@typescript-eslint/no-unnecessary-condition](https://typescript-eslint.io/rules/no-unnecessary-condition) | Disallow conditionals where the type is always truthy or always falsy |
-| [@typescript-eslint/no-unnecessary-template-expression](https://typescript-eslint.io/rules/no-unnecessary-template-expression) | Disallow unnecessary template expressions |
-| [@typescript-eslint/no-unnecessary-type-arguments](https://typescript-eslint.io/rules/no-unnecessary-type-arguments) | Disallow type arguments that are equal to the default |
-| [@typescript-eslint/no-unnecessary-type-assertion](https://typescript-eslint.io/rules/no-unnecessary-type-assertion) | Disallow type assertions that do not change the type of an expression |
-| [@typescript-eslint/no-unnecessary-type-constraint](https://typescript-eslint.io/rules/no-unnecessary-type-constraint) | Disallow unnecessary constraints on generic types |
-| [@typescript-eslint/no-unnecessary-type-parameters](https://typescript-eslint.io/rules/no-unnecessary-type-parameters) | Disallow type parameters that aren't used multiple times |
-| [@typescript-eslint/no-unsafe-argument](https://typescript-eslint.io/rules/no-unsafe-argument) | Disallow calling a function with a value with type `any` |
-| [@typescript-eslint/no-unsafe-assignment](https://typescript-eslint.io/rules/no-unsafe-assignment) | Disallow assigning a value with type `any` to variables and properties |
-| [@typescript-eslint/no-unsafe-call](https://typescript-eslint.io/rules/no-unsafe-call) | Disallow calling a value with type `any` |
-| [@typescript-eslint/no-unsafe-declaration-merging](https://typescript-eslint.io/rules/no-unsafe-declaration-merging) | Disallow unsafe declaration merging |
-| [@typescript-eslint/no-unsafe-enum-comparison](https://typescript-eslint.io/rules/no-unsafe-enum-comparison) | Disallow comparing an enum value with a non-enum value |
-| [@typescript-eslint/no-unsafe-function-type](https://typescript-eslint.io/rules/no-unsafe-function-type) | Disallow using the unsafe built-in Function type |
-| [@typescript-eslint/no-unsafe-member-access](https://typescript-eslint.io/rules/no-unsafe-member-access) | Disallow member access on a value with type `any` |
-| [@typescript-eslint/no-unsafe-return](https://typescript-eslint.io/rules/no-unsafe-return) | Disallow returning a value with type `any` from a function |
-| [@typescript-eslint/no-unsafe-unary-minus](https://typescript-eslint.io/rules/no-unsafe-unary-minus) | Require unary negation to take a number |
-| [@typescript-eslint/no-unused-expressions](https://typescript-eslint.io/rules/no-unused-expressions) | Disallow unused expressions |
-| [@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars) | Disallow unused variables |
-| [@typescript-eslint/no-useless-constructor](https://typescript-eslint.io/rules/no-useless-constructor) | Disallow unnecessary constructors |
-| [@typescript-eslint/no-wrapper-object-types](https://typescript-eslint.io/rules/no-wrapper-object-types) | Disallow using confusing built-in primitive class wrappers |
-| [@typescript-eslint/non-nullable-type-assertion-style](https://typescript-eslint.io/rules/non-nullable-type-assertion-style) | Enforce non-null assertions over explicit type assertions |
-| [@typescript-eslint/only-throw-error](https://typescript-eslint.io/rules/only-throw-error) | Disallow throwing non-`Error` values as exceptions |
-| [@typescript-eslint/prefer-as-const](https://typescript-eslint.io/rules/prefer-as-const) | Enforce the use of `as const` over literal type |
-| [@typescript-eslint/prefer-find](https://typescript-eslint.io/rules/prefer-find) | Enforce the use of Array.prototype.find() over Array.prototype.filter() followed by [0] when looking for a single result |
-| [@typescript-eslint/prefer-for-of](https://typescript-eslint.io/rules/prefer-for-of) | Enforce the use of `for-of` loop over the standard `for` loop where possible |
-| [@typescript-eslint/prefer-function-type](https://typescript-eslint.io/rules/prefer-function-type) | Enforce using function types instead of interfaces with call signatures |
-| [@typescript-eslint/prefer-includes](https://typescript-eslint.io/rules/prefer-includes) | Enforce `includes` method over `indexOf` method |
-| [@typescript-eslint/prefer-literal-enum-member](https://typescript-eslint.io/rules/prefer-literal-enum-member) | Require all enum members to be literal values |
-| [@typescript-eslint/prefer-namespace-keyword](https://typescript-eslint.io/rules/prefer-namespace-keyword) | Require using `namespace` keyword over `module` keyword to declare custom TypeScript modules |
-| [@typescript-eslint/prefer-nullish-coalescing](https://typescript-eslint.io/rules/prefer-nullish-coalescing) | Enforce using the nullish coalescing operator instead of logical assignments or chaining |
-| [@typescript-eslint/prefer-optional-chain](https://typescript-eslint.io/rules/prefer-optional-chain) | Enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects |
-| [@typescript-eslint/prefer-promise-reject-errors](https://typescript-eslint.io/rules/prefer-promise-reject-errors) | Require using Error objects as Promise rejection reasons |
-| [@typescript-eslint/prefer-readonly](https://typescript-eslint.io/rules/prefer-readonly) | Require private members to be marked as `readonly` if they're never modified outside of the constructor |
-| [@typescript-eslint/prefer-reduce-type-parameter](https://typescript-eslint.io/rules/prefer-reduce-type-parameter) | Enforce using type parameter when calling `Array#reduce` instead of using a type assertion |
-| [@typescript-eslint/prefer-regexp-exec](https://typescript-eslint.io/rules/prefer-regexp-exec) | Enforce `RegExp#exec` over `String#match` if no global flag is provided |
-| [@typescript-eslint/prefer-return-this-type](https://typescript-eslint.io/rules/prefer-return-this-type) | Enforce that `this` is used when only `this` type is returned |
-| [@typescript-eslint/prefer-string-starts-ends-with](https://typescript-eslint.io/rules/prefer-string-starts-ends-with) | Enforce using `String#startsWith` and `String#endsWith` over other equivalent methods of checking substrings |
-| [@typescript-eslint/require-await](https://typescript-eslint.io/rules/require-await) | Disallow async functions which do not return promises and have no `await` expression |
-| [@typescript-eslint/restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands) | Require both operands of addition to be the same type and be `bigint`, `number`, or `string` |
-| [@typescript-eslint/restrict-template-expressions](https://typescript-eslint.io/rules/restrict-template-expressions) | Enforce template literal expressions to be of `string` type |
-| [@typescript-eslint/return-await](https://typescript-eslint.io/rules/return-await) | Enforce consistent awaiting of returned promises |
-| [@typescript-eslint/triple-slash-reference](https://typescript-eslint.io/rules/triple-slash-reference) | Disallow certain triple slash directives in favor of ES6-style import declarations |
-| [@typescript-eslint/unbound-method](https://typescript-eslint.io/rules/unbound-method) | Enforce unbound methods are called with their expected scope |
-| [@typescript-eslint/unified-signatures](https://typescript-eslint.io/rules/unified-signatures) | Disallow two overloads that could be unified into one with a union or an optional/rest parameter |
-| [@typescript-eslint/use-unknown-in-catch-callback-variable](https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable) | Enforce typing arguments in Promise rejection callbacks as `unknown` |
-| [n/hashbang](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md) | require correct usage of hashbang |
-| [n/no-deprecated-api](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-deprecated-api.md) | disallow deprecated APIs |
-| [n/no-exports-assign](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md) | disallow the assignment to `exports` |
-| [n/no-extraneous-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-import.md) | disallow `import` declarations which import extraneous modules |
-| [n/no-extraneous-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-require.md) | disallow `require()` expressions which import extraneous modules |
-| [n/no-missing-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-import.md) | disallow `import` declarations which import non-existence modules |
-| [n/no-missing-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-require.md) | disallow `require()` expressions which import non-existence modules |
-| [n/no-process-env](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md) | disallow the use of `process.env` |
-| [n/no-process-exit](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md) | disallow the use of `process.exit()` |
-| [n/no-unpublished-bin](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md) | disallow `bin` files that npm ignores |
-| [n/no-unpublished-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md) | disallow `import` declarations which import private modules |
-| [n/no-unpublished-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md) | disallow `require()` expressions which import private modules |
-| [n/no-unsupported-features/es-builtins](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-builtins.md) | disallow unsupported ECMAScript built-ins on the specified version |
-| [n/no-unsupported-features/es-syntax](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-syntax.md) | disallow unsupported ECMAScript syntax on the specified version |
-| [n/no-unsupported-features/node-builtins](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/node-builtins.md) | disallow unsupported Node.js built-in APIs on the specified version |
-| [n/process-exit-as-throw](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md) | require that `process.exit()` expressions use the same code path as `throw` |
-| [unicorn/better-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/better-regex.md) | Improve regexes by making them shorter, consistent, and safer. |
-| [unicorn/error-message](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/error-message.md) | Enforce passing a `message` value when creating a built-in error. |
-| [unicorn/expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/expiring-todo-comments.md) | Add expiration conditions to TODO comments. |
-| [unicorn/explicit-length-check](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/explicit-length-check.md) | Enforce explicitly comparing the `length` or `size` property of a value. |
-| [unicorn/filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/filename-case.md) | Enforce a case style for filenames. |
-| [unicorn/new-for-builtins](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/new-for-builtins.md) | Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`. |
-| [unicorn/no-abusive-eslint-disable](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-abusive-eslint-disable.md) | Enforce specifying rules to disable in `eslint-disable` comments. |
-| [unicorn/no-anonymous-default-export](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-anonymous-default-export.md) | Disallow anonymous functions and classes as the default export. |
-| [unicorn/no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-for-each.md) | Prefer `for…of` over the `forEach` method. |
-| [unicorn/no-array-reduce](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-reduce.md) | Disallow `Array#reduce()` and `Array#reduceRight()`. |
-| [unicorn/no-await-expression-member](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-expression-member.md) | Disallow member access from await expression. |
-| [unicorn/no-await-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-in-promise-methods.md) | Disallow using `await` in `Promise` method parameters. |
-| [unicorn/no-console-spaces](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-console-spaces.md) | Do not use leading/trailing space between `console.log` parameters. |
-| [unicorn/no-document-cookie](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-document-cookie.md) | Do not use `document.cookie` directly. |
-| [unicorn/no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-empty-file.md) | Disallow empty files. |
-| [unicorn/no-hex-escape](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-hex-escape.md) | Enforce the use of Unicode escapes instead of hexadecimal escapes. |
-| [unicorn/no-instanceof-array](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-instanceof-array.md) | Require `Array.isArray()` instead of `instanceof Array`. |
-| [unicorn/no-invalid-remove-event-listener](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-invalid-remove-event-listener.md) | Prevent calling `EventTarget#removeEventListener()` with the result of an expression. |
-| [unicorn/no-negated-condition](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-negated-condition.md) | Disallow negated conditions. |
-| [unicorn/no-new-array](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-array.md) | Disallow `new Array()`. |
-| [unicorn/no-new-buffer](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-buffer.md) | Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`. |
-| [unicorn/no-null](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-null.md) | Disallow the use of the `null` literal. |
-| [unicorn/no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-object-as-default-parameter.md) | Disallow the use of objects as default parameters. |
-| [unicorn/no-process-exit](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-process-exit.md) | Disallow `process.exit()`. |
-| [unicorn/no-single-promise-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-single-promise-in-promise-methods.md) | Disallow passing single-element arrays to `Promise` methods. |
-| [unicorn/no-static-only-class](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-static-only-class.md) | Disallow classes that only have static members. |
-| [unicorn/no-thenable](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-thenable.md) | Disallow `then` property. |
-| [unicorn/no-this-assignment](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-this-assignment.md) | Disallow assigning `this` to a variable. |
-| [unicorn/no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-typeof-undefined.md) | Disallow comparing `undefined` using `typeof`. |
-| [unicorn/no-unnecessary-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-await.md) | Disallow awaiting non-promise values. |
-| [unicorn/no-unnecessary-polyfills](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-polyfills.md) | Enforce the use of built-in methods instead of unnecessary polyfills. |
-| [unicorn/no-unreadable-array-destructuring](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-array-destructuring.md) | Disallow unreadable array destructuring. |
-| [unicorn/no-unreadable-iife](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-iife.md) | Disallow unreadable IIFEs. |
-| [unicorn/no-useless-fallback-in-spread](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-fallback-in-spread.md) | Disallow useless fallback when spreading in object literals. |
-| [unicorn/no-useless-length-check](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-length-check.md) | Disallow useless array length check. |
-| [unicorn/no-useless-promise-resolve-reject](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-promise-resolve-reject.md) | Disallow returning/yielding `Promise.resolve/reject()` in async functions or promise callbacks |
-| [unicorn/no-useless-spread](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-spread.md) | Disallow unnecessary spread. |
-| [unicorn/no-useless-switch-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-switch-case.md) | Disallow useless case in switch statements. |
-| [unicorn/no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-undefined.md) | Disallow useless `undefined`. |
-| [unicorn/no-zero-fractions](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-zero-fractions.md) | Disallow number literals with zero fractions or dangling dots. |
-| [unicorn/prefer-add-event-listener](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-add-event-listener.md) | Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions. |
-| [unicorn/prefer-array-flat](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat.md) | Prefer `Array#flat()` over legacy techniques to flatten arrays. |
-| [unicorn/prefer-array-flat-map](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat-map.md) | Prefer `.flatMap(…)` over `.map(…).flat()`. |
-| [unicorn/prefer-array-index-of](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-index-of.md) | Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findLastIndex}()` when looking for the index of an item. |
-| [unicorn/prefer-array-some](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-some.md) | Prefer `.some(…)` over `.filter(…).length` check and `.{find,findLast,findIndex,findLastIndex}(…)`. |
-| [unicorn/prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-at.md) | Prefer `.at()` method for index access and `String#charAt()`. |
-| [unicorn/prefer-blob-reading-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-blob-reading-methods.md) | Prefer `Blob#arrayBuffer()` over `FileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`. |
-| [unicorn/prefer-code-point](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-code-point.md) | Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`. |
-| [unicorn/prefer-date-now](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-date-now.md) | Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch. |
-| [unicorn/prefer-default-parameters](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-default-parameters.md) | Prefer default parameters over reassignment. |
-| [unicorn/prefer-dom-node-append](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-append.md) | Prefer `Node#append()` over `Node#appendChild()`. |
-| [unicorn/prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-dataset.md) | Prefer using `.dataset` on DOM elements over calling attribute methods. |
-| [unicorn/prefer-dom-node-remove](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-remove.md) | Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`. |
-| [unicorn/prefer-dom-node-text-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-text-content.md) | Prefer `.textContent` over `.innerText`. |
-| [unicorn/prefer-event-target](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-event-target.md) | Prefer `EventTarget` over `EventEmitter`. |
-| [unicorn/prefer-export-from](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-export-from.md) | Prefer `export…from` when re-exporting. |
-| [unicorn/prefer-keyboard-event-key](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-keyboard-event-key.md) | Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`. |
-| [unicorn/prefer-logical-operator-over-ternary](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-logical-operator-over-ternary.md) | Prefer using a logical operator over a ternary. |
-| [unicorn/prefer-math-trunc](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-math-trunc.md) | Enforce the use of `Math.trunc` instead of bitwise operators. |
-| [unicorn/prefer-modern-dom-apis](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-dom-apis.md) | Prefer `.before()` over `.insertBefore()`, `.replaceWith()` over `.replaceChild()`, prefer one of `.before()`, `.after()`, `.append()` or `.prepend()` over `insertAdjacentText()` and `insertAdjacentElement()`. |
-| [unicorn/prefer-modern-math-apis](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-math-apis.md) | Prefer modern `Math` APIs over legacy patterns. |
-| [unicorn/prefer-module](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-module.md) | Prefer JavaScript modules (ESM) over CommonJS. |
-| [unicorn/prefer-native-coercion-functions](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-native-coercion-functions.md) | Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` directly. |
-| [unicorn/prefer-negative-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-negative-index.md) | Prefer negative index over `.length - index` when possible. |
-| [unicorn/prefer-node-protocol](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-node-protocol.md) | Prefer using the `node:` protocol when importing Node.js builtin modules. |
-| [unicorn/prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-number-properties.md) | Prefer `Number` static properties over global ones. |
-| [unicorn/prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-object-from-entries.md) | Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object. |
-| [unicorn/prefer-prototype-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-prototype-methods.md) | Prefer borrowing methods from the prototype instead of the instance. |
-| [unicorn/prefer-query-selector](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-query-selector.md) | Prefer `.querySelector()` over `.getElementById()`, `.querySelectorAll()` over `.getElementsByClassName()` and `.getElementsByTagName()` and `.getElementsByName()`. |
-| [unicorn/prefer-reflect-apply](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-reflect-apply.md) | Prefer `Reflect.apply()` over `Function#apply()`. |
-| [unicorn/prefer-regexp-test](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-regexp-test.md) | Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`. |
-| [unicorn/prefer-set-size](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-set-size.md) | Prefer using `Set#size` instead of `Array#length`. |
-| [unicorn/prefer-string-replace-all](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-replace-all.md) | Prefer `String#replaceAll()` over regex searches with the global flag. |
-| [unicorn/prefer-string-slice](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-slice.md) | Prefer `String#slice()` over `String#substr()` and `String#substring()`. |
-| [unicorn/prefer-string-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-trim-start-end.md) | Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()`. |
-| [unicorn/prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-top-level-await.md) | Prefer top-level await over top-level promises and async function calls. |
-| [unicorn/prefer-type-error](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-type-error.md) | Enforce throwing `TypeError` in type checking conditions. |
-| [unicorn/relative-url-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/relative-url-style.md) | Enforce consistent relative URL style. |
-| [unicorn/require-array-join-separator](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-array-join-separator.md) | Enforce using the separator argument with `Array#join()`. |
-| [unicorn/require-number-to-fixed-digits-argument](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-number-to-fixed-digits-argument.md) | Enforce using the digits argument with `Number#toFixed()`. |
-| [unicorn/throw-new-error](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/throw-new-error.md) | Require `new` when creating an error. |
+| Rule | Description | Level |
+|---|---|---|
+| [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return) | Enforce `return` statements in callbacks of array methods | error |
+| [constructor-super](https://eslint.org/docs/latest/rules/constructor-super) | Require `super()` calls in constructors | off |
+| [curly](https://eslint.org/docs/latest/rules/curly) | Enforce consistent brace style for all control statements | error |
+| [dot-notation](https://eslint.org/docs/latest/rules/dot-notation) | Enforce dot notation whenever possible | off |
+| [eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq) | Require the use of `===` and `!==` | error |
+| [for-direction](https://eslint.org/docs/latest/rules/for-direction) | Enforce `for` loop update clause moving the counter in the right direction | error |
+| [getter-return](https://eslint.org/docs/latest/rules/getter-return) | Enforce `return` statements in getters | off |
+| [no-array-constructor](https://eslint.org/docs/latest/rules/no-array-constructor) | Disallow `Array` constructors | off |
+| [no-async-promise-executor](https://eslint.org/docs/latest/rules/no-async-promise-executor) | Disallow using an async function as a Promise executor | error |
+| [no-case-declarations](https://eslint.org/docs/latest/rules/no-case-declarations) | Disallow lexical declarations in case clauses | error |
+| [no-class-assign](https://eslint.org/docs/latest/rules/no-class-assign) | Disallow reassigning class members | error |
+| [no-compare-neg-zero](https://eslint.org/docs/latest/rules/no-compare-neg-zero) | Disallow comparing against `-0` | error |
+| [no-cond-assign](https://eslint.org/docs/latest/rules/no-cond-assign) | Disallow assignment operators in conditional expressions | error |
+| [no-const-assign](https://eslint.org/docs/latest/rules/no-const-assign) | Disallow reassigning `const` variables | off |
+| [no-constant-binary-expression](https://eslint.org/docs/latest/rules/no-constant-binary-expression) | Disallow expressions where the operation doesn't affect the value | error |
+| [no-constant-condition](https://eslint.org/docs/latest/rules/no-constant-condition) | Disallow constant expressions in conditions | error |
+| [no-constructor-return](https://eslint.org/docs/latest/rules/no-constructor-return) | Disallow returning value from constructor | error |
+| [no-control-regex](https://eslint.org/docs/latest/rules/no-control-regex) | Disallow control characters in regular expressions | error |
+| [no-debugger](https://eslint.org/docs/latest/rules/no-debugger) | Disallow the use of `debugger` | error |
+| [no-delete-var](https://eslint.org/docs/latest/rules/no-delete-var) | Disallow deleting variables | error |
+| [no-dupe-args](https://eslint.org/docs/latest/rules/no-dupe-args) | Disallow duplicate arguments in `function` definitions | off |
+| [no-dupe-class-members](https://eslint.org/docs/latest/rules/no-dupe-class-members) | Disallow duplicate class members | off |
+| [no-dupe-else-if](https://eslint.org/docs/latest/rules/no-dupe-else-if) | Disallow duplicate conditions in if-else-if chains | error |
+| [no-dupe-keys](https://eslint.org/docs/latest/rules/no-dupe-keys) | Disallow duplicate keys in object literals | off |
+| [no-duplicate-case](https://eslint.org/docs/latest/rules/no-duplicate-case) | Disallow duplicate case labels | error |
+| [no-duplicate-imports](https://eslint.org/docs/latest/rules/no-duplicate-imports) | Disallow duplicate module imports | error |
+| [no-else-return](https://eslint.org/docs/latest/rules/no-else-return) | Disallow `else` blocks after `return` statements in `if` statements | warn |
+| [no-empty](https://eslint.org/docs/latest/rules/no-empty) | Disallow empty block statements | off |
+| [no-empty-character-class](https://eslint.org/docs/latest/rules/no-empty-character-class) | Disallow empty character classes in regular expressions | error |
+| [no-empty-function](https://eslint.org/docs/latest/rules/no-empty-function) | Disallow empty functions | off |
+| [no-empty-pattern](https://eslint.org/docs/latest/rules/no-empty-pattern) | Disallow empty destructuring patterns | error |
+| [no-empty-static-block](https://eslint.org/docs/latest/rules/no-empty-static-block) | Disallow empty static blocks | error |
+| [no-ex-assign](https://eslint.org/docs/latest/rules/no-ex-assign) | Disallow reassigning exceptions in `catch` clauses | error |
+| [no-extra-boolean-cast](https://eslint.org/docs/latest/rules/no-extra-boolean-cast) | Disallow unnecessary boolean casts | error |
+| [no-fallthrough](https://eslint.org/docs/latest/rules/no-fallthrough) | Disallow fallthrough of `case` statements | error |
+| [no-func-assign](https://eslint.org/docs/latest/rules/no-func-assign) | Disallow reassigning `function` declarations | off |
+| [no-global-assign](https://eslint.org/docs/latest/rules/no-global-assign) | Disallow assignments to native objects or read-only global variables | error |
+| [no-implied-eval](https://eslint.org/docs/latest/rules/no-implied-eval) | Disallow the use of `eval()`-like methods | off |
+| [no-import-assign](https://eslint.org/docs/latest/rules/no-import-assign) | Disallow assigning to imported bindings | off |
+| [no-invalid-regexp](https://eslint.org/docs/latest/rules/no-invalid-regexp) | Disallow invalid regular expression strings in `RegExp` constructors | error |
+| [no-irregular-whitespace](https://eslint.org/docs/latest/rules/no-irregular-whitespace) | Disallow irregular whitespace | error |
+| [no-labels](https://eslint.org/docs/latest/rules/no-labels) | Disallow labeled statements | error |
+| [no-loss-of-precision](https://eslint.org/docs/latest/rules/no-loss-of-precision) | Disallow literal numbers that lose precision | error |
+| [no-misleading-character-class](https://eslint.org/docs/latest/rules/no-misleading-character-class) | Disallow characters which are made with multiple code points in character class syntax | error |
+| [no-negated-condition](https://eslint.org/docs/latest/rules/no-negated-condition) | Disallow negated conditions | off |
+| [no-nested-ternary](https://eslint.org/docs/latest/rules/no-nested-ternary) | Disallow nested ternary expressions | error |
+| [no-new-native-nonconstructor](https://eslint.org/docs/latest/rules/no-new-native-nonconstructor) | Disallow `new` operators with global non-constructor functions | off |
+| [no-nonoctal-decimal-escape](https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape) | Disallow `\8` and `\9` escape sequences in string literals | error |
+| [no-obj-calls](https://eslint.org/docs/latest/rules/no-obj-calls) | Disallow calling global object properties as functions | off |
+| [no-octal](https://eslint.org/docs/latest/rules/no-octal) | Disallow octal literals | error |
+| [no-param-reassign](https://eslint.org/docs/latest/rules/no-param-reassign) | Disallow reassigning function parameters | error |
+| [no-promise-executor-return](https://eslint.org/docs/latest/rules/no-promise-executor-return) | Disallow returning values from Promise executor functions | error |
+| [no-prototype-builtins](https://eslint.org/docs/latest/rules/no-prototype-builtins) | Disallow calling some `Object.prototype` methods directly on objects | error |
+| [no-redeclare](https://eslint.org/docs/latest/rules/no-redeclare) | Disallow variable redeclaration | off |
+| [no-regex-spaces](https://eslint.org/docs/latest/rules/no-regex-spaces) | Disallow multiple spaces in regular expressions | error |
+| [no-self-assign](https://eslint.org/docs/latest/rules/no-self-assign) | Disallow assignments where both sides are exactly the same | error |
+| [no-setter-return](https://eslint.org/docs/latest/rules/no-setter-return) | Disallow returning values from setters | off |
+| [no-shadow-restricted-names](https://eslint.org/docs/latest/rules/no-shadow-restricted-names) | Disallow identifiers from shadowing restricted names | error |
+| [no-sparse-arrays](https://eslint.org/docs/latest/rules/no-sparse-arrays) | Disallow sparse arrays | error |
+| [no-template-curly-in-string](https://eslint.org/docs/latest/rules/no-template-curly-in-string) | Disallow template literal placeholder syntax in regular strings | warn |
+| [no-this-before-super](https://eslint.org/docs/latest/rules/no-this-before-super) | Disallow `this`/`super` before calling `super()` in constructors | off |
+| [no-throw-literal](https://eslint.org/docs/latest/rules/no-throw-literal) | Disallow throwing literals as exceptions | off |
+| [no-undef](https://eslint.org/docs/latest/rules/no-undef) | Disallow the use of undeclared variables unless mentioned in `/*global */` comments | off |
+| [no-unexpected-multiline](https://eslint.org/docs/latest/rules/no-unexpected-multiline) | Disallow confusing multiline expressions | error |
+| [no-unmodified-loop-condition](https://eslint.org/docs/latest/rules/no-unmodified-loop-condition) | Disallow unmodified loop conditions | error |
+| [no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable) | Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements | off |
+| [no-unreachable-loop](https://eslint.org/docs/latest/rules/no-unreachable-loop) | Disallow loops with a body that allows only one iteration | error |
+| [no-unsafe-finally](https://eslint.org/docs/latest/rules/no-unsafe-finally) | Disallow control flow statements in `finally` blocks | error |
+| [no-unsafe-negation](https://eslint.org/docs/latest/rules/no-unsafe-negation) | Disallow negating the left operand of relational operators | off |
+| [no-unsafe-optional-chaining](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining) | Disallow use of optional chaining in contexts where the `undefined` value is not allowed | error |
+| [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions) | Disallow unused expressions | off |
+| [no-unused-labels](https://eslint.org/docs/latest/rules/no-unused-labels) | Disallow unused labels | error |
+| [no-unused-private-class-members](https://eslint.org/docs/latest/rules/no-unused-private-class-members) | Disallow unused private class members | error |
+| [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | Disallow unused variables | off |
+| [no-useless-assignment](https://eslint.org/docs/latest/rules/no-useless-assignment) | Disallow variable assignments when the value is not used | error |
+| [no-useless-backreference](https://eslint.org/docs/latest/rules/no-useless-backreference) | Disallow useless backreferences in regular expressions | error |
+| [no-useless-catch](https://eslint.org/docs/latest/rules/no-useless-catch) | Disallow unnecessary `catch` clauses | error |
+| [no-useless-computed-key](https://eslint.org/docs/latest/rules/no-useless-computed-key) | Disallow unnecessary computed property keys in objects and classes | error |
+| [no-useless-constructor](https://eslint.org/docs/latest/rules/no-useless-constructor) | Disallow unnecessary constructors | off |
+| [no-useless-escape](https://eslint.org/docs/latest/rules/no-useless-escape) | Disallow unnecessary escape characters | error |
+| [no-useless-rename](https://eslint.org/docs/latest/rules/no-useless-rename) | Disallow renaming import, export, and destructured assignments to the same name | error |
+| [no-var](https://eslint.org/docs/latest/rules/no-var) | Require `let` or `const` instead of `var` | error |
+| [no-warning-comments](https://eslint.org/docs/latest/rules/no-warning-comments) | Disallow specified warning terms in comments | error |
+| [no-with](https://eslint.org/docs/latest/rules/no-with) | Disallow `with` statements | error |
+| [prefer-const](https://eslint.org/docs/latest/rules/prefer-const) | Require `const` declarations for variables that are never reassigned after declared | error |
+| [prefer-promise-reject-errors](https://eslint.org/docs/latest/rules/prefer-promise-reject-errors) | Require using Error objects as Promise rejection reasons | off |
+| [prefer-rest-params](https://eslint.org/docs/latest/rules/prefer-rest-params) | Require rest parameters instead of `arguments` | error |
+| [prefer-spread](https://eslint.org/docs/latest/rules/prefer-spread) | Require spread operators instead of `.apply()` | error |
+| [require-await](https://eslint.org/docs/latest/rules/require-await) | Disallow async functions which have no `await` expression | off |
+| [require-yield](https://eslint.org/docs/latest/rules/require-yield) | Require generator functions to contain `yield` | error |
+| [use-isnan](https://eslint.org/docs/latest/rules/use-isnan) | Require calls to `isNaN()` when checking for `NaN` | error |
+| [valid-typeof](https://eslint.org/docs/latest/rules/valid-typeof) | Enforce comparing `typeof` expressions against valid strings | error |
+| [@typescript-eslint/adjacent-overload-signatures](https://typescript-eslint.io/rules/adjacent-overload-signatures) | Require that function overload signatures be consecutive | error |
+| [@typescript-eslint/array-type](https://typescript-eslint.io/rules/array-type) | Require consistently using either `T[]` or `Array<T>` for arrays | error |
+| [@typescript-eslint/await-thenable](https://typescript-eslint.io/rules/await-thenable) | Disallow awaiting a value that is not a Thenable | error |
+| [@typescript-eslint/ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment) | Disallow `@ts-<directive>` comments or require descriptions after directives | error |
+| [@typescript-eslint/ban-tslint-comment](https://typescript-eslint.io/rules/ban-tslint-comment) | Disallow `// tslint:<rule-flag>` comments | error |
+| [@typescript-eslint/class-literal-property-style](https://typescript-eslint.io/rules/class-literal-property-style) | Enforce that literals on classes are exposed in a consistent style | error |
+| [@typescript-eslint/consistent-generic-constructors](https://typescript-eslint.io/rules/consistent-generic-constructors) | Enforce specifying generic type arguments on type annotation or constructor name of a constructor call | error |
+| [@typescript-eslint/consistent-indexed-object-style](https://typescript-eslint.io/rules/consistent-indexed-object-style) | Require or disallow the `Record` type | error |
+| [@typescript-eslint/consistent-type-assertions](https://typescript-eslint.io/rules/consistent-type-assertions) | Enforce consistent usage of type assertions | error |
+| [@typescript-eslint/consistent-type-definitions](https://typescript-eslint.io/rules/consistent-type-definitions) | Enforce type definitions to consistently use either `interface` or `type` | error |
+| [@typescript-eslint/dot-notation](https://typescript-eslint.io/rules/dot-notation) | Enforce dot notation whenever possible | error |
+| [@typescript-eslint/explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility) | Require explicit accessibility modifiers on class properties and methods | error |
+| [@typescript-eslint/explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types) | Require explicit return and argument types on exported functions' and classes' public class methods | error |
+| [@typescript-eslint/method-signature-style](https://typescript-eslint.io/rules/method-signature-style) | Enforce using a particular method signature syntax | error |
+| [@typescript-eslint/no-array-constructor](https://typescript-eslint.io/rules/no-array-constructor) | Disallow generic `Array` constructors | error |
+| [@typescript-eslint/no-array-delete](https://typescript-eslint.io/rules/no-array-delete) | Disallow using the `delete` operator on array values | error |
+| [@typescript-eslint/no-base-to-string](https://typescript-eslint.io/rules/no-base-to-string) | Require `.toString()` and `.toLocaleString()` to only be called on objects which provide useful information when stringified | error |
+| [@typescript-eslint/no-confusing-non-null-assertion](https://typescript-eslint.io/rules/no-confusing-non-null-assertion) | Disallow non-null assertion in locations that may be confusing | error |
+| [@typescript-eslint/no-confusing-void-expression](https://typescript-eslint.io/rules/no-confusing-void-expression) | Require expressions of type void to appear in statement position | error |
+| [@typescript-eslint/no-deprecated](https://typescript-eslint.io/rules/no-deprecated) | Disallow using code marked as `@deprecated` | error |
+| [@typescript-eslint/no-duplicate-enum-values](https://typescript-eslint.io/rules/no-duplicate-enum-values) | Disallow duplicate enum member values | error |
+| [@typescript-eslint/no-duplicate-type-constituents](https://typescript-eslint.io/rules/no-duplicate-type-constituents) | Disallow duplicate constituents of union or intersection types | error |
+| [@typescript-eslint/no-dynamic-delete](https://typescript-eslint.io/rules/no-dynamic-delete) | Disallow using the `delete` operator on computed key expressions | error |
+| [@typescript-eslint/no-empty-function](https://typescript-eslint.io/rules/no-empty-function) | Disallow empty functions | off |
+| [@typescript-eslint/no-empty-object-type](https://typescript-eslint.io/rules/no-empty-object-type) | Disallow accidentally using the "empty object" type | error |
+| [@typescript-eslint/no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any) | Disallow the `any` type | error |
+| [@typescript-eslint/no-extra-non-null-assertion](https://typescript-eslint.io/rules/no-extra-non-null-assertion) | Disallow extra non-null assertions | error |
+| [@typescript-eslint/no-extraneous-class](https://typescript-eslint.io/rules/no-extraneous-class) | Disallow classes used as namespaces | error |
+| [@typescript-eslint/no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises) | Require Promise-like statements to be handled appropriately | error |
+| [@typescript-eslint/no-for-in-array](https://typescript-eslint.io/rules/no-for-in-array) | Disallow iterating over an array with a for-in loop | error |
+| [@typescript-eslint/no-implied-eval](https://typescript-eslint.io/rules/no-implied-eval) | Disallow the use of `eval()`-like methods | error |
+| [@typescript-eslint/no-import-type-side-effects](https://typescript-eslint.io/rules/no-import-type-side-effects) | Enforce the use of top-level import type qualifier when an import only has specifiers with inline type qualifiers | error |
+| [@typescript-eslint/no-inferrable-types](https://typescript-eslint.io/rules/no-inferrable-types) | Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean | error |
+| [@typescript-eslint/no-invalid-void-type](https://typescript-eslint.io/rules/no-invalid-void-type) | Disallow `void` type outside of generic or return types | error |
+| [@typescript-eslint/no-meaningless-void-operator](https://typescript-eslint.io/rules/no-meaningless-void-operator) | Disallow the `void` operator except when used to discard a value | error |
+| [@typescript-eslint/no-misused-new](https://typescript-eslint.io/rules/no-misused-new) | Enforce valid definition of `new` and `constructor` | error |
+| [@typescript-eslint/no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises) | Disallow Promises in places not designed to handle them | error |
+| [@typescript-eslint/no-mixed-enums](https://typescript-eslint.io/rules/no-mixed-enums) | Disallow enums from having both number and string members | error |
+| [@typescript-eslint/no-namespace](https://typescript-eslint.io/rules/no-namespace) | Disallow TypeScript namespaces | error |
+| [@typescript-eslint/no-non-null-asserted-nullish-coalescing](https://typescript-eslint.io/rules/no-non-null-asserted-nullish-coalescing) | Disallow non-null assertions in the left operand of a nullish coalescing operator | error |
+| [@typescript-eslint/no-non-null-asserted-optional-chain](https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain) | Disallow non-null assertions after an optional chain expression | error |
+| [@typescript-eslint/no-non-null-assertion](https://typescript-eslint.io/rules/no-non-null-assertion) | Disallow non-null assertions using the `!` postfix operator | error |
+| [@typescript-eslint/no-redundant-type-constituents](https://typescript-eslint.io/rules/no-redundant-type-constituents) | Disallow members of unions and intersections that do nothing or override type information | error |
+| [@typescript-eslint/no-require-imports](https://typescript-eslint.io/rules/no-require-imports) | Disallow invocation of `require()` | error |
+| [@typescript-eslint/no-this-alias](https://typescript-eslint.io/rules/no-this-alias) | Disallow aliasing `this` | error |
+| [@typescript-eslint/no-unnecessary-boolean-literal-compare](https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare) | Disallow unnecessary equality comparisons against boolean literals | error |
+| [@typescript-eslint/no-unnecessary-condition](https://typescript-eslint.io/rules/no-unnecessary-condition) | Disallow conditionals where the type is always truthy or always falsy | error |
+| [@typescript-eslint/no-unnecessary-template-expression](https://typescript-eslint.io/rules/no-unnecessary-template-expression) | Disallow unnecessary template expressions | error |
+| [@typescript-eslint/no-unnecessary-type-arguments](https://typescript-eslint.io/rules/no-unnecessary-type-arguments) | Disallow type arguments that are equal to the default | error |
+| [@typescript-eslint/no-unnecessary-type-assertion](https://typescript-eslint.io/rules/no-unnecessary-type-assertion) | Disallow type assertions that do not change the type of an expression | error |
+| [@typescript-eslint/no-unnecessary-type-constraint](https://typescript-eslint.io/rules/no-unnecessary-type-constraint) | Disallow unnecessary constraints on generic types | error |
+| [@typescript-eslint/no-unnecessary-type-parameters](https://typescript-eslint.io/rules/no-unnecessary-type-parameters) | Disallow type parameters that aren't used multiple times | error |
+| [@typescript-eslint/no-unsafe-argument](https://typescript-eslint.io/rules/no-unsafe-argument) | Disallow calling a function with a value with type `any` | error |
+| [@typescript-eslint/no-unsafe-assignment](https://typescript-eslint.io/rules/no-unsafe-assignment) | Disallow assigning a value with type `any` to variables and properties | error |
+| [@typescript-eslint/no-unsafe-call](https://typescript-eslint.io/rules/no-unsafe-call) | Disallow calling a value with type `any` | error |
+| [@typescript-eslint/no-unsafe-declaration-merging](https://typescript-eslint.io/rules/no-unsafe-declaration-merging) | Disallow unsafe declaration merging | error |
+| [@typescript-eslint/no-unsafe-enum-comparison](https://typescript-eslint.io/rules/no-unsafe-enum-comparison) | Disallow comparing an enum value with a non-enum value | error |
+| [@typescript-eslint/no-unsafe-function-type](https://typescript-eslint.io/rules/no-unsafe-function-type) | Disallow using the unsafe built-in Function type | error |
+| [@typescript-eslint/no-unsafe-member-access](https://typescript-eslint.io/rules/no-unsafe-member-access) | Disallow member access on a value with type `any` | error |
+| [@typescript-eslint/no-unsafe-return](https://typescript-eslint.io/rules/no-unsafe-return) | Disallow returning a value with type `any` from a function | error |
+| [@typescript-eslint/no-unsafe-unary-minus](https://typescript-eslint.io/rules/no-unsafe-unary-minus) | Require unary negation to take a number | error |
+| [@typescript-eslint/no-unused-expressions](https://typescript-eslint.io/rules/no-unused-expressions) | Disallow unused expressions | error |
+| [@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars) | Disallow unused variables | error |
+| [@typescript-eslint/no-useless-constructor](https://typescript-eslint.io/rules/no-useless-constructor) | Disallow unnecessary constructors | error |
+| [@typescript-eslint/no-wrapper-object-types](https://typescript-eslint.io/rules/no-wrapper-object-types) | Disallow using confusing built-in primitive class wrappers | error |
+| [@typescript-eslint/non-nullable-type-assertion-style](https://typescript-eslint.io/rules/non-nullable-type-assertion-style) | Enforce non-null assertions over explicit type assertions | error |
+| [@typescript-eslint/only-throw-error](https://typescript-eslint.io/rules/only-throw-error) | Disallow throwing non-`Error` values as exceptions | error |
+| [@typescript-eslint/prefer-as-const](https://typescript-eslint.io/rules/prefer-as-const) | Enforce the use of `as const` over literal type | error |
+| [@typescript-eslint/prefer-find](https://typescript-eslint.io/rules/prefer-find) | Enforce the use of Array.prototype.find() over Array.prototype.filter() followed by [0] when looking for a single result | error |
+| [@typescript-eslint/prefer-for-of](https://typescript-eslint.io/rules/prefer-for-of) | Enforce the use of `for-of` loop over the standard `for` loop where possible | error |
+| [@typescript-eslint/prefer-function-type](https://typescript-eslint.io/rules/prefer-function-type) | Enforce using function types instead of interfaces with call signatures | error |
+| [@typescript-eslint/prefer-includes](https://typescript-eslint.io/rules/prefer-includes) | Enforce `includes` method over `indexOf` method | error |
+| [@typescript-eslint/prefer-literal-enum-member](https://typescript-eslint.io/rules/prefer-literal-enum-member) | Require all enum members to be literal values | error |
+| [@typescript-eslint/prefer-namespace-keyword](https://typescript-eslint.io/rules/prefer-namespace-keyword) | Require using `namespace` keyword over `module` keyword to declare custom TypeScript modules | error |
+| [@typescript-eslint/prefer-nullish-coalescing](https://typescript-eslint.io/rules/prefer-nullish-coalescing) | Enforce using the nullish coalescing operator instead of logical assignments or chaining | error |
+| [@typescript-eslint/prefer-optional-chain](https://typescript-eslint.io/rules/prefer-optional-chain) | Enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects | error |
+| [@typescript-eslint/prefer-promise-reject-errors](https://typescript-eslint.io/rules/prefer-promise-reject-errors) | Require using Error objects as Promise rejection reasons | error |
+| [@typescript-eslint/prefer-readonly](https://typescript-eslint.io/rules/prefer-readonly) | Require private members to be marked as `readonly` if they're never modified outside of the constructor | error |
+| [@typescript-eslint/prefer-reduce-type-parameter](https://typescript-eslint.io/rules/prefer-reduce-type-parameter) | Enforce using type parameter when calling `Array#reduce` instead of using a type assertion | error |
+| [@typescript-eslint/prefer-regexp-exec](https://typescript-eslint.io/rules/prefer-regexp-exec) | Enforce `RegExp#exec` over `String#match` if no global flag is provided | error |
+| [@typescript-eslint/prefer-return-this-type](https://typescript-eslint.io/rules/prefer-return-this-type) | Enforce that `this` is used when only `this` type is returned | error |
+| [@typescript-eslint/prefer-string-starts-ends-with](https://typescript-eslint.io/rules/prefer-string-starts-ends-with) | Enforce using `String#startsWith` and `String#endsWith` over other equivalent methods of checking substrings | error |
+| [@typescript-eslint/require-await](https://typescript-eslint.io/rules/require-await) | Disallow async functions which do not return promises and have no `await` expression | error |
+| [@typescript-eslint/restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands) | Require both operands of addition to be the same type and be `bigint`, `number`, or `string` | error |
+| [@typescript-eslint/restrict-template-expressions](https://typescript-eslint.io/rules/restrict-template-expressions) | Enforce template literal expressions to be of `string` type | error |
+| [@typescript-eslint/return-await](https://typescript-eslint.io/rules/return-await) | Enforce consistent awaiting of returned promises | error |
+| [@typescript-eslint/triple-slash-reference](https://typescript-eslint.io/rules/triple-slash-reference) | Disallow certain triple slash directives in favor of ES6-style import declarations | error |
+| [@typescript-eslint/unbound-method](https://typescript-eslint.io/rules/unbound-method) | Enforce unbound methods are called with their expected scope | error |
+| [@typescript-eslint/unified-signatures](https://typescript-eslint.io/rules/unified-signatures) | Disallow two overloads that could be unified into one with a union or an optional/rest parameter | error |
+| [@typescript-eslint/use-unknown-in-catch-callback-variable](https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable) | Enforce typing arguments in Promise rejection callbacks as `unknown` | error |
+| [n/hashbang](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md) | require correct usage of hashbang | error |
+| [n/no-deprecated-api](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-deprecated-api.md) | disallow deprecated APIs | error |
+| [n/no-exports-assign](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md) | disallow the assignment to `exports` | error |
+| [n/no-extraneous-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-import.md) | disallow `import` declarations which import extraneous modules | error |
+| [n/no-extraneous-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-require.md) | disallow `require()` expressions which import extraneous modules | error |
+| [n/no-missing-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-import.md) | disallow `import` declarations which import non-existence modules | error |
+| [n/no-missing-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-require.md) | disallow `require()` expressions which import non-existence modules | error |
+| [n/no-process-env](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md) | disallow the use of `process.env` | warn |
+| [n/no-process-exit](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md) | disallow the use of `process.exit()` | error |
+| [n/no-unpublished-bin](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md) | disallow `bin` files that npm ignores | error |
+| [n/no-unpublished-import](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md) | disallow `import` declarations which import private modules | error |
+| [n/no-unpublished-require](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md) | disallow `require()` expressions which import private modules | error |
+| [n/no-unsupported-features/es-builtins](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-builtins.md) | disallow unsupported ECMAScript built-ins on the specified version | error |
+| [n/no-unsupported-features/es-syntax](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-syntax.md) | disallow unsupported ECMAScript syntax on the specified version | error |
+| [n/no-unsupported-features/node-builtins](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/node-builtins.md) | disallow unsupported Node.js built-in APIs on the specified version | error |
+| [n/process-exit-as-throw](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md) | require that `process.exit()` expressions use the same code path as `throw` | error |
+| [unicorn/error-message](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/error-message.md) | Enforce passing a `message` value when creating a built-in error. | error |
+| [unicorn/expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/expiring-todo-comments.md) | Add expiration conditions to TODO comments. | error |
+| [unicorn/explicit-length-check](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/explicit-length-check.md) | Enforce explicitly comparing the `length` or `size` property of a value. | error |
+| [unicorn/filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/filename-case.md) | Enforce a case style for filenames. | error |
+| [unicorn/new-for-builtins](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/new-for-builtins.md) | Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`. | error |
+| [unicorn/no-abusive-eslint-disable](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-abusive-eslint-disable.md) | Enforce specifying rules to disable in `eslint-disable` comments. | error |
+| [unicorn/no-anonymous-default-export](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-anonymous-default-export.md) | Disallow anonymous functions and classes as the default export. | error |
+| [unicorn/no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-for-each.md) | Prefer `for…of` over the `forEach` method. | error |
+| [unicorn/no-array-reduce](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-array-reduce.md) | Disallow `Array#reduce()` and `Array#reduceRight()`. | error |
+| [unicorn/no-await-expression-member](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-expression-member.md) | Disallow member access from await expression. | error |
+| [unicorn/no-await-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-await-in-promise-methods.md) | Disallow using `await` in `Promise` method parameters. | error |
+| [unicorn/no-console-spaces](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-console-spaces.md) | Do not use leading/trailing space between `console.log` parameters. | error |
+| [unicorn/no-document-cookie](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-document-cookie.md) | Do not use `document.cookie` directly. | error |
+| [unicorn/no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-empty-file.md) | Disallow empty files. | error |
+| [unicorn/no-for-loop](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-for-loop.md) | Do not use a `for` loop that can be replaced with a `for-of` loop. | off |
+| [unicorn/no-hex-escape](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-hex-escape.md) | Enforce the use of Unicode escapes instead of hexadecimal escapes. | error |
+| [unicorn/no-instanceof-array](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-instanceof-array.md) | Require `Array.isArray()` instead of `instanceof Array`. | error |
+| [unicorn/no-invalid-remove-event-listener](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-invalid-remove-event-listener.md) | Prevent calling `EventTarget#removeEventListener()` with the result of an expression. | error |
+| [unicorn/no-negated-condition](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-negated-condition.md) | Disallow negated conditions. | error |
+| [unicorn/no-new-array](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-array.md) | Disallow `new Array()`. | error |
+| [unicorn/no-new-buffer](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-new-buffer.md) | Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`. | error |
+| [unicorn/no-null](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-null.md) | Disallow the use of the `null` literal. | error |
+| [unicorn/no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-object-as-default-parameter.md) | Disallow the use of objects as default parameters. | error |
+| [unicorn/no-process-exit](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-process-exit.md) | Disallow `process.exit()`. | error |
+| [unicorn/no-single-promise-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-single-promise-in-promise-methods.md) | Disallow passing single-element arrays to `Promise` methods. | error |
+| [unicorn/no-static-only-class](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-static-only-class.md) | Disallow classes that only have static members. | error |
+| [unicorn/no-thenable](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-thenable.md) | Disallow `then` property. | error |
+| [unicorn/no-this-assignment](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-this-assignment.md) | Disallow assigning `this` to a variable. | error |
+| [unicorn/no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-typeof-undefined.md) | Disallow comparing `undefined` using `typeof`. | error |
+| [unicorn/no-unnecessary-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-await.md) | Disallow awaiting non-promise values. | error |
+| [unicorn/no-unnecessary-polyfills](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unnecessary-polyfills.md) | Enforce the use of built-in methods instead of unnecessary polyfills. | error |
+| [unicorn/no-unreadable-array-destructuring](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-array-destructuring.md) | Disallow unreadable array destructuring. | error |
+| [unicorn/no-unreadable-iife](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unreadable-iife.md) | Disallow unreadable IIFEs. | error |
+| [unicorn/no-useless-fallback-in-spread](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-fallback-in-spread.md) | Disallow useless fallback when spreading in object literals. | error |
+| [unicorn/no-useless-length-check](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-length-check.md) | Disallow useless array length check. | error |
+| [unicorn/no-useless-promise-resolve-reject](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-promise-resolve-reject.md) | Disallow returning/yielding `Promise.resolve/reject()` in async functions or promise callbacks | error |
+| [unicorn/no-useless-spread](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-spread.md) | Disallow unnecessary spread. | error |
+| [unicorn/no-useless-switch-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-switch-case.md) | Disallow useless case in switch statements. | error |
+| [unicorn/no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-useless-undefined.md) | Disallow useless `undefined`. | error |
+| [unicorn/no-zero-fractions](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-zero-fractions.md) | Disallow number literals with zero fractions or dangling dots. | error |
+| [unicorn/prefer-add-event-listener](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-add-event-listener.md) | Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions. | error |
+| [unicorn/prefer-array-find](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-find.md) | Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`. | off |
+| [unicorn/prefer-array-flat](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat.md) | Prefer `Array#flat()` over legacy techniques to flatten arrays. | error |
+| [unicorn/prefer-array-flat-map](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-flat-map.md) | Prefer `.flatMap(…)` over `.map(…).flat()`. | error |
+| [unicorn/prefer-array-index-of](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-index-of.md) | Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findLastIndex}()` when looking for the index of an item. | error |
+| [unicorn/prefer-array-some](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-array-some.md) | Prefer `.some(…)` over `.filter(…).length` check and `.{find,findLast,findIndex,findLastIndex}(…)`. | error |
+| [unicorn/prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-at.md) | Prefer `.at()` method for index access and `String#charAt()`. | error |
+| [unicorn/prefer-blob-reading-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-blob-reading-methods.md) | Prefer `Blob#arrayBuffer()` over `FileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`. | error |
+| [unicorn/prefer-code-point](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-code-point.md) | Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`. | error |
+| [unicorn/prefer-date-now](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-date-now.md) | Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch. | error |
+| [unicorn/prefer-default-parameters](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-default-parameters.md) | Prefer default parameters over reassignment. | error |
+| [unicorn/prefer-dom-node-append](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-append.md) | Prefer `Node#append()` over `Node#appendChild()`. | error |
+| [unicorn/prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-dataset.md) | Prefer using `.dataset` on DOM elements over calling attribute methods. | error |
+| [unicorn/prefer-dom-node-remove](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-remove.md) | Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`. | error |
+| [unicorn/prefer-dom-node-text-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-dom-node-text-content.md) | Prefer `.textContent` over `.innerText`. | error |
+| [unicorn/prefer-event-target](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-event-target.md) | Prefer `EventTarget` over `EventEmitter`. | error |
+| [unicorn/prefer-export-from](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-export-from.md) | Prefer `export…from` when re-exporting. | error |
+| [unicorn/prefer-includes](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-includes.md) | Prefer `.includes()` over `.indexOf()`, `.lastIndexOf()`, and `Array#some()` when checking for existence or non-existence. | off |
+| [unicorn/prefer-keyboard-event-key](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-keyboard-event-key.md) | Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`. | error |
+| [unicorn/prefer-logical-operator-over-ternary](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-logical-operator-over-ternary.md) | Prefer using a logical operator over a ternary. | error |
+| [unicorn/prefer-math-trunc](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-math-trunc.md) | Enforce the use of `Math.trunc` instead of bitwise operators. | error |
+| [unicorn/prefer-modern-dom-apis](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-dom-apis.md) | Prefer `.before()` over `.insertBefore()`, `.replaceWith()` over `.replaceChild()`, prefer one of `.before()`, `.after()`, `.append()` or `.prepend()` over `insertAdjacentText()` and `insertAdjacentElement()`. | error |
+| [unicorn/prefer-modern-math-apis](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-modern-math-apis.md) | Prefer modern `Math` APIs over legacy patterns. | error |
+| [unicorn/prefer-module](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-module.md) | Prefer JavaScript modules (ESM) over CommonJS. | error |
+| [unicorn/prefer-native-coercion-functions](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-native-coercion-functions.md) | Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` directly. | error |
+| [unicorn/prefer-negative-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-negative-index.md) | Prefer negative index over `.length - index` when possible. | error |
+| [unicorn/prefer-node-protocol](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-node-protocol.md) | Prefer using the `node:` protocol when importing Node.js builtin modules. | error |
+| [unicorn/prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-number-properties.md) | Prefer `Number` static properties over global ones. | error |
+| [unicorn/prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-object-from-entries.md) | Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object. | error |
+| [unicorn/prefer-prototype-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-prototype-methods.md) | Prefer borrowing methods from the prototype instead of the instance. | error |
+| [unicorn/prefer-query-selector](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-query-selector.md) | Prefer `.querySelector()` over `.getElementById()`, `.querySelectorAll()` over `.getElementsByClassName()` and `.getElementsByTagName()` and `.getElementsByName()`. | error |
+| [unicorn/prefer-reflect-apply](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-reflect-apply.md) | Prefer `Reflect.apply()` over `Function#apply()`. | error |
+| [unicorn/prefer-regexp-test](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-regexp-test.md) | Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`. | error |
+| [unicorn/prefer-set-size](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-set-size.md) | Prefer using `Set#size` instead of `Array#length`. | error |
+| [unicorn/prefer-string-replace-all](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-replace-all.md) | Prefer `String#replaceAll()` over regex searches with the global flag. | error |
+| [unicorn/prefer-string-slice](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-slice.md) | Prefer `String#slice()` over `String#substr()` and `String#substring()`. | error |
+| [unicorn/prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-starts-ends-with.md) | Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`. | off |
+| [unicorn/prefer-string-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-trim-start-end.md) | Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()`. | error |
+| [unicorn/prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-top-level-await.md) | Prefer top-level await over top-level promises and async function calls. | error |
+| [unicorn/prefer-type-error](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-type-error.md) | Enforce throwing `TypeError` in type checking conditions. | error |
+| [unicorn/relative-url-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/relative-url-style.md) | Enforce consistent relative URL style. | error |
+| [unicorn/require-array-join-separator](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-array-join-separator.md) | Enforce using the separator argument with `Array#join()`. | error |
+| [unicorn/require-number-to-fixed-digits-argument](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-number-to-fixed-digits-argument.md) | Enforce using the digits argument with `Number#toFixed()`. | error |
+| [unicorn/throw-new-error](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/throw-new-error.md) | Require `new` when creating an error. | error |
 
 
 ## Config ts-relaxed-any
     
-| Rule | Description |
-|---|---|
+| Rule | Description | Level |
+|---|---|---|
+| [@typescript-eslint/no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any) | Disallow the `any` type | off |
+| [@typescript-eslint/no-unsafe-argument](https://typescript-eslint.io/rules/no-unsafe-argument) | Disallow calling a function with a value with type `any` | off |
+| [@typescript-eslint/no-unsafe-assignment](https://typescript-eslint.io/rules/no-unsafe-assignment) | Disallow assigning a value with type `any` to variables and properties | off |
+| [@typescript-eslint/no-unsafe-call](https://typescript-eslint.io/rules/no-unsafe-call) | Disallow calling a value with type `any` | off |
+| [@typescript-eslint/no-unsafe-member-access](https://typescript-eslint.io/rules/no-unsafe-member-access) | Disallow member access on a value with type `any` | off |
+| [@typescript-eslint/no-unsafe-return](https://typescript-eslint.io/rules/no-unsafe-return) | Disallow returning a value with type `any` from a function | off |
 
 
 ## All Rules
@@ -479,7 +510,7 @@
 | [complexity](https://eslint.org/docs/latest/rules/complexity) | Enforce a maximum cyclomatic complexity allowed in a program |  |
 | [consistent-return](https://eslint.org/docs/latest/rules/consistent-return) | Require `return` statements to either always or never specify values |  |
 | [consistent-this](https://eslint.org/docs/latest/rules/consistent-this) | Enforce consistent naming when capturing the current execution context |  |
-| [constructor-super](https://eslint.org/docs/latest/rules/constructor-super) | Require `super()` calls in constructors | [js](#config-js), [ts](#config-ts) |
+| [constructor-super](https://eslint.org/docs/latest/rules/constructor-super) | Require `super()` calls in constructors | [js](#config-js) |
 | [curly](https://eslint.org/docs/latest/rules/curly) | Enforce consistent brace style for all control statements | [js](#config-js), [ts](#config-ts) |
 | [default-case](https://eslint.org/docs/latest/rules/default-case) | Require `default` cases in `switch` statements |  |
 | [default-case-last](https://eslint.org/docs/latest/rules/default-case-last) | Enforce `default` clauses in `switch` statements to be last |  |
@@ -490,7 +521,7 @@
 | [func-name-matching](https://eslint.org/docs/latest/rules/func-name-matching) | Require function names to match the name of the variable or property to which they are assigned |  |
 | [func-names](https://eslint.org/docs/latest/rules/func-names) | Require or disallow named `function` expressions |  |
 | [func-style](https://eslint.org/docs/latest/rules/func-style) | Enforce the consistent use of either `function` declarations or expressions assigned to variables |  |
-| [getter-return](https://eslint.org/docs/latest/rules/getter-return) | Enforce `return` statements in getters | [js](#config-js) |
+| [getter-return](https://eslint.org/docs/latest/rules/getter-return) | Enforce `return` statements in getters | [js](#config-js), [ts](#config-ts) |
 | [grouped-accessor-pairs](https://eslint.org/docs/latest/rules/grouped-accessor-pairs) | Require grouped accessor pairs in object literals and classes |  |
 | [guard-for-in](https://eslint.org/docs/latest/rules/guard-for-in) | Require `for-in` loops to include an `if` statement |  |
 | [id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | Disallow specified identifiers |  |
@@ -517,7 +548,7 @@
 | [no-compare-neg-zero](https://eslint.org/docs/latest/rules/no-compare-neg-zero) | Disallow comparing against `-0` | [js](#config-js), [ts](#config-ts) |
 | [no-cond-assign](https://eslint.org/docs/latest/rules/no-cond-assign) | Disallow assignment operators in conditional expressions | [js](#config-js), [ts](#config-ts) |
 | [no-console](https://eslint.org/docs/latest/rules/no-console) | Disallow the use of `console` |  |
-| [no-const-assign](https://eslint.org/docs/latest/rules/no-const-assign) | Disallow reassigning `const` variables | [js](#config-js), [ts](#config-ts) |
+| [no-const-assign](https://eslint.org/docs/latest/rules/no-const-assign) | Disallow reassigning `const` variables | [js](#config-js) |
 | [no-constant-binary-expression](https://eslint.org/docs/latest/rules/no-constant-binary-expression) | Disallow expressions where the operation doesn't affect the value | [js](#config-js), [ts](#config-ts) |
 | [no-constant-condition](https://eslint.org/docs/latest/rules/no-constant-condition) | Disallow constant expressions in conditions | [js](#config-js), [ts](#config-ts) |
 | [no-constructor-return](https://eslint.org/docs/latest/rules/no-constructor-return) | Disallow returning value from constructor | [js](#config-js), [ts](#config-ts) |
@@ -526,10 +557,10 @@
 | [no-debugger](https://eslint.org/docs/latest/rules/no-debugger) | Disallow the use of `debugger` | [js](#config-js), [ts](#config-ts) |
 | [no-delete-var](https://eslint.org/docs/latest/rules/no-delete-var) | Disallow deleting variables | [js](#config-js), [ts](#config-ts) |
 | [no-div-regex](https://eslint.org/docs/latest/rules/no-div-regex) | Disallow equal signs explicitly at the beginning of regular expressions |  |
-| [no-dupe-args](https://eslint.org/docs/latest/rules/no-dupe-args) | Disallow duplicate arguments in `function` definitions | [js](#config-js) |
-| [no-dupe-class-members](https://eslint.org/docs/latest/rules/no-dupe-class-members) | Disallow duplicate class members | [js](#config-js), [ts](#config-ts) |
+| [no-dupe-args](https://eslint.org/docs/latest/rules/no-dupe-args) | Disallow duplicate arguments in `function` definitions | [js](#config-js), [ts](#config-ts) |
+| [no-dupe-class-members](https://eslint.org/docs/latest/rules/no-dupe-class-members) | Disallow duplicate class members | [js](#config-js) |
 | [no-dupe-else-if](https://eslint.org/docs/latest/rules/no-dupe-else-if) | Disallow duplicate conditions in if-else-if chains | [js](#config-js), [ts](#config-ts) |
-| [no-dupe-keys](https://eslint.org/docs/latest/rules/no-dupe-keys) | Disallow duplicate keys in object literals | [js](#config-js), [ts](#config-ts) |
+| [no-dupe-keys](https://eslint.org/docs/latest/rules/no-dupe-keys) | Disallow duplicate keys in object literals | [js](#config-js) |
 | [no-duplicate-case](https://eslint.org/docs/latest/rules/no-duplicate-case) | Disallow duplicate case labels | [js](#config-js), [ts](#config-ts) |
 | [no-duplicate-imports](https://eslint.org/docs/latest/rules/no-duplicate-imports) | Disallow duplicate module imports | [js](#config-js), [ts](#config-ts) |
 | [no-else-return](https://eslint.org/docs/latest/rules/no-else-return) | Disallow `else` blocks after `return` statements in `if` statements | [js](#config-js), [ts](#config-ts) |
@@ -546,12 +577,12 @@
 | [no-extra-boolean-cast](https://eslint.org/docs/latest/rules/no-extra-boolean-cast) | Disallow unnecessary boolean casts | [js](#config-js), [ts](#config-ts) |
 | [no-extra-label](https://eslint.org/docs/latest/rules/no-extra-label) | Disallow unnecessary labels |  |
 | [no-fallthrough](https://eslint.org/docs/latest/rules/no-fallthrough) | Disallow fallthrough of `case` statements | [js](#config-js), [ts](#config-ts) |
-| [no-func-assign](https://eslint.org/docs/latest/rules/no-func-assign) | Disallow reassigning `function` declarations | [js](#config-js), [ts](#config-ts) |
+| [no-func-assign](https://eslint.org/docs/latest/rules/no-func-assign) | Disallow reassigning `function` declarations | [js](#config-js) |
 | [no-global-assign](https://eslint.org/docs/latest/rules/no-global-assign) | Disallow assignments to native objects or read-only global variables | [js](#config-js), [ts](#config-ts) |
 | [no-implicit-coercion](https://eslint.org/docs/latest/rules/no-implicit-coercion) | Disallow shorthand type conversions |  |
 | [no-implicit-globals](https://eslint.org/docs/latest/rules/no-implicit-globals) | Disallow declarations in the global scope |  |
 | [no-implied-eval](https://eslint.org/docs/latest/rules/no-implied-eval) | Disallow the use of `eval()`-like methods |  |
-| [no-import-assign](https://eslint.org/docs/latest/rules/no-import-assign) | Disallow assigning to imported bindings | [js](#config-js) |
+| [no-import-assign](https://eslint.org/docs/latest/rules/no-import-assign) | Disallow assigning to imported bindings | [js](#config-js), [ts](#config-ts) |
 | [no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments) | Disallow inline comments after code |  |
 | [no-inner-declarations](https://eslint.org/docs/latest/rules/no-inner-declarations) | Disallow variable or `function` declarations in nested blocks |  |
 | [no-invalid-regexp](https://eslint.org/docs/latest/rules/no-invalid-regexp) | Disallow invalid regular expression strings in `RegExp` constructors | [js](#config-js), [ts](#config-ts) |
@@ -572,10 +603,10 @@
 | [no-nested-ternary](https://eslint.org/docs/latest/rules/no-nested-ternary) | Disallow nested ternary expressions | [js](#config-js), [ts](#config-ts) |
 | [no-new](https://eslint.org/docs/latest/rules/no-new) | Disallow `new` operators outside of assignments or comparisons |  |
 | [no-new-func](https://eslint.org/docs/latest/rules/no-new-func) | Disallow `new` operators with the `Function` object |  |
-| [no-new-native-nonconstructor](https://eslint.org/docs/latest/rules/no-new-native-nonconstructor) | Disallow `new` operators with global non-constructor functions | [js](#config-js) |
+| [no-new-native-nonconstructor](https://eslint.org/docs/latest/rules/no-new-native-nonconstructor) | Disallow `new` operators with global non-constructor functions | [js](#config-js), [ts](#config-ts) |
 | [no-new-wrappers](https://eslint.org/docs/latest/rules/no-new-wrappers) | Disallow `new` operators with the `String`, `Number`, and `Boolean` objects |  |
 | [no-nonoctal-decimal-escape](https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape) | Disallow `\8` and `\9` escape sequences in string literals | [js](#config-js), [ts](#config-ts) |
-| [no-obj-calls](https://eslint.org/docs/latest/rules/no-obj-calls) | Disallow calling global object properties as functions | [js](#config-js) |
+| [no-obj-calls](https://eslint.org/docs/latest/rules/no-obj-calls) | Disallow calling global object properties as functions | [js](#config-js), [ts](#config-ts) |
 | [no-object-constructor](https://eslint.org/docs/latest/rules/no-object-constructor) | Disallow calls to the `Object` constructor without an argument |  |
 | [no-octal](https://eslint.org/docs/latest/rules/no-octal) | Disallow octal literals | [js](#config-js), [ts](#config-ts) |
 | [no-octal-escape](https://eslint.org/docs/latest/rules/no-octal-escape) | Disallow octal escape sequences in string literals |  |
@@ -584,7 +615,7 @@
 | [no-promise-executor-return](https://eslint.org/docs/latest/rules/no-promise-executor-return) | Disallow returning values from Promise executor functions | [js](#config-js), [ts](#config-ts) |
 | [no-proto](https://eslint.org/docs/latest/rules/no-proto) | Disallow the use of the `__proto__` property |  |
 | [no-prototype-builtins](https://eslint.org/docs/latest/rules/no-prototype-builtins) | Disallow calling some `Object.prototype` methods directly on objects | [js](#config-js), [ts](#config-ts) |
-| [no-redeclare](https://eslint.org/docs/latest/rules/no-redeclare) | Disallow variable redeclaration | [js](#config-js), [ts](#config-ts) |
+| [no-redeclare](https://eslint.org/docs/latest/rules/no-redeclare) | Disallow variable redeclaration | [js](#config-js) |
 | [no-regex-spaces](https://eslint.org/docs/latest/rules/no-regex-spaces) | Disallow multiple spaces in regular expressions | [js](#config-js), [ts](#config-ts) |
 | [no-restricted-exports](https://eslint.org/docs/latest/rules/no-restricted-exports) | Disallow specified names in exports |  |
 | [no-restricted-globals](https://eslint.org/docs/latest/rules/no-restricted-globals) | Disallow specified global variables |  |
@@ -596,30 +627,30 @@
 | [no-self-assign](https://eslint.org/docs/latest/rules/no-self-assign) | Disallow assignments where both sides are exactly the same | [js](#config-js), [ts](#config-ts) |
 | [no-self-compare](https://eslint.org/docs/latest/rules/no-self-compare) | Disallow comparisons where both sides are exactly the same |  |
 | [no-sequences](https://eslint.org/docs/latest/rules/no-sequences) | Disallow comma operators |  |
-| [no-setter-return](https://eslint.org/docs/latest/rules/no-setter-return) | Disallow returning values from setters | [js](#config-js) |
+| [no-setter-return](https://eslint.org/docs/latest/rules/no-setter-return) | Disallow returning values from setters | [js](#config-js), [ts](#config-ts) |
 | [no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | Disallow variable declarations from shadowing variables declared in the outer scope |  |
 | [no-shadow-restricted-names](https://eslint.org/docs/latest/rules/no-shadow-restricted-names) | Disallow identifiers from shadowing restricted names | [js](#config-js), [ts](#config-ts) |
 | [no-sparse-arrays](https://eslint.org/docs/latest/rules/no-sparse-arrays) | Disallow sparse arrays | [js](#config-js), [ts](#config-ts) |
 | [no-template-curly-in-string](https://eslint.org/docs/latest/rules/no-template-curly-in-string) | Disallow template literal placeholder syntax in regular strings | [js](#config-js), [ts](#config-ts) |
 | [no-ternary](https://eslint.org/docs/latest/rules/no-ternary) | Disallow ternary operators |  |
-| [no-this-before-super](https://eslint.org/docs/latest/rules/no-this-before-super) | Disallow `this`/`super` before calling `super()` in constructors | [js](#config-js) |
+| [no-this-before-super](https://eslint.org/docs/latest/rules/no-this-before-super) | Disallow `this`/`super` before calling `super()` in constructors | [js](#config-js), [ts](#config-ts) |
 | [no-throw-literal](https://eslint.org/docs/latest/rules/no-throw-literal) | Disallow throwing literals as exceptions |  |
-| [no-undef](https://eslint.org/docs/latest/rules/no-undef) | Disallow the use of undeclared variables unless mentioned in `/*global */` comments | [js](#config-js) |
+| [no-undef](https://eslint.org/docs/latest/rules/no-undef) | Disallow the use of undeclared variables unless mentioned in `/*global */` comments | [js](#config-js), [ts](#config-ts) |
 | [no-undef-init](https://eslint.org/docs/latest/rules/no-undef-init) | Disallow initializing variables to `undefined` |  |
 | [no-undefined](https://eslint.org/docs/latest/rules/no-undefined) | Disallow the use of `undefined` as an identifier |  |
 | [no-underscore-dangle](https://eslint.org/docs/latest/rules/no-underscore-dangle) | Disallow dangling underscores in identifiers |  |
 | [no-unexpected-multiline](https://eslint.org/docs/latest/rules/no-unexpected-multiline) | Disallow confusing multiline expressions | [js](#config-js), [ts](#config-ts) |
 | [no-unmodified-loop-condition](https://eslint.org/docs/latest/rules/no-unmodified-loop-condition) | Disallow unmodified loop conditions | [js](#config-js), [ts](#config-ts) |
 | [no-unneeded-ternary](https://eslint.org/docs/latest/rules/no-unneeded-ternary) | Disallow ternary operators when simpler alternatives exist |  |
-| [no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable) | Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements | [js](#config-js), [ts](#config-ts) |
+| [no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable) | Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements | [js](#config-js) |
 | [no-unreachable-loop](https://eslint.org/docs/latest/rules/no-unreachable-loop) | Disallow loops with a body that allows only one iteration | [js](#config-js), [ts](#config-ts) |
 | [no-unsafe-finally](https://eslint.org/docs/latest/rules/no-unsafe-finally) | Disallow control flow statements in `finally` blocks | [js](#config-js), [ts](#config-ts) |
-| [no-unsafe-negation](https://eslint.org/docs/latest/rules/no-unsafe-negation) | Disallow negating the left operand of relational operators | [js](#config-js) |
+| [no-unsafe-negation](https://eslint.org/docs/latest/rules/no-unsafe-negation) | Disallow negating the left operand of relational operators | [js](#config-js), [ts](#config-ts) |
 | [no-unsafe-optional-chaining](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining) | Disallow use of optional chaining in contexts where the `undefined` value is not allowed | [js](#config-js), [ts](#config-ts) |
-| [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions) | Disallow unused expressions | [js](#config-js) |
+| [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions) | Disallow unused expressions | [js](#config-js), [ts](#config-ts) |
 | [no-unused-labels](https://eslint.org/docs/latest/rules/no-unused-labels) | Disallow unused labels | [js](#config-js), [ts](#config-ts) |
 | [no-unused-private-class-members](https://eslint.org/docs/latest/rules/no-unused-private-class-members) | Disallow unused private class members | [js](#config-js), [ts](#config-ts) |
-| [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | Disallow unused variables | [js](#config-js), [ts](#config-ts) |
+| [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | Disallow unused variables | [js](#config-js) |
 | [no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define) | Disallow the use of variables before they are defined |  |
 | [no-useless-assignment](https://eslint.org/docs/latest/rules/no-useless-assignment) | Disallow variable assignments when the value is not used | [js](#config-js), [ts](#config-ts) |
 | [no-useless-backreference](https://eslint.org/docs/latest/rules/no-useless-backreference) | Disallow useless backreferences in regular expressions | [js](#config-js), [ts](#config-ts) |
@@ -836,7 +867,7 @@
 | [n/prefer-promises/fs](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-promises/fs.md) | enforce `require("fs").promises` |  |
 | [n/process-exit-as-throw](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md) | require that `process.exit()` expressions use the same code path as `throw` | [js](#config-js), [ts](#config-ts) |
 | [n/shebang](https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md) | require correct usage of hashbang |  |
-| [unicorn/better-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/better-regex.md) | Improve regexes by making them shorter, consistent, and safer. | [js](#config-js), [ts](#config-ts) |
+| [unicorn/better-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/better-regex.md) | Improve regexes by making them shorter, consistent, and safer. |  |
 | [unicorn/catch-error-name](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/catch-error-name.md) | Enforce a specific parameter name in catch clauses. |  |
 | [unicorn/consistent-destructuring](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/consistent-destructuring.md) | Use destructured variables over properties. |  |
 | [unicorn/consistent-empty-array-spread](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/consistent-empty-array-spread.md) | Prefer consistent types when spreading a ternary in an array literal. |  |
@@ -866,7 +897,7 @@
 | [unicorn/no-document-cookie](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-document-cookie.md) | Do not use `document.cookie` directly. | [js](#config-js), [ts](#config-ts) |
 | [unicorn/no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-empty-file.md) | Disallow empty files. | [js](#config-js), [ts](#config-ts) |
 | [unicorn/no-fn-reference-in-iterator](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/deprecated-rules.md#no-fn-reference-in-iterator) |  |  |
-| [unicorn/no-for-loop](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-for-loop.md) | Do not use a `for` loop that can be replaced with a `for-of` loop. | [js](#config-js) |
+| [unicorn/no-for-loop](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-for-loop.md) | Do not use a `for` loop that can be replaced with a `for-of` loop. | [js](#config-js), [ts](#config-ts) |
 | [unicorn/no-hex-escape](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-hex-escape.md) | Enforce the use of Unicode escapes instead of hexadecimal escapes. | [js](#config-js), [ts](#config-ts) |
 | [unicorn/no-instanceof-array](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-instanceof-array.md) | Require `Array.isArray()` instead of `instanceof Array`. | [js](#config-js), [ts](#config-ts) |
 | [unicorn/no-invalid-fetch-options](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-invalid-fetch-options.md) | Disallow invalid options in `fetch()` and `new Request()`. |  |
@@ -956,7 +987,7 @@
 | [unicorn/prefer-string-raw](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-raw.md) | Prefer using the `String.raw` tag to avoid escaping `\`. |  |
 | [unicorn/prefer-string-replace-all](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-replace-all.md) | Prefer `String#replaceAll()` over regex searches with the global flag. | [js](#config-js), [ts](#config-ts) |
 | [unicorn/prefer-string-slice](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-slice.md) | Prefer `String#slice()` over `String#substr()` and `String#substring()`. | [js](#config-js), [ts](#config-ts) |
-| [unicorn/prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-starts-ends-with.md) | Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`. | [js](#config-js) |
+| [unicorn/prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-starts-ends-with.md) | Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`. | [js](#config-js), [ts](#config-ts) |
 | [unicorn/prefer-string-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-string-trim-start-end.md) | Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()`. | [js](#config-js), [ts](#config-ts) |
 | [unicorn/prefer-structured-clone](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-structured-clone.md) | Prefer using `structuredClone` to create a deep clone. |  |
 | [unicorn/prefer-switch](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-switch.md) | Prefer `switch` over multiple `else-if`. |  |

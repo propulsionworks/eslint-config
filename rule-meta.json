@@ -4272,12 +4272,6 @@
       "description": "Improve regexes by making them shorter, consistent, and safer.",
       "recommended": false,
       "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/better-regex.md"
-    },
-    "rulesets": {
-      "js": "error"
-    },
-    "sourceConfigs": {
-      "unicorn/recommended": "off"
     }
   },
   "unicorn/catch-error-name": {
@@ -4295,12 +4289,6 @@
       "description": "Use destructured variables over properties.",
       "recommended": false,
       "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/consistent-destructuring.md"
-    },
-    "rulesets": {
-      "js": "off"
-    },
-    "sourceConfigs": {
-      "unicorn/recommended": "off"
     }
   },
   "unicorn/consistent-empty-array-spread": {
@@ -4338,9 +4326,6 @@
       "description": "Enforce correct `Error` subclassing.",
       "recommended": false,
       "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/custom-error-definition.md"
-    },
-    "sourceConfigs": {
-      "unicorn/recommended": "off"
     }
   },
   "unicorn/empty-brace-spaces": {
@@ -4668,12 +4653,6 @@
       "description": "Disallow identifiers starting with `new` or `class`.",
       "recommended": false,
       "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-keyword-prefix.md"
-    },
-    "rulesets": {
-      "js": "off"
-    },
-    "sourceConfigs": {
-      "unicorn/recommended": "off"
     }
   },
   "unicorn/no-length-as-slice-end": {
@@ -4936,9 +4915,6 @@
       "description": "Disallow unused object properties.",
       "recommended": false,
       "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/no-unused-properties.md"
-    },
-    "sourceConfigs": {
-      "unicorn/recommended": "off"
     }
   },
   "unicorn/no-useless-fallback-in-spread": {
@@ -5329,12 +5305,6 @@
       "description": "Prefer reading a JSON file as a buffer.",
       "recommended": false,
       "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/prefer-json-parse-buffer.md"
-    },
-    "rulesets": {
-      "js": "off"
-    },
-    "sourceConfigs": {
-      "unicorn/recommended": "off"
     }
   },
   "unicorn/prefer-keyboard-event-key": {
@@ -5798,12 +5768,6 @@
       "description": "Enforce using the `targetOrigin` argument with `window.postMessage()`.",
       "recommended": false,
       "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/require-post-message-target-origin.md"
-    },
-    "rulesets": {
-      "js": "off"
-    },
-    "sourceConfigs": {
-      "unicorn/recommended": "off"
     }
   },
   "unicorn/string-content": {
@@ -5811,12 +5775,6 @@
       "description": "Enforce better string content.",
       "recommended": false,
       "url": "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v56.0.1/docs/rules/string-content.md"
-    },
-    "rulesets": {
-      "js": "off"
-    },
-    "sourceConfigs": {
-      "unicorn/recommended": "off"
     }
   },
   "unicorn/switch-case-braces": {
